@@ -1,0 +1,35 @@
+<div>
+<pre>
+<span class='code_snippet' style='font-size: 11px'>
+
+XYBarDataSeries barSeries = new XYBarDataSeries();
+barSeries.add(new DataPointBar("J", 37));
+barSeries.add(new DataPointBar("F", 42));
+barSeries.add(new DataPointBar("M", 37));
+barSeries.add(new DataPointBar("A", 39));
+barSeries.add(new DataPointBar("M", 40));
+barSeries.add(new DataPointBar("J", 53));
+barSeries.add(new DataPointBar("J", 80));
+barSeries.add(new DataPointBar("A", 103));
+barSeries.add(new DataPointBar("S", 162));
+barSeries.add(new DataPointBar("O", 180));
+barSeries.add(new DataPointBar("N", 207));
+
+BarDisplayOptions barDisplayOptions = new BarDisplayOptions();
+barDisplayOptions.color = Color.BLUE;
+barDisplayOptions.transparancy = 0.5f;
+
+barSeries.setUpBarDisplayOptions(barDisplayOptions);
+
+XYChart chart = new XYChart("Refugee Arrivals to Germany", "Month", "Number in '1000s", barSeries);
+
+chart.clearGraphLines();
+
+try {
+Image background = ImageIO.read(new File("src/test/java/com/frontangle/ichart/main/test/bar/refugees.jpg"));
+chart.setBackgroundImage(background);
+} catch (IOException e) {
+e.printStackTrace();
+}
+
+</span></pre></div>
