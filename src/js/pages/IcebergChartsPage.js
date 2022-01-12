@@ -2,7 +2,7 @@ import React from "react";
 
 import Slider from "react-slick"
 
-import "./style.less"
+// import "./style.scss"
 
 import c1 from "./icharts/samples/TestDataArea_2_Multiple_Layered.PNG"
 import c2 from "./icharts/samples/TestDataArea_4_Multiple_Stacked.PNG"

@@ -4,8 +4,6 @@ import IcebergChartsPage from "./IcebergChartsPage"
 import BlogPage from "./BlogPage"
 import ReactChartsPage from "./ReactChartsPage"
 
-
-
 export default class PreviousWorkPage extends React.Component {
   render() {
     return (

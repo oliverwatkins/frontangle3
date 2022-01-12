@@ -12,7 +12,8 @@ import Banner from "./layout/Banner.js";
 import Nav from "./layout/Nav.js";
 
 // import BouncySwitch from "./BouncySwitch"
-import './style.less';
+// import './style.scss';
+import {Switch} from "react-router-dom";
 
 
 /**
@@ -32,21 +33,22 @@ export default function PageLayout(props) {
         <div>
             <Banner/>
             <Nav location={location}/>
-
             <div>
                 <div>
                     <div>
                         {/*<FadeSwitch>*/}
-                        <Route exact path="/main" component={HomePage}/>
-                        <Route path="/main/previous" component={PreviousWorkPage}/>
-                        <Route path="/main/contact" component={ContactPage}/>
+                        <Switch>
+                            <Route exact path="/main" component={HomePage}/>
+                            <Route path="/main/previous" component={PreviousWorkPage}/>
+                            <Route path="/main/contact" component={ContactPage}/>
+                        </Switch>
                         {/*</FadeSwitch>*/}
                     </div>
                 </div>
                 <Footer/>
             </div>
-
-
         </div>
     );
 }
+
+

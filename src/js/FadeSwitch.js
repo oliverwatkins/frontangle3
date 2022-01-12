@@ -1,6 +1,6 @@
 import React from "react";
 
-import './style.less';
+import './style.scss';
 import { spring, AnimatedSwitch } from 'react-router-transition';
 
 /**
