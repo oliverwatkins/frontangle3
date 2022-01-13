@@ -60,7 +60,7 @@ import TestDataPie_Multi_HTML from './samples/TestDataPie_Multi.html'
 import TestDataPie_Multi_PNG from './samples/TestDataPie_Multi.PNG'
 import TestDataBar_2Y_HTML from './samples/TestDataBar_2Y.html'
 import TestDataBar_2Y_PNG from './samples/TestDataBar_2Y.PNG'
-
+// TestDataBar_2Y
 
 
 import './CodesamplesPanel.scss';
@@ -77,6 +77,9 @@ export default function CodesamplesPanel() {
     const [htmlToLoad, setHtmlToLoad] = React.useState();
     const [pngToLoad, setPngToLoad] = React.useState();
 
+    const [too, setToo] = React.useState();
+
+
     useEffect(() => {
         //required to load all images with webpack
         function requireAll(r) {
@@ -86,10 +89,39 @@ export default function CodesamplesPanel() {
         requireAll(require.context('./samples/', true));
 
         setNavHeader(samplesFile.samples)
+
+
+        let l = samplesFile.samples.map(elem => {
+            let xx, xx2;
+            try {
+                xx = require("./samples/" + elem.fileName +  ".PNG");
+                xx2 = require("./samples/" + elem.fileName +  ".html");
+            }catch(e) {
+                console.error(e)
+            }
+            return <div>
+                {xx2 &&  <div dangerouslySetInnerHTML={{__html:xx2.default}}></div>}
+                <img src={xx}/>
+                {/*<div dangerouslySetInnerHTML={{__html: htmlToLoad2}}></div>*/}
+            </div>
+        })
+
+        setToo(l)
+
     });
 
 
-    const images = require.context('../../../../public/images', true);
+
+
+    // const images = require.context('../../../../public/images', true);
+    // try {
+    //
+    // const dog = images(pngToLoad);
+    // }catch(e) {
+    //     console.error(e)
+    //     // alert()
+    // }
+
 
 
     let loadBoth = (fileName) => {
@@ -147,10 +179,6 @@ export default function CodesamplesPanel() {
             });
     }
 
-    let selectImg = loadBoth;
-
-
-
     let bottomStyle = {
         marginTop: 30,
     }
@@ -159,17 +187,19 @@ export default function CodesamplesPanel() {
         width: "400px",
     }
 
-    const dog = images(pngToLoad);
     return (
         <div>
             <h1>Code Samples</h1>
             <h4>Quickly get started with these samples</h4>
             <div id="tabs">
                 <div>
-                    <img src={`${process.env.PUBLIC_URL}/TestDataBubble_2_series.PNG`} />
-                    <img src={`TestDataBubble_2_series.PNG`} />
-                    <img src={`${process.env.PUBLIC_URL}/TestDataBubble_2_series.PNG`} />
 
+                    <div dangerouslySetInnerHTML={{__html:TestStackedChart3_HTML}}></div>
+                    <img src={TestStackedChart3_PNG} />
+                    <img src={""} style={imgStyle}/>
+                    <div dangerouslySetInnerHTML={{__html: htmlToLoad}}></div>
+
+                    {too}
 
                     <ul>
                         {navHeader && navHeader.map(function (name, index) {
@@ -179,7 +209,7 @@ export default function CodesamplesPanel() {
                             if (pngToLoad && pngToLoad === name.urlPath + name.fileName + ".PNG") {
                                 return <li key={index} className='active'>{name.title}</li>;
                             } else {
-                                return <li key={index} onClick={e => selectImg(name.fileName)}>{name.title}</li>;
+                                return <li key={index} onClick={e => loadBoth(name.fileName)}>{name.title}</li>;
                             }
                         })}
                     </ul>
@@ -187,11 +217,12 @@ export default function CodesamplesPanel() {
             </div>
             <br/>
             <div id="mainView" style={bottomStyle}>
-                {pngToLoad}
-                {/*<img src={"" + dog} style={imgStyle}/>*/}
 
 
+                {getCorrect()}
 
+
+                <img src={""} style={imgStyle}/>
                 <div dangerouslySetInnerHTML={{__html: htmlToLoad}}></div>
             </div>
         </div>
