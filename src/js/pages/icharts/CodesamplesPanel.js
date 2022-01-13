@@ -66,6 +66,7 @@ import TestDataBar_2Y_PNG from './samples/TestDataBar_2Y.PNG'
 import './CodesamplesPanel.scss';
 
 import samplesFile from './samples/samples.json'
+import DetailPanel from "./DetailPanel";
 
 // import samplesFile from '../../../../public'
 
@@ -79,6 +80,47 @@ export default function CodesamplesPanel() {
 
     const [too, setToo] = React.useState();
 
+    let arrayOfComponents =
+        [1,2,3].map(() => {
+            return (props) => <div>TEST {props.position}</div>
+        })
+
+
+    // {navHeader && navHeader.map(function (name, index) {
+    //     <img src={""} style={imgStyle}/>
+    //     <div dangerouslySetInnerHTML={{__html: htmlToLoad}}></div>
+    //     console.info("pngToLoad " + pngToLoad)
+    //
+    //     if (pngToLoad && pngToLoad === name.urlPath + name.fileName + ".PNG") {
+    //         return <li key={index} className='active'>{name.title}</li>;
+    //     } else {
+    //         return <li key={index} onClick={e => loadBoth(name.fileName)}>{name.title}</li>;
+    //     }
+    // })}
+
+    let ParentComponent = () => {
+        return <>
+            <div>Show Me Three Elements</div>
+            <div>the length of array is {arrayOfComponents && arrayOfComponents.length} </div>
+            <div>
+
+                {navHeader && navHeader.map((e, i) => {
+                    return <div>xx<e position={i}/></div>
+                })}
+
+            {/*{arrayOfComponents && arrayOfComponents.map((e, i) => {*/}
+            {/*    return <div>xx<e position={i}/></div>*/}
+            {/*})}*/}
+            {/*{arrayOfComponents && arrayOfComponents.map((value, i) => {*/}
+            {/*    return (<div>TEST {value}</div>)*/}
+            {/*})}*/}
+
+
+            </div>
+        </>
+    }
+
+
 
     useEffect(() => {
         //required to load all images with webpack
@@ -91,22 +133,37 @@ export default function CodesamplesPanel() {
         setNavHeader(samplesFile.samples)
 
 
-        let l = samplesFile.samples.map(elem => {
-            let xx, xx2;
-            try {
-                xx = require("./samples/" + elem.fileName +  ".PNG");
-                xx2 = require("./samples/" + elem.fileName +  ".html");
-            }catch(e) {
-                console.error(e)
-            }
-            return <div>
-                {xx2 &&  <div dangerouslySetInnerHTML={{__html:xx2.default}}></div>}
-                <img src={xx}/>
-                {/*<div dangerouslySetInnerHTML={{__html: htmlToLoad2}}></div>*/}
-            </div>
-        })
+        let arrayOfComponents =
+            [1,2,3].map(elem => {
+                return () => <div>TEST </div>
+            })
 
-        setToo(l)
+
+            // samplesFile.samples.map(elem => {
+            //     let xx, xx2;
+            //     try {
+            //         xx = require("./samples/" + elem.fileName + ".PNG");
+            //         xx2 = require("./samples/" + elem.fileName + ".html");
+            //     } catch (e) {
+            //         console.error(e)
+            //     }
+            //     return (props) => {
+            //         return <div>
+            //             {xx2 && <div dangerouslySetInnerHTML={{__html: xx2.default}}></div>}
+            //             <img src={xx}/>
+            //         </div>
+            //     }
+            // })
+
+
+
+
+
+        // let comp = (props) => <>
+        //     {l}
+        // </>
+        //
+        setToo(arrayOfComponents)
 
     });
 
@@ -193,13 +250,16 @@ export default function CodesamplesPanel() {
             <h4>Quickly get started with these samples</h4>
             <div id="tabs">
                 <div>
+                    {/*<Comp2 visible={"that one"}></Comp2>*/}
+                    {/*<div dangerouslySetInnerHTML={{__html:TestStackedChart3_HTML}}></div>*/}
+                    {/*<img src={TestStackedChart3_PNG} />*/}
+                    {/*<img src={""} style={imgStyle}/>*/}
+                    {/*<div dangerouslySetInnerHTML={{__html: htmlToLoad}}></div>*/}
+                    <img src={require("./samples/TestDataArea_2_Multiple_Layered.PNG")} style={imgStyle}/>
 
-                    <div dangerouslySetInnerHTML={{__html:TestStackedChart3_HTML}}></div>
-                    <img src={TestStackedChart3_PNG} />
-                    <img src={""} style={imgStyle}/>
-                    <div dangerouslySetInnerHTML={{__html: htmlToLoad}}></div>
-
-                    {too}
+                    <DetailPanel samples={navHeader}/>
+                    <ParentComponent/>
+                    {/*{too}*/}
 
                     <ul>
                         {navHeader && navHeader.map(function (name, index) {
@@ -219,7 +279,7 @@ export default function CodesamplesPanel() {
             <div id="mainView" style={bottomStyle}>
 
 
-                {getCorrect()}
+                {/*{getCorrect()}*/}
 
 
                 <img src={""} style={imgStyle}/>
