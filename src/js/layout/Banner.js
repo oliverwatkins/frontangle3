@@ -1,6 +1,6 @@
 import React from "react";
 
-import './header.scss_';
+import './header.scss';
 
 export default class Banner extends React.Component {
   render() {

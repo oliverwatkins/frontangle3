@@ -38,11 +38,22 @@ export default function PageLayout(props) {
                     <div>
                         {/*<FadeSwitch>*/}
                         <Switch>
-                            <Route exact path="/main" component={HomePage}/>
-                            <Route path="/main/previous" component={PreviousWorkPage}/>
-                            <Route path="/main/contact" component={ContactPage}/>
+                            <Route exact path="/main">
+                                <HomePage/>
+                            </Route>
+                            <Route path="/main/previous">
+                                <PreviousWorkPage/>
+                            </Route>
+                            <Route path="/main/contact">
+                                <ContactPage/>
+                            </Route>
                         </Switch>
                         {/*</FadeSwitch>*/}
+
+                        {/*<Route path="/main">*/}
+                        {/*    <PageLayoutMain/>*/}
+                        {/*</Route>*/}
+
                     </div>
                 </div>
                 <Footer/>

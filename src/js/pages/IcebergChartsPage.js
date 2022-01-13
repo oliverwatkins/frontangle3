@@ -2,7 +2,7 @@ import React from "react";
 
 import Slider from "react-slick"
 
-// import "./style.scss"
+import "./style.scss"
 
 import c1 from "./icharts/samples/TestDataArea_2_Multiple_Layered.PNG"
 import c2 from "./icharts/samples/TestDataArea_4_Multiple_Stacked.PNG"
@@ -37,6 +37,9 @@ import c30 from "./icharts/samples/TestStackedChart3.PNG"
 import ImageGallery from 'react-image-gallery';
 
 import "react-image-gallery/styles/css/image-gallery.css";
+
+// Panel!!
+
 
 export default class IcebergChartsPage2 extends React.Component {
 

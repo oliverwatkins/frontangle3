@@ -1,7 +1,7 @@
 import React from "react";
 import {Link, useLocation} from "react-router-dom";
-// import "./header.scss_";
-import "./test.scss"
+import "./header.scss";
+import "./style.scss"
 import "./nav.css"
 
 

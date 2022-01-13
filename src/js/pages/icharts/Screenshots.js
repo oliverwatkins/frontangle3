@@ -2,9 +2,7 @@ import React from "react";
 
 
 import './style.less';
-import request from 'superagent';
 // import welcome from './assets/img_DEPRECATED/pizza.png';
-
 import img1 from './screenshots/img1.PNG'
 import img2 from './screenshots/img2.PNG'
 import img3 from './screenshots/img3.PNG'
@@ -17,36 +15,25 @@ import img9 from './screenshots/img9.PNG'
 import img10 from './screenshots/img10.PNG'
 
 
-/**
- * Contains nav on top, footer on bottom, and all the pages are passed in
- * as children..
- */
-export default class PageLayoutICharts extends React.Component {
-
-  componentDidMount() {
-  }
-
-  render() {
-    const {location} = this.props;
+export default function Screenshots() {
 
     const style = {
-      width: '300px',
-      marginTop: "0px"
+        width: '300px',
+        marginTop: "0px"
     }
 
     return (
-      <div>
-        <img src={img1} style={style} className='screenshot-image'/>
-        <img src={img2} style={style} className='screenshot-image'/>
-        <img src={img3} style={style} className='screenshot-image'/>
-        <img src={img4} style={style} className='screenshot-image'/>
-        <img src={img5} style={style} className='screenshot-image'/>
-        <img src={img6} style={style} className='screenshot-image'/>
-        <img src={img7} style={style} className='screenshot-image'/>
-        <img src={img8} style={style} className='screenshot-image'/>
-        <img src={img9} style={style} className='screenshot-image'/>
-        <img src={img10} style={style} className='screenshot-image'/>
-      </div>
+        <div>
+            <img src={img1} style={style} className='screenshot-image'/>
+            <img src={img2} style={style} className='screenshot-image'/>
+            <img src={img3} style={style} className='screenshot-image'/>
+            <img src={img4} style={style} className='screenshot-image'/>
+            <img src={img5} style={style} className='screenshot-image'/>
+            <img src={img6} style={style} className='screenshot-image'/>
+            <img src={img7} style={style} className='screenshot-image'/>
+            <img src={img8} style={style} className='screenshot-image'/>
+            <img src={img9} style={style} className='screenshot-image'/>
+            <img src={img10} style={style} className='screenshot-image'/>
+        </div>
     )
-  }
 }

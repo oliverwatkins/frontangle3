@@ -1,6 +1,6 @@
 import React from "react";
 
-// import './style.scss';
+import './style.scss';
 
 export default class WelcomePage extends React.Component {
 
