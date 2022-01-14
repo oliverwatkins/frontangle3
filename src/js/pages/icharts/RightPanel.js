@@ -1,6 +1,6 @@
 import React from "react";
 
-import './style.less';
+import './style.scss';
 
 import githubImage from './img/download_github.jpg';
 

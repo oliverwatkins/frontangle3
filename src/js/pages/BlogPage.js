@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./style.scss"
+import "./page.scss"
 
 export default class BlogPage extends React.Component {
 

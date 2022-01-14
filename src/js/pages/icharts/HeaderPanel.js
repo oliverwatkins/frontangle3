@@ -3,7 +3,7 @@ import icebergImage from './img/icbergcharts2.PNG';
 import headerImage from './img/icharts-banner.PNG';
 import {Link, useLocation, withRouter} from "react-router-dom";
 
-import './HeaderPanel.less';
+import './HeaderPanel.scss';
 
 
 export default function HeaderPanel(props) {
