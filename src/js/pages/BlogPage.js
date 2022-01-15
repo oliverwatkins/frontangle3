@@ -17,7 +17,6 @@ export default class BlogPage extends React.Component {
           </p>
         </div>
         <div id="blog"/>
-
       </div>
     );
   }

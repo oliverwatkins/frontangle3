@@ -6,18 +6,12 @@ export default class HomePanel extends React.Component {
   render() {
     const {location} = this.props;
 
-    // style = {
-    //
-    // }
-
     return (
       <div>
         <div style={{margin:"30px"}}>
-
           Iceberg Charts is an advanced charting library for creating charts in Java.
           <br/>
           It offers a rich set of charting features including :
-
           <ul>
             <li> XY Charts</li>
             <li> Pie Charts</li>
@@ -27,7 +21,6 @@ export default class HomePanel extends React.Component {
             <li> Bar Charts</li>
             <li> Stacked Charts</li>
           </ul>
-
 
           Check out some screenshots and then try out some of the code samples.
           <p/>

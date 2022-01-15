@@ -28,11 +28,6 @@ export default function PageLayoutICharts(props) {
             <div style={containerStyle}>
                 <div>
                     <div>
-                        {/*<Switch>*/}
-                        {/*  /!*<Route exact path="/icharts" component = {HomePanel}/>*!/*/}
-                        {/*  /!*<Route path="/icharts/screenshots" component = {Screenshots}/>*!/*/}
-                        {/*  /!*<Route path="/icharts/codesamples" component = {CodesamplesPanel}/>*!/*/}
-                        {/*</Switch>*/}
                         <Switch>
                             <Route exact path="/icharts">
                                 <HomePanel/>

@@ -14,22 +14,12 @@ export default function CodesamplesPanel() {
 
     useEffect(() => {
         //required to load all images with webpack
-        function requireAll(r) {
-            r.keys().forEach(r);
-        }
-
-        requireAll(require.context('./samples/', true));
-
+        // function requireAll(r) {
+        //     r.keys().forEach(r);
+        // }
+        // requireAll(require.context('./samples/', true));
         setNavHeader(samplesFile.samples)
     });
-
-    let bottomStyle = {
-        marginTop: 30,
-    }
-
-    let imgStyle = {
-        width: "400px",
-    }
 
     return (
         <div>
@@ -49,10 +39,11 @@ export default function CodesamplesPanel() {
                 </div>
             </div>
             <br/>
-            <div id="mainView" style={bottomStyle}>
+            <div id="mainView" style={{
+                marginTop: 30,
+            }}>
                 <DetailPanel samples={navHeader} selected={fileName}/>
             </div>
         </div>
     )
 }
-

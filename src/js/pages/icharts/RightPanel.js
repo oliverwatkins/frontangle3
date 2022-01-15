@@ -6,7 +6,6 @@ import githubImage from './img/download_github.jpg';
 
 export default class RightPanel extends React.Component {
 
-
   render() {
     const styleGithubButton = {
       margin: 15
