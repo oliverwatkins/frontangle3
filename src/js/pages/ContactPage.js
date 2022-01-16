@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./contactPage.scss"
+
 export default class ContactPage extends React.Component {
   render() {
     return (

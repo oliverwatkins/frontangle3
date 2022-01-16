@@ -4,8 +4,6 @@ import React from "react";
 export default class Footer extends React.Component {
   render() {
     const footerStyles = {
-        // marginTop: "30px",
-        // marginLeft:"10px",
         backgroundColor: "#fff9fa",
         color: "#123123",
         padding:"5px",

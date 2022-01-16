@@ -11,15 +11,12 @@ import PreviousWorkPage from "./pages/PreviousWorkPage";
 import Banner from "./layout/Banner.js";
 import Nav from "./layout/Nav.js";
 
-// import BouncySwitch from "./BouncySwitch"
-// import './style.scss';
 import {Switch} from "react-router-dom";
 
 
 /**
  * Contains nav on top, footer on bottom, and all the pages are passed in
  * as children..
- *
  */
 export default function PageLayout(props) {
     const {location} = props;

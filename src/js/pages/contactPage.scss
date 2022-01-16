@@ -1,0 +1,16 @@
+@import "../global";
+
+
+.contact-page {
+  $multiplyFactor: 0.7px;
+  $width: (284 * $multiplyFactor);
+  $height: (428 * $multiplyFactor);
+  //contact
+  .mugshot-image {
+    margin: 15px;
+    width: $width;
+    height: $height;
+    background-image: url("../../img/bw_me.jpg");
+    background-size: $width $height;
+  }
+}

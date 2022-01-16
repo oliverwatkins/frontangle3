@@ -1,7 +1,5 @@
 import React from "react";
 
-import './style.scss';
-
 import githubImage from './img/download_github.jpg';
 
 export default class RightPanel extends React.Component {

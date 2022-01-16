@@ -9,8 +9,6 @@ import ContactPage from "../ContactPage";
 import HomePanel from "./HomePanel";
 import Screenshots from "./Screenshots";
 import CodesamplesPanel from './CodesamplesPanel';
-// import Route from "react-router-dom/es/Route";
-// import { Routes, Route, withRouter, Router, Redirect } from 'react-router-dom'
 /**
  * Contains nav on top, footer on bottom, and all the pages are passed in
  * as children..

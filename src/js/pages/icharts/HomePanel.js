@@ -1,7 +1,5 @@
 import React from "react";
 
-import './style.scss';
-
 export default class HomePanel extends React.Component {
   render() {
     const {location} = this.props;

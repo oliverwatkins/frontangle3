@@ -27,18 +27,19 @@ function Nav(props) {
     let previousClassisActive = location.pathname.match(/^\/previous/) ? "active" : "";
     let contactClassisActive = location.pathname.match(/^\/contact/) ? "active" : "";
 
-    const headerStyle = {
-        position: "sticky",
-        width: "100%",
-        color: "pink",
-        backgroundColor: "white",
-        top: 0,
-        zIndex: 99
-    };
+    // const headerStyle = {
+    //     position: "sticky",
+    //     width: "100%",
+    //     color: "pink",
+    //     backgroundColor: "white",
+    //     top: 0,
+    //     zIndex: 99
+    // };
+    // style={headerStyle}
 
     return (
 
-        <nav style={headerStyle} className="navbar navbar-default" role="navigation">
+        <nav className="navbar navbar-default" role="navigation">
             <div className="container-fluid">
                 <ul className="nav navbar-nav">
                     <li className={homeClassisActive}>
