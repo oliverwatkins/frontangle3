@@ -37,93 +37,81 @@ import c30 from "./icharts/samples/TestStackedChart3.PNG"
 import ImageGallery from 'react-image-gallery';
 
 import "react-image-gallery/styles/css/image-gallery.css";
-import {Card, CardContent, CardMedia} from "@mui/material";
-import CardHeader from "react-bootstrap/CardHeader";
+import {Card, CardContent, CardHeader, CardMedia, Typography} from "@mui/material";
 import bw from "../../img/bw.PNG";
 
-// Panel!!
-
-
-export default class IcebergChartsPage2 extends React.Component {
-
-  render() {
-
-
-
-    return (
-        <Card className="admin-item-box">
-          <CardHeader
-              title= {"asdfasdfasdfsdfa "}
-          > http://www.blue-walrus.com
-            Iceberg Charts</CardHeader>
-          <CardContent>         Iceberg charts is a comprehensive java charting library
-            <a href="/#/icharts">
-              (Visit the project repository on Github).
-            </a>
-            Some chart examples can be seen here :
-
-              <ImageGallery id="ImageGallery" items={someInterestingImages} />
-          </CardContent>
-        </Card>
-    );
-  }
+export default class IcebergChartsCard extends React.Component {
+    render() {
+        return (
+            <Card>
+                <CardHeader title={ "Iceberg Charts "} subheader={"http://www.frontangle.com/#/icharts/"}/>
+                <CardContent>
+                    <Typography variant={"body1"}>
+                    Iceberg charts is a comprehensive java charting library
+                    <a href="/#/icharts">  (Visit the project repository on Github). </a> Some chart examples can be seen here :
+                    </Typography>
+                    <ImageGallery id="ImageGallery" items={someInterestingImages}/>
+                </CardContent>
+            </Card>
+        );
+    }
 }
 
 const someInterestingImages = [
-  {
-    original: c1,
-    thumbnail: c1,
-  },
-  {
-    original: c2,
-    thumbnail: c2,
-  },
-  {
-    original: c4,
-    thumbnail: c4,
-  },
-  {
-    original: c5,
-    thumbnail: c5,
-  },
-  {
-    original: c6,
-    thumbnail: c6,
-  },
-  {
-    original: c7,
-    thumbnail: c7,
-  },
-  {
-    original: c8,
-    thumbnail: c8,
-  },
-  {
-    original: c9,
-    thumbnail: c9,
-  },
-  {
-    original: c10,
-    thumbnail: c10,
-  },
-  {
-    original: c11,
-    thumbnail: c11,
-  },
-  {
-    original: c12,
-    thumbnail: c12,
-  },
-  {
-    original: c13,
-    thumbnail: c13,
-  },
-  {
-    original: c17,
-    thumbnail: c17
-  },
-  {
-    original: c18,
-    thumbnail: c18
-  }
+    {
+        original: c1,
+        thumbnail: c1,
+    },
+    {
+        original: c2,
+        thumbnail: c2,
+    },
+    {
+        original: c4,
+        thumbnail: c4,
+    },
+    {
+        original: c5,
+        thumbnail: c5,
+    },
+    {
+        original: c6,
+        thumbnail: c6,
+    },
+    {
+        original: c7,
+        thumbnail: c7,
+    },
+    {
+        original: c8,
+        thumbnail: c8,
+    },
+    {
+        original: c9,
+        thumbnail: c9,
+    },
+    {
+        original: c10,
+        thumbnail: c10,
+    },
+    {
+        original: c11,
+        thumbnail: c11,
+    },
+    {
+        original: c12,
+        thumbnail: c12,
+    },
+    {
+        original: c13,
+        thumbnail: c13,
+    },
+    {
+        original: c17,
+        thumbnail: c17
+    },
+    {
+        original: c18,
+        thumbnail: c18
+    }
 ]

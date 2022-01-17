@@ -35,7 +35,6 @@
   li {
     float: left;
   }
-
   li a {
     display: block;
     color: white;
@@ -43,16 +42,11 @@
     padding: 16px;
     text-decoration: none;
   }
-
   li a:hover {
-    background-color: #111111;
+    background-color: #1995dc;
   }
-
-
-
 }
-
 .navbar .active {
-  background: pink;
+  background: #1995dc;
 }
 

@@ -1,4 +1,8 @@
 
 //$globalH1Color: rgb(0,160,221); //leave!!!
 //$globalGray: rgba(213, 213, 213, 0.35);
-
+html {font-size: 1.375em;  /* 22px */}
+body {
+  font-size: 100%;     /* flexible baseline */
+  line-height: 1.4;
+}
