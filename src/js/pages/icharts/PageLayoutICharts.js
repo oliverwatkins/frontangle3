@@ -9,6 +9,7 @@ import ContactPage from "../ContactPage";
 import HomePanel from "./HomePanel";
 import Screenshots from "./Screenshots";
 import CodesamplesPanel from './CodesamplesPanel';
+import "./index.scss"
 /**
  * Contains nav on top, footer on bottom, and all the pages are passed in
  * as children..

@@ -7,6 +7,7 @@ import faImage from './img/FrontAngle_For_Site.png';
 import {Link, useLocation, withRouter} from "react-router-dom";
 
 import './HeaderPanel.scss';
+import {Typography} from "@mui/material";
 
 export default function HeaderPanel(props) {
     const [collapsed, setCollapsed] = React.useState(true);
@@ -36,16 +37,18 @@ export default function HeaderPanel(props) {
                 <div className="container-fluid">
                     <ul className="nav navbar-nav mr-auto">
                         <li className={homeClassisActive}>
-                            <Link to="/icharts" onClick={toggleCollapse.bind(this)}>Home</Link>
+                            <Link to="/icharts" onClick={toggleCollapse.bind(this)}>
+                                <Typography variant={"body1"}>Home</Typography>
+                            </Link>
                         </li>
                         <li className={screenshotsIsActive}>
                             <Link to="/icharts/screenshots" onClick={toggleCollapse.bind(this)}>
-                                Screenshots
+                                <Typography variant={"body1"}>Screenshots</Typography>
                             </Link>
                         </li>
                         <li className={codesamplesIsActive + " mr-auto"}>
                             <Link to="/icharts/codesamples" onClick={toggleCollapse.bind(this)}>
-                                Code Samples
+                                <Typography variant={"body1"}>Code Samples</Typography>
                             </Link>
                         </li>
 

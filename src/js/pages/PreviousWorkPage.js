@@ -1,15 +1,17 @@
 import React from "react";
 
-import IcebergChartsPage from "./IcebergChartsCard"
-import BlogCard from "./BlogCard"
-import ReactChartsCard from "./ReactChartsCard"
+import IcebergChartsPage from "./cards/IcebergChartsCard"
+import BlogCard from "./cards/BlogCard"
+import ReactChartsCard from "./cards/ReactChartsCard"
 import {Card, CardContent, Grid, Typography} from "@mui/material";
+import ShapeShopCard from "./cards/ShapeShopCard";
+import "./cards/card.scss";
 
 export default class PreviousWorkPage extends React.Component {
     render() {
         return (
             <div className="fa-page" id="previous-page">
-                <Grid container spacing={2}>
+                <Grid container spacing={8} ml={3} mr={3}>
                     <Grid item xs={12}>
                         {/*<Card>*/}
                             {/*<CardContent>*/}
@@ -27,14 +29,18 @@ export default class PreviousWorkPage extends React.Component {
                         {/*</Card>*/}
                     </Grid>
                     <Grid item xs={12} md={6}>
-                        <IcebergChartsPage/>
+                        <ShapeShopCard/>
                     </Grid>
+                    {/*<Grid item xs={12} md={6}>*/}
+                    {/*    <IcebergChartsPage/>*/}
+                    {/*</Grid>*/}
                     <Grid item xs={12} md={6}>
                         <BlogCard/>
                     </Grid>
                     <Grid item xs={12} md={6}>
                         <ReactChartsCard/>
                     </Grid>
+
                     <Grid item xs={8}>
                     </Grid>
                 </Grid>
