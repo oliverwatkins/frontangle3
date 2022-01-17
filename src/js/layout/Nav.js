@@ -2,8 +2,7 @@ import React from "react";
 import {Link, useLocation} from "react-router-dom";
 import "./header.scss";
 import "./style.scss"
-import "./nav.css"
-
+import "./nav.scss"
 
 function Nav(props) {
 
@@ -16,26 +15,13 @@ function Nav(props) {
         // this.setState({collapsed});
     }
 
-    let location = useLocation();
-
-    // const {location} = this.props;
-    // const {collapsed} = this.state;
-    const homeClassisActive = location.pathname === "/" ? "active" : "";
-
     const collapse = collapsed ? "collapse" : "";
 
-    let previousClassisActive = location.pathname.match(/^\/previous/) ? "active" : "";
-    let contactClassisActive = location.pathname.match(/^\/contact/) ? "active" : "";
+    let location = useLocation();
 
-    // const headerStyle = {
-    //     position: "sticky",
-    //     width: "100%",
-    //     color: "pink",
-    //     backgroundColor: "white",
-    //     top: 0,
-    //     zIndex: 99
-    // };
-    // style={headerStyle}
+    const homeClassisActive = location.pathname === "/main" ? "active" : "";
+    let previousClassisActive = location.pathname.indexOf("previous") > 0 ? "active" : "";
+    let contactClassisActive = location.pathname.indexOf("contact") > 0 ? "active" : "";
 
     return (
 
