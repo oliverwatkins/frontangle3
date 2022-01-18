@@ -3,18 +3,21 @@ import React from "react";
 import IcebergChartsPage from "./cards/IcebergChartsCard"
 import BlogCard from "./cards/BlogCard"
 import ReactChartsCard from "./cards/ReactChartsCard"
-import {Card, CardContent, Grid, Typography} from "@mui/material";
+import {Box, Card, CardContent, Grid, Typography} from "@mui/material";
 import ShapeShopCard from "./cards/ShapeShopCard";
 import "./cards/card.scss";
 
 export default class PreviousWorkPage extends React.Component {
     render() {
         return (
-            <div className="fa-page" id="previous-page">
-                <Grid container spacing={8} ml={3} mr={3}>
-                    <Grid item xs={12}>
+            <Box className="fa-page" >
+                <Grid container rowSpacing={3}>
+                    <Grid item xs={12}
+                          // sx={{border: "red dashed medium"}}
+                    >
                         {/*<Card>*/}
                             {/*<CardContent>*/}
+                        <Box p={2}>
                                 <Typography variant="body1">
                                     I have worked across a diverse cross-section of companies. From financial trading
                                     houses, and
@@ -25,26 +28,30 @@ export default class PreviousWorkPage extends React.Component {
                                     number of smaller software companies. In my spare time, these are some of the
                                     projects I work on.
                                 </Typography>
+                        </Box>
                         {/*    </CardContent>*/}
                         {/*</Card>*/}
                     </Grid>
                     <Grid item xs={12} md={6}>
+                          {/*// sx={{border: "blue dashed medium"}}*/}
                         <ShapeShopCard/>
                     </Grid>
                     {/*<Grid item xs={12} md={6}>*/}
                     {/*    <IcebergChartsPage/>*/}
                     {/*</Grid>*/}
                     <Grid item xs={12} md={6}>
+                          {/*// sx={{border: "orange dashed medium"}}*/}
                         <BlogCard/>
                     </Grid>
                     <Grid item xs={12} md={6}>
+                          {/*// sx={{border: "pink dashed medium"}}*/}
                         <ReactChartsCard/>
                     </Grid>
 
-                    <Grid item xs={8}>
-                    </Grid>
+                    {/*<Grid item xs={8}>*/}
+                    {/*</Grid>*/}
                 </Grid>
-            </div>
+            </Box>
         );
     }
 }

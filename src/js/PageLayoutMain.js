@@ -31,30 +31,19 @@ export default function PageLayout(props) {
             <Banner/>
             <Nav location={location}/>
             <div>
-                <div>
-                    <div>
-                        {/*<FadeSwitch>*/}
-                        <Switch>
-                            <Route exact path="/main">
-                                <HomePage/>
-                            </Route>
-                            <Route path="/main/previous">
-                                <PreviousWorkPage/>
-                            </Route>
-                            <Route path="/main/contact">
-                                <ContactPage/>
-                            </Route>
-                        </Switch>
-                        {/*</FadeSwitch>*/}
-
-                        {/*<Route path="/main">*/}
-                        {/*    <PageLayoutMain/>*/}
-                        {/*</Route>*/}
-
-                    </div>
-                </div>
-                <Footer/>
+                <Switch>
+                    <Route exact path="/main">
+                        <HomePage/>
+                    </Route>
+                    <Route path="/main/previous">
+                        <PreviousWorkPage/>
+                    </Route>
+                    <Route path="/main/contact">
+                        <ContactPage/>
+                    </Route>
+                </Switch>
             </div>
+            <Footer/>
         </div>
     );
 }

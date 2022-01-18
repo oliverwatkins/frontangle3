@@ -8,17 +8,17 @@ import {Card, CardContent, CardHeader, CardMedia, Typography} from "@mui/materia
 export default function ShapeShopCard() {
     return (
         <Card className={"fa-card"}>
-            <CardHeader title={"Shape Shop "}
-                        subheader={"E-commerce platform developed for small to medium businesses"}/>
+            <CardHeader title={"Shape Shop "} subheader={"E-commerce platform developed for small to medium businesses"}/>
             <CardMedia
                 component="img"
-                // height="740"
+                // height="800"
                 image={ss}
             />
             <CardContent>
                 <Typography variant={"body1"}>
                     My blog is where I write about javascript and javascript frameworks, java
                     swing components, projects I am working on, problems i have encountered, and
+                    reviews.                    My blog is where I write about javascript and javascript frameworks, java
                     reviews.
                 </Typography>
             </CardContent>

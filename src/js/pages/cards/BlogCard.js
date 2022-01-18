@@ -8,10 +8,7 @@ import {Card, CardContent, CardHeader, CardMedia, Typography} from "@mui/materia
 export default function BlogCard() {
     return (
         <Card className={"fa-card"}>
-            <CardHeader title={"Blog "} subheader={"http://www.blue-walrus.com"}>
-                <Typography variant={"body1"}>
-                </Typography>
-            </CardHeader>
+            <CardHeader title={"Blog "} subheader={"http://www.blue-walrus.com"}/>
             <CardMedia
                 component="img"
                 // height="440"
