@@ -2,57 +2,46 @@ import React from "react";
 
 import './page.scss';
 
-export default class WelcomePage extends React.Component {
+import headerImage from './Fotolia_107797505_L.jpg';
+import {Box, Typography} from "@mui/material";
 
-  render() {
-    const homePage = {
-      display: "flex",
-      width: "100%",
-    };
-    const homePageLeft = {
-      display: "flex",
-      width: "50%",
-      flexGrow: 1,
-      // margin:"30px",
-      padding:"10px 30px 10px 30px"
-    };
-    const homePageRight = {
-      width: "50%",
-      height: "500px",
-      flexGrow: 1,
-      backgroundImage: "url('../../img/Fotolia_107797505_L.jpg')",
-      backgroundSize: "500px 333px",
-      backgroundRepeat: "no-repeat",
-      backgroundPositionX: 0
-    };
 
-    return (
-      <div className="fa-page">
-        <div style={homePage}>
-          <div style={homePageLeft}>
-            <div>
-              <h1>Welcome </h1>
-              <span>
-                Munich based developer with almost 20 years experience in Java and Javascript specialising in
-              </span>
-            <p/>
+export default function WelcomePage() {
+  const homePage = {
+    display: "flex",
+    width: "100%",
+  };
+
+  return (
+      <Box className="fa-page">
+        <Box style={homePage}>
+            <Box>
+              <Typography variant={"h1"}>Welcome </Typography>
+              <Box>
+                <Typography variant={"body1"}>
+                Munich based software developer with over 20 years experience in Java and Javascript specialising in
+                </Typography>
+              </Box>
+              <Typography variant={"body1"}>
               <ul>
                 <li>
-                  Single page applications using the latest Javascript frameworks such as reactjs, node.js and the ES6 ecosystem.
+                  Fullstack and single page applications (SPA) using the latest Javascript frameworks such as reactjs, node.js and the ES6
+                  ecosystem.
                 </li>
                 <li>
-                  Backend developement in Java and the JEE ecosystem
+                  Backend developement in Java and the JEE ecosystem including Spring Boot.
                 </li>
                 <li>
                   Coaching, Business Analysis, Systems Engineering, and developement of Database Systems.
                 </li>
               </ul>
-            <p/>
-            </div>
+              </Typography>
+            </Box>
+          </Box>
+
+          <div>
+            <img src={headerImage} width={"600px"}/>
           </div>
-          <div style={homePageRight}/>
-        </div>
-      </div>
-    );
-  }
+      </Box>
+  );
 }

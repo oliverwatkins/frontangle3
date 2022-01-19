@@ -5,10 +5,11 @@ export default class Footer extends React.Component {
   render() {
     const footerStyles = {
         // backgroundColor: "#fff9fa",
+        fontSize: "14px",
         color: "#123123",
-        padding:"5px",
+        padding:"2px",
         width: "100%",
-        // position: "fixed",
+        position: "fixed",
         bottom: 0
       };
 

@@ -4,10 +4,11 @@ import "../page.scss"
 
 import bw from "../../../img/bw.PNG"
 import {Card, CardContent, CardHeader, CardMedia, Typography} from "@mui/material";
+import {cardColor} from "../PreviousWorkPage";
 
 export default function BlogCard() {
     return (
-        <Card className={"fa-card"}>
+        <Card className={"fa-card"}  style={{background: cardColor}}>
             <CardHeader title={"Blog "} subheader={"http://www.blue-walrus.com"}/>
             <CardMedia
                 component="img"

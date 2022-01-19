@@ -1,35 +1,32 @@
 import React from "react";
 import {Box, Typography} from "@mui/material";
 
-export default class HomePanel extends React.Component {
-  render() {
-    const {location} = this.props;
-
-    return (
+export default function HomePanel(props) {
+  return (
       <Box>
         <Typography variant={"body1"}>
 
-        <div style={{margin:"30px"}}>
-          Iceberg Charts is an advanced charting library for creating charts in Java.
-          <br/>
-          It offers a rich set of charting features including :
-          <ul>
-            <li> XY Charts</li>
-            <li> Pie Charts</li>
-            <li> Area Charts</li>
-            <li> Bubble Charts</li>
-            <li> Candlestick Charts</li>
-            <li> Bar Charts</li>
-            <li> Stacked Charts</li>
-          </ul>
+          <div style={{margin: "30px"}}>
+            Iceberg Charts is an advanced charting library for creating charts in Java.
+            <br/>
+            It offers a rich set of charting features including :
+            <ul>
+              <li> XY Charts</li>
+              <li> Pie Charts</li>
+              <li> Area Charts</li>
+              <li> Bubble Charts</li>
+              <li> Candlestick Charts</li>
+              <li> Bar Charts</li>
+              <li> Stacked Charts</li>
+            </ul>
 
-          Check out some screenshots and then try out some of the code samples.
-          <p/>
+            Check out some screenshots and then try out some of the code samples.
+            <p/>
 
-          Add it to your Maven project :
+            Add it to your Maven project :
 
-          <pre>
-          <span style={{fontSize:10, fontFamily: "courier new"}}>
+            <pre>
+          <span style={{fontSize: 10, fontFamily: "courier new"}}>
             <code>
               &lt;dependency&gt; <br/>
               &nbsp; &lt;groupId&gt;com.frontangle&lt;/groupId&gt; <br/>
@@ -39,15 +36,8 @@ export default class HomePanel extends React.Component {
             </code>
           </span>
         </pre>
-
-        </div>
-
-
-        {/*<div style={{float:"right"}}>*/}
-
-        {/*</div>*/}
+          </div>
         </Typography>
       </Box>
-    )
-  }
+  )
 }

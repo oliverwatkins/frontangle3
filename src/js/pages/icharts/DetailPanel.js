@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function DetailPanel(props) {
-
     return (
         <div>
             {props.samples && props.samples.map((elem) => {

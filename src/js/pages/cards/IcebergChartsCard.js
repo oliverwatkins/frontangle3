@@ -22,10 +22,11 @@ import ImageGallery from 'react-image-gallery';
 
 import "react-image-gallery/styles/css/image-gallery.css";
 import {Card, CardContent, CardHeader, Typography} from "@mui/material";
+import {cardColor} from "../PreviousWorkPage";
 
 export default function IcebergChartsCard() {
     return (
-        <Card className={"fa-card"}>
+        <Card className={"fa-card"}  style={{background: cardColor}}>
             <CardHeader title={"Iceberg Charts "} subheader={"http://www.frontangle.com/#/icharts/"}/>
             <CardContent>
 

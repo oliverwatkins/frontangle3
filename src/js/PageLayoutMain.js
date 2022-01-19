@@ -25,13 +25,15 @@ export default function PageLayout(props) {
         color: "pink",
         backgroundColor: "red"
     };
-    //TODO disabling fadeswitch for now! It is interfering with the sticky header!!
     return (
         <div>
             <Banner/>
             <Nav location={location}/>
             <div>
                 <Switch>
+                    <Route exact path="/">
+                        <HomePage/>
+                    </Route>
                     <Route exact path="/main">
                         <HomePage/>
                     </Route>

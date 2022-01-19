@@ -3,10 +3,11 @@ import React from "react";
 import "../page.scss"
 import {Card, CardContent, CardHeader, CardMedia, Typography} from "@mui/material";
 import bw from "../../../img/react-charts.jpg";
+import {cardColor} from "../PreviousWorkPage";
 
 export default function ReactChartsCard() {
     return (
-        <Card className={"fa-card"}>
+        <Card className={"fa-card"}   style={{background: cardColor}}>
             <CardHeader
                 title={"Simple Charting Application "} subheader={"charting application written in react-js"}
             >
