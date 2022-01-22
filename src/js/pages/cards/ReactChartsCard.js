@@ -2,7 +2,7 @@ import React from "react";
 
 import "../page.scss"
 import {Card, CardContent, CardHeader, CardMedia, Typography} from "@mui/material";
-import bw from "../../../img/react-charts.jpg";
+import bw from "../../../img/react-charts-1167-846.jpg";
 import {cardColor} from "../PreviousWorkPage";
 
 export default function ReactChartsCard() {

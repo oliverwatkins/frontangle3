@@ -2,7 +2,7 @@ import React from "react";
 
 import "../page.scss"
 
-import ss from "../../../img/shape-shop-admin.PNG"
+import ss from "../../../img/shape-shop-admin-1167x846.png"
 import {Card, CardContent, CardHeader, CardMedia, Typography} from "@mui/material";
 import {cardColor} from "../PreviousWorkPage";
 
