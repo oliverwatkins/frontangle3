@@ -12,7 +12,8 @@ import Banner from "./layout/Banner.js";
 import Nav from "./layout/Nav.js";
 
 import {Switch} from "react-router-dom";
-
+import {Box} from "@mui/material";
+import headerImage from './pages/Fotolia_107797505_L.jpg';
 
 /**
  * Contains nav on top, footer on bottom, and all the pages are passed in
@@ -29,7 +30,11 @@ export default function PageLayout(props) {
         <div>
             <Banner/>
             <Nav location={location}/>
-            <div>
+            <Box
+                // sx={{backgroundImage: `url(${headerImage})`}}
+            >
+                {/*// sx={{border: "red dashed medium", height: "100%"}}*/}
+
                 <Switch>
                     <Route exact path="/">
                         <HomePage/>
@@ -44,7 +49,7 @@ export default function PageLayout(props) {
                         <ContactPage/>
                     </Route>
                 </Switch>
-            </div>
+            </Box>
             <Footer/>
         </div>
     );

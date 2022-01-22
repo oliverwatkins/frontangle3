@@ -7,14 +7,20 @@ import {Card, CardContent, CardHeader, CardMedia, Typography} from "@mui/materia
 import {cardColor} from "../PreviousWorkPage";
 
 export default function BlogCard() {
+
+    let style = {
+        width:"100%",
+        height: "567px",
+        objectFit: "cover",
+        objectPosition: "0% 0%"
+    }
+
     return (
         <Card className={"fa-card"}  style={{background: cardColor}}>
             <CardHeader title={"Blog "} subheader={"http://www.blue-walrus.com"}/>
-            <CardMedia
-                component="img"
-                // height="440"
-                image={bw}
-            />
+            <CardMedia>
+                <img src={bw} style={style}/>
+            </CardMedia>
             <CardContent>
                 <Typography variant={"body1"}>
                     My blog is where I write about javascript and javascript frameworks, java

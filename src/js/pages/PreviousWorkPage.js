@@ -56,7 +56,7 @@ export default class PreviousWorkPage extends React.Component {
     }
 }
 
-export const cardColor = "#F0E3AF"
+export const cardColor = "#6D737723"
 
 // #F0E3AF
 
