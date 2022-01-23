@@ -19,7 +19,7 @@ export default function BlogCard() {
             <CardContent>
                 <Typography variant={"body1"}>
                     My blog is where I write about javascript and javascript frameworks, java
-                    swing components, projects I am working on, problems i have encountered, and
+                    swing components, projects I am working on, problems i have encountered, and technical
                     reviews.
                 </Typography>
             </CardContent>

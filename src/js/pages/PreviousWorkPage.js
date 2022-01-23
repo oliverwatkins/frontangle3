@@ -6,6 +6,7 @@ import ReactChartsCard from "./cards/ReactChartsCard"
 import {Box, Card, CardContent, Grid, Typography} from "@mui/material";
 import ShapeShopCard from "./cards/ShapeShopCard";
 import "./cards/card.scss";
+import IcebergChartsCard from "./cards/IcebergChartsCard";
 
 export default class PreviousWorkPage extends React.Component {
     render() {
@@ -19,15 +20,21 @@ export default class PreviousWorkPage extends React.Component {
                             {/*<CardContent>*/}
                         <Box pl={3} pr={3} pt={3}>
                             <Typography variant="body1">
-                                I have worked across a diverse cross-section of companies. From financial trading
-                                houses, and
-                                ratings companies, during my time in London, to German household names such as BMW
-                                and Lufthansa,
-                                since I have been living in Munich. I have also worked on eCommerce projects, B2B
-                                projects and a
-                                number of smaller software companies. In my spare time, these are some of the
-                                projects I work on.
+
+                                <Box pb={2}>
+                                For over 20 years and in three cities (Melbourne, London, Munich) I have worked across
+                                a diverse cross-section of companies including financial services, telecommunication companies,
+                                eCommerce and startups to German household names such as BMW and Lufthansa.
+                                </Box >
                             </Typography>
+                            <Typography variant="body1">
+
+                                <Box >
+                                In my spare time between projects, these are some of the
+                                projects I work on.
+                                </Box>
+                            </Typography>
+
                         </Box>
                         {/*    </CardContent>*/}
                         {/*</Card>*/}
@@ -48,6 +55,10 @@ export default class PreviousWorkPage extends React.Component {
                         <ReactChartsCard/>
                     </Grid>
 
+                    <Grid item xs={12} md={6}>
+
+                    <IcebergChartsCard/>
+                    </Grid>
                     {/*<Grid item xs={8}>*/}
                     {/*</Grid>*/}
                 </Grid>
