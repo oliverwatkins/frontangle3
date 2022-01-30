@@ -5,15 +5,12 @@ import "./style.scss"
 import "./nav.scss"
 import {Typography} from "@mui/material";
 
-function Nav(props) {
+function Nav() {
 
     const [collapsed, setCollapsed] = React.useState(true);
 
     let toggleCollapse = () => {
         setCollapsed(!collapsed)
-        //
-        // const collapsed = !this.state.collapsed;
-        // this.setState({collapsed});
     }
 
     const collapse = collapsed ? "collapse" : "";

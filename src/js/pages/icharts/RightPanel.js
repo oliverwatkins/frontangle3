@@ -16,8 +16,6 @@ export default function RightPanel(props) {
         background: '#ebebeb'
     }
 
-    // const {location} = props;
-
     return (
         <section className="container " style={styleSection}>
             <Box p={2}>

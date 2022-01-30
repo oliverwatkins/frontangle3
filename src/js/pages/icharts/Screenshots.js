@@ -1,7 +1,6 @@
 import React from "react";
 
 
-// import welcome from './assets/img_DEPRECATED/pizza.png';
 import img1 from './screenshots/img1.PNG'
 import img2 from './screenshots/img2.PNG'
 import img3 from './screenshots/img3.PNG'

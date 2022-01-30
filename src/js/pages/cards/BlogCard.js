@@ -3,11 +3,10 @@ import React from "react";
 import "../page.scss"
 
 import bw from "../../../img/bw_1167x847.png"
-import {Card, CardContent, CardHeader, CardMedia, Typography} from "@mui/material";
+import {Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, IconButton, Typography} from "@mui/material";
 import {cardColor} from "../PreviousWorkPage";
 
 export default function BlogCard() {
-
     return (
         <Card className={"fa-card"}  style={{background: cardColor}}>
             <CardHeader title={"Blog "} subheader={"http://www.blue-walrus.com"}/>

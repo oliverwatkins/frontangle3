@@ -4,7 +4,6 @@ import "../page.scss"
 
 import c1 from "../icharts/samples/TestDataArea_2_Multiple_Layered.PNG"
 import c2 from "../icharts/samples/TestDataArea_4_Multiple_Stacked.PNG"
-// import c3 from "./icharts/samples/grid2_graphpaper.png"
 import c4 from "../icharts/samples/TestDataXY_Simple.PNG"
 import c5 from "../icharts/samples/TestDataXY_Simple_Series.PNG"
 import c6 from "../icharts/samples/TestDataBar_1_Simple.PNG"

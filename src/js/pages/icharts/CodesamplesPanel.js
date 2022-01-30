@@ -1,6 +1,5 @@
 import React, {useEffect} from "react";
 
-
 import './CodesamplesPanel.scss';
 
 import samplesFile from './samples/samples.json'
