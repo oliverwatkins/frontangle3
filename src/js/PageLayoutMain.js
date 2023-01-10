@@ -21,11 +21,11 @@ import headerImage from './pages/Fotolia_107797505_L.jpg';
  */
 export default function PageLayout(props) {
     const {location} = props;
-    const headerStyle = {
-        position: "fixed",
-        color: "pink",
-        backgroundColor: "red"
-    };
+    // const headerStyle = {
+    //     position: "fixed",
+    //     color: "pink",
+    //     backgroundColor: "red"
+    // };
     return (
         <div>
             <Banner/>

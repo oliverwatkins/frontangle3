@@ -1,3 +1,4 @@
+@import "../global";
 
 .navbar {
   background-image: -webkit-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
@@ -19,6 +20,8 @@
 }
 
 .navbar {
+  padding-left: $sidePadding;
+  padding-right: $sidePadding;
   position: relative;
   min-height: 50px;
   margin-bottom: 20px;

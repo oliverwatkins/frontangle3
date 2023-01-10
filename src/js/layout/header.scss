@@ -12,6 +12,9 @@
   $heightImg: (161 * $multiplyFactor);
 
   #header-image {
+
+    margin-left: $sidePadding;
+
     height: 100%;
     background-image: url("../../img/FrontAngle_For_Site.png");
 

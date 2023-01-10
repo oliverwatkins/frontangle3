@@ -1,0 +1,23 @@
+@import "src/js/global.scss";
+
+
+// const footerStyles = {
+//     // backgroundColor: "#fff9fa",
+//     fontSize: "14px",
+//     color: "#123123",
+//     padding: "2px",
+//     width: "100%",
+//     position: "fixed",
+//     bottom: 0
+// };
+
+footer {
+       font-size: 14px;
+       color: #123123;
+       padding: 2px;
+       width: 100%;
+       position: fixed;
+       bottom: 0;
+  margin-left: $sidePadding;
+}
+
