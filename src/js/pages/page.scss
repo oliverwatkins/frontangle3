@@ -1,21 +1,15 @@
 @import "../global";
 
-$textColor: #747474;
-$blockyTextColor: darken($textColor, 40%);
+//$textColor: #747474;
+//$blockyTextColor: darken($textColor, 40%);
 
 body {
-  //background: rgba(109, 115, 119, 0.14);
   background: #6D737723;
-
-
 }
 //global
 .fa-page {
-  margin-left: $sidePadding;
-  margin-right: $sidePadding;
-  //padding: 20px;
-  //font-size: 18px;
-  //border: #c6b753 dashed medium;
+  margin-left: $sidePadding_big;
+  margin-right: $sidePadding_big;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
@@ -23,3 +17,25 @@ body {
   background: white;
   //height: 70%;
 }
+
+
+@media only screen and (max-width: $breakpoint-width-tablet) {
+  body {
+    background-color: lightblue;
+    //.navbar {
+    //  margin-left: 2px;
+    //  padding-right: 2px;
+    //  padding-left: 2px;
+    //}
+    .fa-page {
+      margin-left: 2px;
+      margin-right: 2px;
+    }
+  }
+
+  //.footer {
+  //  margin-left: 2px;
+  //  margin-right: 2px;
+  //}
+}
+

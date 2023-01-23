@@ -19,9 +19,11 @@
   border-color: #1995dc;
 }
 
+
+
 .navbar {
-  padding-left: $sidePadding;
-  padding-right: $sidePadding;
+  padding-left: $sidePadding_big;
+  padding-right: $sidePadding_big;
   position: relative;
   min-height: 50px;
   margin-bottom: 20px;
@@ -53,3 +55,17 @@
   background: #1995dc;
 }
 
+
+@media only screen and (max-width: $breakpoint-width-tablet) {
+  body {
+    background-color: lightblue;
+    .navbar {
+      margin-left: 2px;
+      padding-right: 2px;
+      padding-left: 2px;
+    }
+
+  }
+
+
+}

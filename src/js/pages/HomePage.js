@@ -1,26 +1,17 @@
 import React from "react";
 
 import './page.scss';
+import './homePage.scss';
 
-import headerImage from './Fotolia_107797505_L.jpg';
 import {Box, Card, CardContent, Typography} from "@mui/material";
 
 
-export default function WelcomePage() {
-    const homePage = {
-        display: "flex",
-        width: "100%",
-        background: `url(${headerImage})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "100% ",
-        paddingBottom: "900px"
-    };
-
+export default function HomePage() {
     return (
         <Box className="fa-page">
-            <Box style={homePage}>
-                <Card sx={{width: "40%", margin: "16px", opacity: "60%"}}>
-                    <Box sx={{display: 'flex', flexDirection: 'column'}}>
+            <Box className="home-page" >
+                <Card className="home-page-bg">
+                    <Box className="home-page-info">
                         <CardContent>
                             <Box margin={1}>
                                 <Typography variant={"body1"} >

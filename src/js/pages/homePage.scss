@@ -1,0 +1,62 @@
+@import "../global";
+
+
+.home-page {
+  display: flex;
+  width: 100%;
+  background: url("../../img/Fotolia_107797505_L.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 900px;
+
+  .home-page-bg {
+    width: 40%;
+    margin: 16px;
+    opacity: 60%;
+  };
+
+  .home-page-info {
+
+    display: flex;
+    flex-direction: column;
+  }
+
+};
+
+
+
+$test: max-width;
+
+@media only screen and ($test: $breakpoint-width-tablet) {
+  body {
+    .home-page {
+      display: flex;
+      width: 100%;
+      background: url("../../img/Fotolia_107797505_L.jpg");
+      background-color: black;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      padding-bottom: 900px;
+
+      .home-page-bg {
+        width: 100%;
+        margin: 16px;
+        //padding: 2px;
+        opacity: 90%;
+      };
+
+      .home-page-info {
+        //padding: 2px;
+        display: flex;
+        flex-direction: column;
+      }
+
+    };
+  }
+}
+
+
+
+//
+//<Card className="home-page-bg" sx={{width: "40%", margin: "16px", opacity: "60%"}}>
+//<Box className="home-page-info"  sx={{display: 'flex', flexDirection: 'column'}}>

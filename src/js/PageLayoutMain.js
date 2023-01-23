@@ -8,7 +8,7 @@ import ContactPage from "./pages/ContactPage";
 import HomePage from "./pages/HomePage";
 import PreviousWorkPage from "./pages/PreviousWorkPage";
 
-import Banner from "./layout/Banner.js";
+import Header from "./layout/Header.js";
 import Nav from "./layout/Nav.js";
 
 import {Switch} from "react-router-dom";
@@ -28,7 +28,7 @@ export default function PageLayout(props) {
     // };
     return (
         <div>
-            <Banner/>
+            <Header/>
             <Nav location={location}/>
             <Box
                 // sx={{backgroundImage: `url(${headerImage})`}}

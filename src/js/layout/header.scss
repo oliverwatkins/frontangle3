@@ -13,7 +13,7 @@
 
   #header-image {
 
-    margin-left: $sidePadding;
+    margin-left: $sidePadding_big;
 
     height: 100%;
     background-image: url("../../img/FrontAngle_For_Site.png");
@@ -24,4 +24,36 @@
     background-position-y: 20px;
   }
 }
+
+
+$test: max-width;
+
+@media only screen and ($test: $breakpoint-width-tablet) {
+  body {
+    .Header {
+      //background: $headerBgColor;
+      height: 100px;
+      background-size: 200px 128px;
+      background-repeat: no-repeat;
+
+      $multiplyFactor: 0.4px;
+      $widthImg: (250 * $multiplyFactor);
+      $heightImg: (161 * $multiplyFactor);
+
+      #header-image {
+
+        margin-left: 2px;
+
+        height: 100%;
+        background-image: url("../../img/FrontAngle_For_Site.png");
+
+        background-size: $widthImg $heightImg;
+        background-repeat: no-repeat;
+        background-position-x: 20px; //nudge it out from the corner
+        background-position-y: 20px;
+      }
+    }
+  }
+}
+
 

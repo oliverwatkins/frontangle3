@@ -18,6 +18,11 @@ footer {
        width: 100%;
        position: fixed;
        bottom: 0;
-  margin-left: $sidePadding;
+       margin-left: $sidePadding_big;
 }
 
+$test: max-width;
+
+@media only screen and ($test: $breakpoint-width-tablet) {
+
+}

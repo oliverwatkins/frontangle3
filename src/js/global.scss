@@ -8,5 +8,9 @@ body {
   line-height: 1.4;
 }
 
-$sidePadding: 150px;
+//$sidePadding: 150px;
+$sidePadding_big: 10%;
+
+$breakpoint-width-tablet: 768px; //width
+
 //$heightImg: (161px * $multiplyFactor);

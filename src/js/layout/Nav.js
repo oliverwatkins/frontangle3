@@ -1,7 +1,5 @@
 import React from "react";
 import {Link, useLocation} from "react-router-dom";
-import "./header.scss";
-import "./style.scss"
 import "./nav.scss"
 import {Typography} from "@mui/material";
 
