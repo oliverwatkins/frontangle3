@@ -26,20 +26,24 @@ import {cardColor} from "../PreviousWorkPage";
 export default function IcebergChartsCard() {
     return (
         <Card className={"fa-card"}  style={{background: cardColor}}>
-            <CardHeader title={"Iceberg Charts "} subheader={"http://www.frontangle.com/#/icharts/"}/>
+            <CardHeader title={"Iceberg Charts "} subheader={headerText}/>
             <CardContent>
 
                 <ImageGallery id="ImageGallery" items={someInterestingImages}/>
 
                 <Typography variant={"body1"}>
-                    Iceberg charts is a comprehensive java charting library
-                    <a href="/#/icharts"> (Visit the project repository on Github). </a> Some chart examples can be seen
-                    here :
+                    <a href="/#/icharts"> (Visit the project repository on Github) </a> .
                 </Typography>
             </CardContent>
         </Card>
     );
 }
+
+let headerText = `Iceberg charts is a comprehensive java charting library
+ Some chart examples can be seen
+here. `
+
+
 
 const someInterestingImages = [
     {

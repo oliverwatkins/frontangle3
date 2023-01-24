@@ -25,12 +25,11 @@
   padding-left: $sidePadding_big;
   padding-right: $sidePadding_big;
   position: relative;
-  min-height: 50px;
+  min-height: 20px;
   margin-bottom: 20px;
   border: 1px solid transparent;
 
-  ul
-  {
+  ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -63,9 +62,14 @@
       margin-left: 2px;
       padding-right: 2px;
       padding-left: 2px;
+
+      li a {
+        //display: block;
+        //color: white;
+        //text-align: center;
+        padding: 5px;
+        //text-decoration: none;
+      }
     }
-
   }
-
-
 }

@@ -4,7 +4,7 @@ import IcebergChartsCard from "./cards/IcebergChartsCard"
 import BlogCard from "./cards/BlogCard"
 import ReactChartsCard from "./cards/ReactChartsCard"
 import {Box, Grid, Typography} from "@mui/material";
-import ShapeShopCard from "./cards/ShapeShopCard";
+import ShapeShopCard2 from "./cards/ShapeShopCard2";
 import "./cards/card.scss";
 
 export default function PreviousWorkPage() {
@@ -31,16 +31,16 @@ export default function PreviousWorkPage() {
                     </Box>
                 </Grid>
                 <Grid item xs={12} md={6}>
-                    <ShapeShopCard/>
+                    <ShapeShopCard2/>
                 </Grid>
                 <Grid item xs={12} md={6}>
-                    <BlogCard/>
+                    <IcebergChartsCard/>
                 </Grid>
                 <Grid item xs={12} md={6}>
                     <ReactChartsCard/>
                 </Grid>
                 <Grid item xs={12} md={6}>
-                    <IcebergChartsCard/>
+                    <BlogCard/>
                 </Grid>
             </Grid>
         </Box>
