@@ -4,12 +4,15 @@ import "./contactPage.scss"
 
 export default function ContactPage() {
     return (
+
         <div className="fa-page contact-page">
-            <div style={{"float": "left"}}>
-                <div className="mugshot-image">
-                </div>
-            </div>
-            <div style={{"width": "70%", "float": "left"}}>
+
+            <div className="mugshot-image"/>
+
+
+
+
+            <div className="contact-info">
                 <h1>Contact </h1>
                 On social media :
                 <ul>
@@ -23,6 +26,14 @@ export default function ContactPage() {
                 <p/>
                 Email : <b>oliver.f.watkins[at]gmail.com</b>
             </div>
+
+            <div className="contact-page-image"/>
+
+
+
+
         </div>
+
+
     );
 }

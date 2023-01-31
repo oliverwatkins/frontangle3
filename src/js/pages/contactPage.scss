@@ -2,15 +2,51 @@
 
 
 .contact-page {
-  $multiplyFactor: 0.7px;
-  $width: (284 * $multiplyFactor);
-  $height: (428 * $multiplyFactor);
-  //contact
-  .mugshot-image {
-    margin: 15px;
-    width: $width;
-    height: $height;
-    background-image: url("../../img/bw_me.jpg");
-    background-size: $width $height;
-  }
+  display: flex;
+  //border: 5px solid purple;
+  justify-content: flex-start;
+
 }
+
+//$width = 1;
+//contact
+.mugshot-image {
+  //border: 5px solid green;
+  border-radius: 900px;
+  margin: 15px;
+  width: 350px;
+  height: 450px;
+  background-image: url("../../img/bw_me.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
+
+.contact-page-image {
+  //$multiplyFactor: 0.7px;
+  //$width: (284 * $multiplyFactor);
+  //$height: (428 * $multiplyFactor);
+  background: url("../../img/Fotolia_107797505_L.jpg");
+  background-size: contain;
+  //background-repeat: no-repeat;
+  //border: 5px solid red;
+  width: 700px;
+  height: 700px;
+
+
+  -webkit-mask-image: url(../../img/splatter.svg);
+  mask-image: url(../../img/splatter.svg);
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: contain;
+
+
+}
+
+.contact-info {
+  //border: 5px solid pink;
+  margin-left: 100px;
+  font-size: 20px;
+}
+
+

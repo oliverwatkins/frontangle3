@@ -7,7 +7,7 @@ import {cardColor} from "../PreviousWorkPage";
 
 export default function ReactChartsCard() {
     return (
-        <Card className={"fa-card"}   style={{background: cardColor}}>
+        <Card className={"fa-card"} style={{background: cardColor}}>
             <CardHeader
                 title={"Simple Charting Application "} subheader={"charting application written in react-js"}
             >
@@ -20,7 +20,7 @@ export default function ReactChartsCard() {
             <CardContent>
                 <Typography variant={"body1"}>My charting application is a continuous 'work in progress' written
                     entirely in react-JS along
-                    with some third party components</Typography>
+                    with some third party components <b>[NOTE: Currently Out of Date]</b></Typography>
             </CardContent>
         </Card>
     );
