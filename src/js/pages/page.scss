@@ -2,12 +2,30 @@
 
 //$textColor: #747474;
 //$blockyTextColor: darken($textColor, 40%);
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 body {
   background: #6D737723;
 }
 //global
 .fa-page {
+
+
+  //animation-name: fadeInOpacity;
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: .3s;
+
+
   margin-left: $sidePadding_big;
   margin-right: $sidePadding_big;
   color: black;
