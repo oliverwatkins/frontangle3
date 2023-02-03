@@ -9,12 +9,12 @@ export default function ContactPage() {
 
     const { t, i18n } = useTranslation();
     // return <h1>{t('Welcome to React')}</h1>
-    i18n.changeLanguage("de")
+    // i18n.changeLanguage("en")
 
 
     return (
 
-        <div className="fa-page contact-page">
+        <section className="fa-page contact-page">
 
             <div className="mugshot-image"/>
 
@@ -41,7 +41,7 @@ export default function ContactPage() {
 
 
 
-        </div>
+        </section>
 
 
     );

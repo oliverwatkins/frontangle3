@@ -6,28 +6,32 @@ import ReactChartsCard from "./cards/ReactChartsCard"
 import {Box, Grid, Typography} from "@mui/material";
 import ShapeShopCard2 from "./cards/ShapeShopCard2";
 import "./cards/card.scss";
+import {Trans, useTranslation} from "react-i18next";
 
 export default function PreviousWorkPage() {
+
+    const { t, i18n } = useTranslation();
+
     return (
-        <Box className="fa-page">
-            <Grid container rowSpacing={3}>
+        <section className="fa-page">
+            <Grid container rowSpacing={3} mt={2}>
                 <Grid item xs={12}>
-                    <Box pl={3} pr={3} pt={3}>
-                        <Typography variant="body1">
-                            <Box pb={2}>
-                                For over 20 years and in three cities (Melbourne, London, Munich) I have worked
-                                across
-                                a diverse cross-section of companies including financial services, telecommunication
-                                companies,
-                                eCommerce and startups to German household names such as BMW and Lufthansa.
-                            </Box>
-                        </Typography>
-                        <Typography variant="body1">
-                            <Box>
-                                In my spare time between projects, these are some of the
-                                projects I work on.
-                            </Box>
-                        </Typography>
+                    <Box pl={3} pr={3}>
+                        {/*<Typography variant="body1">*/}
+
+                        <Trans i18nKey="previous-blurb"/>
+                            {/*<p>*/}
+                            {/*    For over 20 years and in three cities (Melbourne, London, Munich) I have worked*/}
+                            {/*    across*/}
+                            {/*    a diverse cross-section of companies including financial services, telecommunication*/}
+                            {/*    companies,*/}
+                            {/*    eCommerce and startups to German household names such as BMW and Lufthansa.*/}
+                            {/*</p>*/}
+                            {/*<p>*/}
+                            {/*    In my spare time between projects, these are some of the*/}
+                            {/*    projects I work on.*/}
+                            {/*</p>*/}
+                        {/*</Typography>*/}
                     </Box>
                 </Grid>
                 <Grid item xs={12} md={6}>
@@ -43,7 +47,7 @@ export default function PreviousWorkPage() {
                     <BlogCard/>
                 </Grid>
             </Grid>
-        </Box>
+        </section>
     );
 }
 

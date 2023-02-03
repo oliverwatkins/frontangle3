@@ -44,35 +44,19 @@
   }
   li.language{
     float: right;
-    //border: 1px solid #d91f1f;
     padding: 16px;
     width:30px;
 
-
     #german {
       min-height: 20px;
-      //margin-left: $sidePadding_big;
-      //
-      //height: 23px;
       background-image: url("../../img/germany-flag-icon.svg");
-      //background-size:cover;
-      //background-size: $widthImg $heightImg;
       background-repeat: no-repeat;
-      //background-position-x: 20px; //nudge it out from the corner
-      //background-position-y: 20px;
     }
 
     #english {
       min-height: 20px;
-      //margin-left: $sidePadding_big;
-      //
-      //height: 100%;
       background-image: url("../../img/united-kingdom-flag-icon.svg");
       background-repeat: no-repeat;
-      //background-size: $widthImg $heightImg;
-      //background-repeat: no-repeat;
-      //background-position-x: 20px; //nudge it out from the corner
-      //background-position-y: 20px;
     }
   }
 
@@ -96,6 +80,9 @@
   background: #1995dc;
 }
 
+li.language.active {
+  background: #1995dc;
+}
 
 @media only screen and (max-width: $breakpoint-width-tablet) {
   body {

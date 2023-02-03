@@ -3,12 +3,13 @@ import {Link, useLocation} from "react-router-dom";
 import "./nav.scss"
 import {Typography} from "@mui/material";
 // import './';
+import { useTranslation } from 'react-i18next';
 
 function Nav() {
 
     const [lang, setLang] = React.useState("en");
 
-
+    const { t, i18n } = useTranslation();
 
     const [collapsed, setCollapsed] = React.useState(true);
 
@@ -52,10 +53,21 @@ function Nav() {
                     </li>
 
 
-                    <li className={"language"} onClick={()=>setLang("en")}>
+                    <li className={"language " + (lang === "en" ? "active": "")} onClick={
+                        ()=>{
+                            setLang("en")
+                            i18n.changeLanguage("en");
+                        }
+
+                    }>
                         <div id="english"/>
                     </li>
-                    <li className={"language"} onClick={()=>setLang("de")}>
+                    <li className={"language " + (lang === "de" ? "active": "")} onClick={
+                        ()=>{
+                            setLang("de");
+                            i18n.changeLanguage("de");
+                        }
+                    }>
                         <div id="german"/>
                     </li>
                 </ul>
