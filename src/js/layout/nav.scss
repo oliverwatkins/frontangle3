@@ -29,6 +29,9 @@
   margin-bottom: 20px;
   border: 1px solid transparent;
 
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 400;
+
   ul {
     list-style-type: none;
     margin: 0;
@@ -96,18 +99,40 @@
 
 @media only screen and (max-width: $breakpoint-width-tablet) {
   body {
-    background-color: lightblue;
     .navbar {
+      font-size: 16px;
       margin-left: 2px;
       padding-right: 2px;
       padding-left: 2px;
+      padding-bottom: 0px;
 
       li a {
-        //display: block;
-        //color: white;
-        //text-align: center;
         padding: 5px;
-        //text-decoration: none;
+      }
+
+      li.language {
+        padding: 5px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-width-phone) {
+  body {
+    .navbar {
+      font-size: 14px;
+
+      margin-left: 2px;
+      padding-right: 2px;
+      padding-left: 2px;
+      padding-bottom: 0px;
+
+      li a {
+        padding: 5px;
+      }
+
+      li.language {
+        padding: 5px;
       }
     }
   }

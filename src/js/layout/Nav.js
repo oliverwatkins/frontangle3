@@ -27,27 +27,27 @@ function Nav() {
     return (
 
         <nav className="navbar navbar-default" role="navigation">
-            {lang}
+            {/*{lang}*/}
             <div className="container-fluid">
                 <ul className="nav navbar-nav">
                     <li className={homeClassisActive}>
                         <Link to="/main" onClick={toggleCollapse.bind(this)}>
-                            <Typography variant="body1">Home</Typography>
+                            Home
                         </Link>
                     </li>
                     <li>
                         <Link to="/main/previous" onClick={toggleCollapse.bind(this)} className={previousClassisActive}>
-                            <Typography variant="body1">Previous Work</Typography>
+                            Previous Work
                         </Link>
                     </li>
                     <li>
                         <Link to="/icharts/" onClick={toggleCollapse.bind(this)}>
-                            <Typography variant="body1">Iceberg Charts</Typography>
+                            Iceberg Charts
                         </Link>
                     </li>
                     <li>
                         <Link to="/main/contact" onClick={toggleCollapse.bind(this)} className={contactClassisActive}>
-                            <Typography variant="body1">Contact</Typography>
+                            Contact
                         </Link>
                     </li>
 

@@ -28,9 +28,7 @@
 }
 
 
-$test: max-width;
-
-@media only screen and ($test: $breakpoint-width-tablet) {
+@media only screen and (max-width: $breakpoint-width-tablet) {
   body {
     .Header {
       //background: $headerBgColor;
