@@ -2,8 +2,13 @@ import React from "react";
 import {Link, useLocation} from "react-router-dom";
 import "./nav.scss"
 import {Typography} from "@mui/material";
+// import './';
 
 function Nav() {
+
+    const [lang, setLang] = React.useState("en");
+
+
 
     const [collapsed, setCollapsed] = React.useState(true);
 
@@ -22,6 +27,7 @@ function Nav() {
     return (
 
         <nav className="navbar navbar-default" role="navigation">
+            {lang}
             <div className="container-fluid">
                 <ul className="nav navbar-nav">
                     <li className={homeClassisActive}>
@@ -43,6 +49,14 @@ function Nav() {
                         <Link to="/main/contact" onClick={toggleCollapse.bind(this)} className={contactClassisActive}>
                             <Typography variant="body1">Contact</Typography>
                         </Link>
+                    </li>
+
+
+                    <li className={"language"} onClick={()=>setLang("en")}>
+                        <div id="english"/>
+                    </li>
+                    <li className={"language"} onClick={()=>setLang("de")}>
+                        <div id="german"/>
                     </li>
                 </ul>
             </div>
