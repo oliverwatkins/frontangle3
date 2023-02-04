@@ -21,8 +21,9 @@ footer {
        margin-left: $sidePadding_big;
 }
 
-$test: max-width;
+@media only screen and (max-width: $breakpoint-width-tablet) {
+       footer {
 
-@media only screen and ($test: $breakpoint-width-tablet) {
-
+              margin-left: 0rem;
+       }
 }
