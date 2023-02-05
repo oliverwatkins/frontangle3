@@ -15,11 +15,7 @@ export default function Footer() {
 
     return (
         <footer>
-            <div>
-                <div>
-                    <p>Copyright &copy; Frontangle.com</p>
-                </div>
-            </div>
+            <p>Copyright &copy; Frontangle.com</p>
         </footer>
     );
 }

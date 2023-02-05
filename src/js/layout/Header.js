@@ -2,10 +2,14 @@ import React from "react";
 
 import './header.scss';
 
+import linkedInLogo from './../../img/FrontAngle_For_Site.png';
+
 export default function Header() {
   return (
-      <div className="Header">
-        <div id="header-image"/>
-      </div>
+      <header className="Header">
+
+          <img src={linkedInLogo}  alt={"Front Angle Logo"}/>
+        {/*<div id="header-image"/>*/}
+      </header>
   );
 }
