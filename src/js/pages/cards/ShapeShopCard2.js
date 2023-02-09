@@ -4,7 +4,7 @@ import "../page.scss"
 
 import ss from "../../../img/shape-shop-admin-1167x846.png"
 import {Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, IconButton, Typography} from "@mui/material";
-import {cardColor} from "../PreviousWorkPage";
+import {cardColor} from "./old/PreviousWorkPage";
 
 import {Link, ExpandMore as ExpandMoreIcon} from '@mui/icons-material';
 import {ExpandMore} from "./util";
@@ -27,79 +27,22 @@ export default function ShapeShopCard2() {
     };
 
     return (
-
-        // <Card className={"fa-card"}  style={{background: cardColor}}>
-        //     <CardHeader title={"Shape Shop"} subheader={"http://www.frontangle.com/#/TODO/"}/>
-        //     <CardContent>
-        //
-        //         <ImageGallery id="ImageGallery" items={someInterestingImages}/>
-        //
-        //         <Typography variant={"body1"}>
-        //             Shape Shop is an ecommerce platform in developement that allows small and medium sized companies to administer their product catalog. A white labelling solution
-        //             exists for developing customized public facing websites.
-        //         </Typography>
-        //     </CardContent>
-        // </Card>
-
-
-            <Card className={"fa-card"}  style={{background: cardColor}}>
-                <CardHeader title={"Shape Shop"} subheader={"" +
-                    "Shape Shop is an ecommerce platform in developement that allows small and medium sized companies to administer their product catalog. A white labelling solution " +
-                    "exists for developing customized public facing websites."
-
-                }/>
-                <CardContent>
-
-                    <ImageGallery id="ImageGallery" items={someInterestingImages}/>
-
-                    <Typography variant={"body1"}>
-
-                    </Typography>
-                </CardContent>
-            <CardActions disableSpacing>
-                <IconButton aria-label="add to favorites">
-                    <Link />
-                </IconButton>
-                <ExpandMore
-                    expand={expanded}
-                    onClick={handleExpandClick}
-                    aria-expanded={expanded}
-                    aria-label="show more"
-                >
-                    <ExpandMoreIcon />
-                </ExpandMore>
-            </CardActions>
-
-            <Collapse in={expanded} timeout="auto" unmountOnExit>
-                <CardContent>
-                    <Typography paragraph>Front End</Typography>
-                    <Typography paragraph>
-
-                        <ul>
-                            <li>React</li>
-                            <li>Redux middleware</li>
-                            <li>Typescript</li>
-                            <li>Hooks</li>
-                            <li>Material UI</li>
-                            <li>Testing with Enzyme and Jest</li>
-                        </ul>
-
-                    </Typography>
-                    <Typography paragraph>
-                        Backend
-                    </Typography>
-                    <Typography paragraph>
-                        <ul>
-                            <li>Spring Boot</li>
-                            <li>JPA</li>
-                            <li>Token authorization</li>
-                            <li>Docker</li>
-                            <li>Testing with JUnit and in memory database</li>
-                        </ul>
-                    </Typography>
-                </CardContent>
-            </Collapse>
-        </Card>
+        <>
+        <div className={"previous-work-description"}>
+            <p> "Shape Shop is an ecommerce platform in developement that allows small and medium sized companies to administer their product catalog. A white labelling solution " +
+            "exists for developing customized public facing websites."
+            <ul>
+                <li>React</li>
+                <li>Redux middleware</li>
+                <li>Typescript</li>
+                <li>Hooks</li>
+                <li>Material UI</li>
+                <li>Testing with Enzyme and Jest</li>
+            </ul>
+            </p>
+        </div>
+        <ImageGallery id="ImageGallery" items={someInterestingImages}/>
+        </>
     );
 }
 

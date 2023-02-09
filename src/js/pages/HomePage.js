@@ -11,7 +11,7 @@ export default function HomePage() {
     const { t, i18n } = useTranslation();
 
     return (
-        <section className="fa-page">
+        <section className="fa-page fa-page-home">
             {/*{i18n.language}*/}
             <div className="home-page-info">
                 <div className="home-page-image"/>

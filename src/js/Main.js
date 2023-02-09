@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 // import {BrowserRouter as Router, Route, Navigate} from "react-router-dom";
 import PageLayoutMain from "./PageLayoutMain"
@@ -18,6 +18,11 @@ import './global.scss';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function Main() {
+
+
+    useEffect((e) => {
+
+    })
     return (
         <BrowserRouter>
             <Switch>
@@ -35,5 +40,7 @@ function Main() {
         </BrowserRouter>
     );
 }
+
+
 
 export default Main

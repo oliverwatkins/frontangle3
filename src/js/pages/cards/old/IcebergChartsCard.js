@@ -21,31 +21,21 @@ import ImageGallery from 'react-image-gallery';
 
 import "react-image-gallery/styles/css/image-gallery.css";
 import {Card, CardContent, CardHeader, Typography} from "@mui/material";
-import {cardColor} from "./old/PreviousWorkPage";
+import {cardColor} from "../PreviousWorkPage";
 
 export default function IcebergChartsCard() {
     return (
-        <>
+        <Card className={"fa-card"}  style={{background: cardColor}}>
+            <CardHeader title={"Iceberg Charts "} subheader={headerText}/>
+            <CardContent>
 
-        {/*// <section className="boxy prev hidden">*/}
-            <div className={"previous-work-description"} >
-                <p>asdfasdf asdf asdf asdf sdaf</p>
-            </div>
-        {/*<Card className={"fa-card"}  style={{background: cardColor}}>*/}
-        {/*    <CardHeader title={"Iceberg Charts "} subheader={headerText}/>*/}
-        {/*    <CardContent>*/}
+                <ImageGallery id="ImageGallery" items={someInterestingImages}/>
 
-            <ImageGallery id="ImageGallery" items={someInterestingImages}/>
-
-        {/*        <Typography variant={"body1"}>*/}
-        {/*            <a href="/#/icharts"> (Visit the project repository on Github) </a> .*/}
-        {/*        </Typography>*/}
-        {/*    </CardContent>*/}
-        {/*</Card>*/}
-
-        {/*// </section>*/}
-
-        </>
+                <Typography variant={"body1"}>
+                    <a href="/#/icharts"> (Visit the project repository on Github) </a> .
+                </Typography>
+            </CardContent>
+        </Card>
     );
 }
 

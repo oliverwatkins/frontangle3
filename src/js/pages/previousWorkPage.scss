@@ -1,0 +1,81 @@
+@import "../global";
+
+
+.previous-work {
+  padding: 2rem;
+}
+
+.previous-work-top {
+  //padding: 2rem;
+  p {
+    padding-top: 0rem;
+    //padding: 2rem 2rem 2rem 2rem;
+    margin-top: 0rem;
+    font-size: 26px;
+    text-align: right;
+  }
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: $standardTextColor;
+}
+.previous-work-description {
+  padding: 0rem 2rem 2rem 2rem;
+  p {
+    font-size: 16px;
+    padding-top: 0rem;
+    margin-top: 0rem;
+    text-align: right;
+    ul {
+      direction: rtl;
+      //display: inline;
+    }
+  }
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: $standardTextColor;
+
+
+}
+
+.prev-section {
+  //display: grid;
+  //place-items: center;
+  //align-content: center;
+  //min-height: 100vh;
+  //border: 5px solid green;
+  //padding: 100px;
+
+  margin-bottom: 200px;
+  display: flex;
+  justify-content: flex-end;
+  max-height: 50vh;
+}
+
+
+.image-gallery {
+  width : 500px;
+}
+
+#react-charts-img {
+ width : 500px
+}
+
+//#ImageGallery {
+//
+//  height: 100px
+//}
+
+.hidden {
+  opacity: 0;
+  transition: all 2s;
+  filter: blur(5px);
+  transform: translateX(-100px);
+  //background: red;
+}
+.show {
+  opacity: 1;
+  transition: all 2s;
+  filter: blur(0);
+  transform: translateX(0);
+  //background: blue;
+}

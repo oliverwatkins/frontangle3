@@ -4,7 +4,7 @@ import "../page.scss"
 
 import bw from "../../../img/bw_1167x847.png"
 import {Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, IconButton, Typography} from "@mui/material";
-import {cardColor} from "../PreviousWorkPage";
+import {cardColor} from "./old/PreviousWorkPage";
 
 export default function BlogCard() {
     return (
