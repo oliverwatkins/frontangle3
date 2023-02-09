@@ -20,38 +20,44 @@ import c18 from "../icharts/samples/TestDataGrids_5_Gradiant.PNG"
 import ImageGallery from 'react-image-gallery';
 
 import "react-image-gallery/styles/css/image-gallery.css";
-import {Card, CardContent, CardHeader, Typography} from "@mui/material";
-import {cardColor} from "./old/PreviousWorkPage";
 
 export default function IcebergChartsCard() {
     return (
         <>
-
-        {/*// <section className="boxy prev hidden">*/}
             <div className={"previous-work-description"} >
-                <p>asdfasdf asdf asdf asdf sdaf</p>
+                <p>
+
+                    Iceberg Charts is an advanced charting library for creating charts in Java.
+                    It offers a rich set of charting features including :
+                    <ul>
+                        <li>XY Charts</li>
+                        <li>Pie Charts</li>
+                        <li>Area Charts</li>
+                        <li>Bubble Charts</li>
+                        <li>Candlestick Charts</li>
+                        <li>Bar Charts</li>
+                        <li>Stacked Charts</li>
+                    </ul>
+
+                    <a href={"/icharts/"}>
+                    Visit the website here
+                    </a>
+                </p>
             </div>
-        {/*<Card className={"fa-card"}  style={{background: cardColor}}>*/}
-        {/*    <CardHeader title={"Iceberg Charts "} subheader={headerText}/>*/}
-        {/*    <CardContent>*/}
-
             <ImageGallery id="ImageGallery" items={someInterestingImages}/>
-
-        {/*        <Typography variant={"body1"}>*/}
-        {/*            <a href="/#/icharts"> (Visit the project repository on Github) </a> .*/}
-        {/*        </Typography>*/}
-        {/*    </CardContent>*/}
-        {/*</Card>*/}
-
-        {/*// </section>*/}
-
         </>
     );
 }
 
-let headerText = `Iceberg charts is a comprehensive java charting library
- Some chart examples can be seen
-here. `
+let headerText = `Iceberg Charts is an advanced charting library for creating charts in Java.
+It offers a rich set of charting features including :
+XY Charts
+Pie Charts
+Area Charts
+Bubble Charts
+Candlestick Charts
+Bar Charts
+Stacked Charts `
 
 
 

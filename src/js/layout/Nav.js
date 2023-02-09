@@ -41,11 +41,11 @@ function Nav() {
                             Previous Work
                         </Link>
                     </li>
-                    <li>
-                        <Link to="/icharts/" onClick={toggleCollapse.bind(this)}>
-                            Iceberg Charts
-                        </Link>
-                    </li>
+                    {/*<li>*/}
+                    {/*    <Link to="/icharts/" onClick={toggleCollapse.bind(this)}>*/}
+                    {/*        Iceberg Charts*/}
+                    {/*    </Link>*/}
+                    {/*</li>*/}
                     <li>
                         <Link to="/main/contact" onClick={toggleCollapse.bind(this)} className={contactClassisActive}>
                             Contact

@@ -29,8 +29,8 @@ export default function ShapeShopCard2() {
     return (
         <>
         <div className={"previous-work-description"}>
-            <p> "Shape Shop is an ecommerce platform in developement that allows small and medium sized companies to administer their product catalog. A white labelling solution " +
-            "exists for developing customized public facing websites."
+            <p> Shape Shop is an ecommerce platform in developement that allows small and medium sized companies to administer their product catalog. A white labelling solution
+            exists for developing customized public facing websites.
             <ul>
                 <li>React</li>
                 <li>Redux middleware</li>
@@ -38,6 +38,9 @@ export default function ShapeShopCard2() {
                 <li>Hooks</li>
                 <li>Material UI</li>
                 <li>Testing with Enzyme and Jest</li>
+                <li>Spring Boot</li>
+                <li>MySQL</li>
+                <li>all running on the Azure Cloud</li>
             </ul>
             </p>
         </div>

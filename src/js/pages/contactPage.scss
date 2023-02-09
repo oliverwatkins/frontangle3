@@ -11,11 +11,23 @@
 .contact-page > * { flex: 1; } //makes them all equal width
 
 .contact-info {
-  //border: 5px solid pink;
-  //margin-left: 100px;
-  //font-size: 20px;
+  p {
+    //padding-top: 0rem;
+    padding: 2rem 2rem 2rem 2rem;
+    margin-top: 0rem;
+    font-size: 26px;
+    text-align: right;
+  }
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: $standardTextColor;
 }
 
+
+//.previous-work-top {
+//  //padding: 2rem;
+//
+//}
 
 .contact-page-image {
   //border: 5px solid red;
