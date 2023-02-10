@@ -26,7 +26,6 @@ export default function IcebergChartsCard() {
         <>
             <div className={"previous-work-description"} >
                 <p>
-
                     Iceberg Charts is an advanced charting library for creating charts in Java.
                     It offers a rich set of charting features including :
                     <ul>
@@ -44,7 +43,11 @@ export default function IcebergChartsCard() {
                     </a>
                 </p>
             </div>
-            <ImageGallery id="ImageGallery" items={someInterestingImages}/>
+
+            <div className={"boxy"} >
+                <ImageGallery id="ImageGallery" items={someInterestingImages}/>
+            </div>
+
         </>
     );
 }

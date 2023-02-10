@@ -22,8 +22,8 @@
 
 
 .navbar {
-  padding-left: $sidePadding_big;
-  padding-right: $sidePadding_big;
+  //padding-left: $sidePadding_big;
+  //padding-right: $sidePadding_big;
   position: relative;
   min-height: 20px;
   margin-bottom: 20px;
@@ -89,8 +89,8 @@ li.language.active {
     .navbar {
       font-size: 16px;
       margin-left: 2px;
-      padding-right: 2px;
-      padding-left: 2px;
+      //padding-right: 2px;
+      //padding-left: 2px;
       padding-bottom: 0px;
 
       li a {
@@ -110,8 +110,8 @@ li.language.active {
       font-size: 14px;
 
       margin-left: 2px;
-      padding-right: 2px;
-      padding-left: 2px;
+      //padding-right: 2px;
+      //padding-left: 2px;
       padding-bottom: 0px;
 
       li a {

@@ -2,6 +2,7 @@ import React from "react";
 
 import "../page.scss"
 import bw from "../../../img/react-charts-1167-846.jpg";
+import ImageGallery from "react-image-gallery";
 
 export default function ReactChartsCard() {
     return (<>
@@ -12,6 +13,9 @@ export default function ReactChartsCard() {
                     with some third party components <b>[NOTE: Currently Out of Date]</b>
                     </p>
                 </div>
-                <img id={"react-charts-img"} src={bw} alt={"screen shot of react charts"}/>
+
+
+
+                <img id={"react-charts-img"} className={"boxy"} src={bw} alt={"screen shot of react charts"}/>
             </>);
 }

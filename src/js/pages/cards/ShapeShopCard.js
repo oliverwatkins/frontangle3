@@ -2,12 +2,6 @@ import React from "react";
 
 import "../page.scss"
 
-import ss from "../../../img/shape-shop-admin-1167x846.png"
-import {Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, IconButton, Typography} from "@mui/material";
-import {cardColor} from "./old/PreviousWorkPage";
-
-import {Link, ExpandMore as ExpandMoreIcon} from '@mui/icons-material';
-import {ExpandMore} from "./util";
 import ImageGallery from "react-image-gallery";
 import c1 from "../shapeshop/img/ss1.png";
 import c2 from "../shapeshop/img/ss2.png";
@@ -18,13 +12,7 @@ import c6 from "../shapeshop/img/ss6.png";
 import c7 from "../shapeshop/img/ss7.png";
 
 
-export default function ShapeShopCard2() {
-
-    const [expanded, setExpanded] = React.useState(false);
-
-    const handleExpandClick = () => {
-        setExpanded(!expanded);
-    };
+export default function ShapeShopCard() {
 
     return (
         <>
@@ -44,7 +32,12 @@ export default function ShapeShopCard2() {
             </ul>
             </p>
         </div>
-        <ImageGallery id="ImageGallery" items={someInterestingImages}/>
+
+            <div className={"boxy"}>
+                <ImageGallery id="ImageGallery" items={someInterestingImages}/>
+            </div>
+            {/*className={"boxy"}*/}
+
         </>
     );
 }

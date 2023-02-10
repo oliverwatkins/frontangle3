@@ -9,15 +9,124 @@ body {
 }
 
 //$sidePadding: 150px;
-$sidePadding_big: 10%;
+$sidePadding_phone: 2px;
+$sidePadding_tablet: 5px;
+$sidePadding_normal: 10%;
+$sidePadding_wide: 20%;
+//$sidePadding_phone: 10%;
+//$sidePadding_big: 10%;
+//$sidePadding_wide: 30%;
+
 
 
 //$sidePadding: 150px;
 $standardTextColor: #6d7377;
 //$standardTextColor: red;
 
-$breakpoint-width-tablet: 1200px; //width
 
 $breakpoint-width-phone: 400px; //width
+$breakpoint-width-tablet: 1200px; //width
+$breakpoint-width-normal: 1700px; //width
 
-//$heightImg: (161px * $multiplyFactor);
+//PHONE
+@media only screen and (max-width: $breakpoint-width-phone) {
+  body {
+
+    .fa-page {
+      //border: 5px solid green;
+      margin-left: $sidePadding_phone;
+      margin-right: $sidePadding_phone;
+    }
+
+    .navbar {
+      padding-left: $sidePadding_phone;
+      padding-right: $sidePadding_phone;
+    }
+
+    footer {
+      margin-left: $sidePadding_phone;
+      margin-right: $sidePadding_phone;
+    }
+
+    .Header img {
+      margin-left: $sidePadding_phone;
+    }
+  }
+}
+
+//TABLET
+@media only screen and (min-width: $breakpoint-width-phone) and (max-width: $breakpoint-width-tablet) {
+  body {
+
+    .fa-page {
+      //border: 5px solid blue;
+      margin-left: $sidePadding_tablet;
+      margin-right: $sidePadding_tablet;
+    }
+
+    .navbar {
+      padding-left: $sidePadding_tablet;
+      padding-right: $sidePadding_tablet;
+    }
+
+    footer {
+      padding-left: $sidePadding_tablet;
+      padding-right: $sidePadding_tablet;
+    }
+    .Header img {
+      margin-left: $sidePadding_tablet;
+    }
+  }
+}
+
+//NORMAL
+@media only screen and (min-width: $breakpoint-width-tablet) and (max-width: $breakpoint-width-normal) {
+  body {
+
+    .navbar {
+      padding-left: $sidePadding_normal;
+      padding-right: $sidePadding_normal;
+    }
+
+    .fa-page {
+      //border: 5px solid red;
+      margin-left: $sidePadding_normal;
+      margin-right: $sidePadding_normal;
+    }
+
+    footer {
+      padding-left: $sidePadding_normal;
+      padding-right: $sidePadding_normal;
+    }
+
+    .Header img {
+      margin-left: $sidePadding_normal;
+    }
+  }
+}
+
+//WIDE
+@media only screen and (min-width: $breakpoint-width-normal) {
+  body {
+
+    .navbar {
+      padding-left: $sidePadding_wide;
+      padding-right: $sidePadding_wide;
+    }
+
+    .fa-page {
+      //border: 5px solid orange;
+      margin-left: $sidePadding_wide;
+      margin-right: $sidePadding_wide;
+    }
+
+    footer {
+      padding-left: $sidePadding_wide;
+      padding-right: $sidePadding_wide;
+    }
+
+    .Header img {
+      margin-left: $sidePadding_wide;
+    }
+  }
+}

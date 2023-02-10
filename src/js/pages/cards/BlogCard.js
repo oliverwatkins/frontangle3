@@ -3,8 +3,6 @@ import React from "react";
 import "../page.scss"
 
 import bw from "../../../img/bw_1167x847.png"
-import {Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, IconButton, Typography} from "@mui/material";
-import {cardColor} from "./old/PreviousWorkPage";
 
 export default function BlogCard() {
     return (
@@ -15,8 +13,12 @@ export default function BlogCard() {
                     java swing components, projects I am working on, problems i have encountered, and technical reviews.
                 </p>
             </div>
-            <img id={"blog-img"} src={bw} alt={"blog url"}/>
+            <img className={"boxy"} id={"blog-img"} src={bw} alt={"blog url"}/>
 
+
+            {/*<div className={"boxy"} >*/}
+            {/*    <ImageGallery id="ImageGallery" items={someInterestingImages}/>*/}
+            {/*</div>*/}
         </>
     );
 }

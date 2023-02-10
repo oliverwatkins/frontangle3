@@ -24,6 +24,8 @@ Check URL. If everything looks OK, then deply with prod flag.
 
 ### `netlify deploy --prod`
 
+(enter 'build')
+
 
 
 Note : installed "react-app-rewired" to override certain parts of the webpack config for CRA so that we can use 

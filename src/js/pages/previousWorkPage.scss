@@ -2,53 +2,127 @@
 
 
 .previous-work {
-  padding: 2rem;
-}
 
-.previous-work-top {
-  //padding: 2rem;
-  p {
-    padding-top: 0rem;
-    //padding: 2rem 2rem 2rem 2rem;
-    margin-top: 0rem;
-    font-size: 26px;
-    text-align: right;
-  }
+  .hidden {
+    //opacity: 0;
+    //transition: all 2s;
+    //filter: blur(5px);
+    //transform: translateX(-100px);
+    //background: red;
 
-  font-family: Arial, Helvetica, sans-serif;
-  color: $standardTextColor;
-}
-.previous-work-description {
-  padding: 0rem 2rem 2rem 2rem;
-  p {
-    font-size: 16px;
-    padding-top: 0rem;
-    margin-top: 0rem;
-    text-align: right;
-    ul {
-      direction: rtl;
-      //display: inline;
+    .previous-work-description {
+
+      opacity: 0;
+      transition: all 1s;
+      filter: blur(5px);
+      transform: translateX(-100px);
+    }
+
+    .boxy{
+
+      opacity: 0;
+      transition: all 1s;
+      filter: blur(5px);
+      transform: translateX(-100px);
     }
   }
+  .show {
 
-  font-family: Arial, Helvetica, sans-serif;
-  color: $standardTextColor;
+    .previous-work-description {
+
+      //border: 5px solid green;
+      opacity: 1;
+      transition: all 2s;
+      filter: blur(0);
+      transform: translateX(0);
+    }
+
+    .boxy{
+      //border: 5px solid green;
+      opacity: 1;
+      transition: all 1s;
+      filter: blur(0);
+      transform: translateX(0);
+    }
 
 
-}
+    //opacity: 1;
+    //transition: all 2s;
+    //filter: blur(0);
+    //transform: translateX(0);
+    //background: blue;
+  }
 
-.prev-section {
-  //display: grid;
-  //place-items: center;
-  //align-content: center;
-  //min-height: 100vh;
-  //border: 5px solid green;
-  //padding: 100px;
+  padding: 2rem;
 
-  margin-bottom: 200px;
-  display: flex;
-  justify-content: flex-end;
-  max-height: 50vh;
+  .previous-work-top {
+    //border: 5px solid green;
+    p {
+      padding-top: 0rem;
+      margin-top: 0rem;
+      font-size: 26px;
+      text-align: right;
+    }
+    font-family: Arial, Helvetica, sans-serif;
+    color: $standardTextColor;
+    margin-bottom: 200px;
+  }
+
+  .prev-section.left {
+    //border: 5px solid green;
+    .previous-work-description {
+      ul {
+        direction: rtl;
+        //display: inline;
+      }
+      p {
+        text-align: right;
+      }
+    }
+  }
+  .prev-section.right {
+    .previous-work-description {
+      ul {
+        direction: ltr;
+        //display: inline;
+      }
+      p {
+        text-align: left;
+      }
+    }
+    flex-direction: row-reverse;
+  }
+
+  .prev-section {
+    //border: 5px solid blue;
+    margin-bottom: 300px;
+    display: flex;
+    justify-content: flex-end;
+    max-height: 50vh;
+
+    .previous-work-description {
+      //transition-delay: 5s;
+      padding: 0rem 2rem 2rem 2rem;
+      p {
+        font-size: 16px;
+        padding-top: 0rem;
+        margin-top: 0rem;
+        text-align: right;
+        //ul {
+        //  direction: rtl;
+        //  //display: inline;
+        //}
+
+
+        //ul {
+        //  //direction: rtl;
+        //  //display: inline;
+        //}
+      }
+      font-family: Arial, Helvetica, sans-serif;
+      color: $standardTextColor;
+    }
+  }
 }
 
 
@@ -64,22 +138,48 @@
 }
 
 
+//WIDE
+@media only screen and (min-width: $breakpoint-width-normal) {
+  .image-gallery {
+    width : 700px;
+  }
+
+  #react-charts-img {
+    width : 700px
+  }
+  #blog-img {
+    width : 700px
+  }
+
+}
+
+//PHONE
+@media only screen and (max-width: $breakpoint-width-phone) {
+  .previous-work {
+    .prev-section {
+      flex-direction: column;
+      justify-content: normal;
+    }
+  }
+}
+
+//TABLET
+@media only screen and (min-width: $breakpoint-width-phone) and (max-width: $breakpoint-width-tablet) {
+  .previous-work {
+    .prev-section {
+      flex-direction: column;
+      justify-content: normal;
+    }
+  }
+}
+
+
+
+
+
 //#ImageGallery {
 //
 //  height: 100px
 //}
 
-.hidden {
-  opacity: 0;
-  transition: all 2s;
-  filter: blur(5px);
-  transform: translateX(-100px);
-  //background: red;
-}
-.show {
-  opacity: 1;
-  transition: all 2s;
-  filter: blur(0);
-  transform: translateX(0);
-  //background: blue;
-}
+

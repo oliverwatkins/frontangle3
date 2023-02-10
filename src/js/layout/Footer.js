@@ -14,8 +14,8 @@ export default function Footer() {
     // };
 
     return (
-        <footer>
-            <p>Copyright &copy; Frontangle.com</p>
-        </footer>
+        <span>
+            Copyright &copy; Frontangle.com
+        </span>
     );
 }
