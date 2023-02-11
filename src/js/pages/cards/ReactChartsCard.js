@@ -3,14 +3,13 @@ import React from "react";
 import "../page.scss"
 import bw from "../../../img/react-charts-1167-846.jpg";
 import ImageGallery from "react-image-gallery";
+import {Trans} from "react-i18next";
 
 export default function ReactChartsCard() {
     return (<>
                 <div className={"previous-work-description"}>
                     <p>
-                    My charting application is a continuous 'work in progress' written
-                    entirely in react-JS along
-                    with some third party components <b>[NOTE: Currently Out of Date]</b>
+                        <Trans i18nKey="previous-rc"/>
                     </p>
                 </div>
 

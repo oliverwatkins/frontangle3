@@ -10,6 +10,13 @@ import ReactChartsCard from "./cards/ReactChartsCard";
 import BlogCard from "./cards/BlogCard";
 import {InView, useInView} from "react-intersection-observer";
 
+// "previous-ss":
+// `Shape Shop ist eine E-Commerce-Plattform in der Entwicklung, die es kleinen und mittleren Unternehmen ermöglicht, ihren Produktkatalog zu verwalten. Es gibt eine White-Labeling-Lösung für die Entwicklung angepasster, öffentlich zugänglicher Websites`,
+//     "previous-ic": `Iceberg Charts ist eine fortschrittliche Diagrammbibliothek zum Erstellen von Diagrammen in Java. Es bietet eine Vielzahl von Diagrammfunktionen, darunter:`,
+//     "previous-rc": `Meine Charting-Anwendung ist ein kontinuierliches „Work in Progress“, das zusammen mit einigen Komponenten von Drittanbietern vollständig in React-JS geschrieben wurde <strong> [HINWEIS: Derzeit veraltet] </strong>`,
+//     "previous-bl":
+
+
 export default function PreviousWorkPage() {
 
     return (

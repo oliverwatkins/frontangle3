@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./contactPage.scss"
-import { useTranslation } from 'react-i18next';
+import {Trans, useTranslation} from 'react-i18next';
 
 import linkedInLogo from './../../img/link-linkedin.png';
 import xingLogo from './../../img/xing.svg';
@@ -33,6 +33,7 @@ export default function ContactPage() {
                     or <a href={"https://www.xing.com/profile/Oliver_Watkins2/cv"}> Xing</a>
                 </p>
 
+                {/*<Trans i18nKey="contact"/>*/}
                 <div className="contact-page-image">  </div>
 
                 {/*On social media :*/}

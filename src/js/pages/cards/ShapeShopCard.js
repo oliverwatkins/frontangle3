@@ -10,6 +10,7 @@ import c4 from "../shapeshop/img/ss4.png";
 import c5 from "../shapeshop/img/ss5.png";
 import c6 from "../shapeshop/img/ss6.png";
 import c7 from "../shapeshop/img/ss7.png";
+import {Trans} from "react-i18next";
 
 
 export default function ShapeShopCard() {
@@ -17,9 +18,12 @@ export default function ShapeShopCard() {
     return (
         <>
             <div className={"previous-work-description"}>
-                <p> Shape Shop is an ecommerce platform in developement that allows small and medium sized companies to administer their product catalog. A white labelling solution
-                exists for developing customized public facing websites.
-                <ul>
+                <p>
+                    <Trans i18nKey="previous-ss"/>
+
+                {/*    Shape Shop is an ecommerce platform in developement that allows small and medium sized companies to administer their product catalog. A white labelling solution*/}
+                {/*exists for developing customized public facing websites.*/}
+                    <ul>
                     <li>React</li>
                     <li>Redux middleware</li>
                     <li>Typescript</li>

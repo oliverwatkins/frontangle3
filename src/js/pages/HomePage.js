@@ -7,8 +7,7 @@ import { useTranslation } from 'react-i18next';
 
 export default function HomePage() {
 
-    //TODO translation only works if this hook is initialised here
-    const { t, i18n } = useTranslation();
+
 
     return (
         <section className="fa-page fa-page-home">

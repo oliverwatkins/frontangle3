@@ -16,9 +16,12 @@ import './global.scss';
 
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import {useTranslation} from "react-i18next";
 
 function Main() {
 
+    //TODO translation only works if this hook is initialised here..but why?
+    const { t, i18n } = useTranslation();
 
     useEffect((e) => {
 

@@ -20,14 +20,14 @@ import c18 from "../icharts/samples/TestDataGrids_5_Gradiant.PNG"
 import ImageGallery from 'react-image-gallery';
 
 import "react-image-gallery/styles/css/image-gallery.css";
+import {Trans} from "react-i18next";
 
 export default function IcebergChartsCard() {
     return (
         <>
             <div className={"previous-work-description"} >
                 <p>
-                    Iceberg Charts is an advanced charting library for creating charts in Java.
-                    It offers a rich set of charting features including :
+                    <Trans i18nKey="previous-ic"/>
                     <ul>
                         <li>XY Charts</li>
                         <li>Pie Charts</li>
