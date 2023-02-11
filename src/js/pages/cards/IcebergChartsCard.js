@@ -43,11 +43,9 @@ export default function IcebergChartsCard() {
                     </a>
                 </p>
             </div>
-
             <div className={"boxy"} >
                 <ImageGallery id="ImageGallery" items={someInterestingImages}/>
             </div>
-
         </>
     );
 }

@@ -156,6 +156,7 @@
 //PHONE
 @media only screen and (max-width: $breakpoint-width-phone) {
   .previous-work {
+    .prev-section.right,
     .prev-section {
       flex-direction: column;
       justify-content: normal;
@@ -166,6 +167,7 @@
 //TABLET
 @media only screen and (min-width: $breakpoint-width-phone) and (max-width: $breakpoint-width-tablet) {
   .previous-work {
+    .prev-section.right,
     .prev-section {
       flex-direction: column;
       justify-content: normal;
@@ -173,13 +175,5 @@
   }
 }
 
-
-
-
-
-//#ImageGallery {
-//
-//  height: 100px
-//}
 
 
