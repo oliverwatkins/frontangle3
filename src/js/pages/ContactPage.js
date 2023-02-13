@@ -10,8 +10,6 @@ import xingLogo from './../../img/xing.svg';
 export default function ContactPage() {
 
     const { t, i18n } = useTranslation();
-    // return <h1>{t('Welcome to React')}</h1>
-    // i18n.changeLanguage("en")
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -20,35 +18,18 @@ export default function ContactPage() {
 
     return (
         <section className="fa-page contact-page">
-            {/*<div className="mugshot-image"/>*/}
-
             <div className="contact-info">
-                {/*<h1>Contact </h1>*/}
-
-
                 <p>
-
                 If you would like to contact me please fill out the form on the right.
                 You can also contact me via <a href={"https://www.linkedin.com/in/oliver-watkins-0673b27/"}>Linked In </a>
                     or <a href={"https://www.xing.com/profile/Oliver_Watkins2/cv"}> Xing</a>
                 </p>
 
+
+                {/*todo*/}
                 {/*<Trans i18nKey="contact"/>*/}
                 <div className="contact-page-image">  </div>
 
-                {/*On social media :*/}
-
-
-                {/*<ul>*/}
-                {/*    <li>*/}
-                {/*        <a href="https://www.linkedin.com/in/oliver-watkins-0673b27/"> Linkedin </a>*/}
-                {/*    </li>*/}
-                {/*    <li>*/}
-                {/*        <a href="https://www.xing.com/profile/Oliver_Watkins2"> Xing </a>*/}
-                {/*    </li>*/}
-                {/*</ul>*/}
-                {/*<p/>*/}
-                {/*Email : <b>oliver.f.watkins[at]gmail.com</b>*/}
             </div>
             <div className="contact-form-container">
                 <form
@@ -61,8 +42,6 @@ export default function ContactPage() {
                     <label htmlFor="name">First Name</label>
 
                     <input type="text" name="name" required placeholder="Your name.." />
-
-                    {/*<input type="text" id="fname" name="firstname" placeholder="Your name.." />*/}
 
                     <label htmlFor="lname">Last Name</label>
                     <input type="text" id="lname" name="lastname" placeholder="Your last name.." />

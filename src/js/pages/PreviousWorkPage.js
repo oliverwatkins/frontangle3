@@ -10,17 +10,45 @@ import ReactChartsCard from "./cards/ReactChartsCard";
 import BlogCard from "./cards/BlogCard";
 import {InView, useInView} from "react-intersection-observer";
 
-// "previous-ss":
-// `Shape Shop ist eine E-Commerce-Plattform in der Entwicklung, die es kleinen und mittleren Unternehmen ermöglicht, ihren Produktkatalog zu verwalten. Es gibt eine White-Labeling-Lösung für die Entwicklung angepasster, öffentlich zugänglicher Websites`,
-//     "previous-ic": `Iceberg Charts ist eine fortschrittliche Diagrammbibliothek zum Erstellen von Diagrammen in Java. Es bietet eine Vielzahl von Diagrammfunktionen, darunter:`,
-//     "previous-rc": `Meine Charting-Anwendung ist ein kontinuierliches „Work in Progress“, das zusammen mit einigen Komponenten von Drittanbietern vollständig in React-JS geschrieben wurde <strong> [HINWEIS: Derzeit veraltet] </strong>`,
-//     "previous-bl":
-
-
 export default function PreviousWorkPage() {
 
     return (
         <section className="fa-page previous-work ">
+
+
+
+
+            {/*<svg width="500" height="2550" viewBox="0 0 500 2550" fill="none" xmlns="http://www.w3.org/2000/svg">*/}
+
+            {/*    <path d="M 350 0 V 450" strokeWidth="5" stroke="url(#paint0_linear_207_14200)"/>*/}
+            {/*    <path d="M 350 400 L 300 450" strokeWidth="5" stroke="url(#paint0_linear_207_14200)"/>*/}
+            {/*    <path d="M 350 450 H 200" strokeWidth="5" stroke="url(#paint0_linear_207_14200)"/>*/}
+
+            {/*    <path d="M 200 450 V 820" strokeWidth="5" stroke="url(#paint0_linear_207_14200)"/>*/}
+            {/*    <path d="M 200 820 H 350" strokeWidth="5" stroke="url(#paint0_linear_207_14200)"/>*/}
+            {/*    <path d="M 350 820 V 1820" strokeWidth="5" stroke="url(#paint0_linear_207_14200)"/>*/}
+            {/*    <path d="M 200 1820 H 350" strokeWidth="5" stroke="url(#paint0_linear_207_14200)"/>*/}
+            {/*    <defs>*/}
+            {/*        <linearGradient id="paint0_linear_207_14200" x1="8.51253" y1="731.998" x2="308.147" y2="1023.79" gradientUnits="userSpaceOnUse">*/}
+            {/*            <stop stopColor="red"/>*/}
+            {/*            <stop offset="1" stopColor="blue"/>*/}
+            {/*        </linearGradient>*/}
+            {/*    </defs>*/}
+            {/*</svg>*/}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <section className="previous-work-top">
                 <Trans i18nKey="previous-blurb"/>
             </section>
@@ -67,5 +95,3 @@ export default function PreviousWorkPage() {
         </section>
     );
 }
-
-export const cardColor = "#6D737723"

@@ -4,30 +4,23 @@
 html {font-size: 1em;  /* 22px */}
 body {
   font-size: 100%;     /* flexible baseline */
-
   line-height: 1.4;
+  background: #6D737723;
 }
-
-//$sidePadding: 150px;
 $sidePadding_phone: 2px;
 $sidePadding_tablet: 5px;
 $sidePadding_normal: 10%;
 $sidePadding_wide: 20%;
-//$sidePadding_phone: 10%;
-//$sidePadding_big: 10%;
-//$sidePadding_wide: 30%;
 
-
-
-//$sidePadding: 150px;
 $standardTextColor: #6d7377;
-//$standardTextColor: red;
 
+$breakpoint-width-phone: 400px;
+$breakpoint-width-tablet: 1200px;
+$breakpoint-width-normal: 1700px;
 
-$breakpoint-width-phone: 400px; //width
-$breakpoint-width-tablet: 1200px; //width
-$breakpoint-width-normal: 1700px; //width
-
+.svg-test {
+  border: 5px solid blue
+}
 //PHONE
 @media only screen and (max-width: $breakpoint-width-phone) {
   body {

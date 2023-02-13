@@ -50,8 +50,14 @@ function Nav() {
                         <Link to="/main/contact" onClick={toggleCollapse.bind(this)} className={contactClassisActive}>
                             Contact
                         </Link>
+
                     </li>
 
+                    <li>
+                    <Link to="/main/test" onClick={toggleCollapse.bind(this)} className={contactClassisActive}>
+                        test
+                    </Link>
+                    </li>
 
                     <li className={"language " + (lang === "en" ? "active": "")} onClick={
                         ()=>{

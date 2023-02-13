@@ -1,7 +1,5 @@
 @import "../global";
 
-//$textColor: #747474;
-//$blockyTextColor: darken($textColor, 40%);
 @keyframes fadeInOpacity {
   0% {
     opacity: 0;
@@ -11,25 +9,16 @@
   }
 }
 
-body {
-  background: #6D737723;
-}
+
 .fa-page {
   //border: 5px solid green;
-  //animation-name: fadeInOpacity;
   opacity: 1;
   animation-name: fadeInOpacity;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
   animation-duration: .3s;
-
-  //margin-left: $sidePadding_big;
-  //margin-right: $sidePadding_big;
   font-family: Arial, Helvetica, sans-serif;
-  //display: flex;
-  //width: 100%;
   background: white;
-  //height: 70%;
 }
 
 
