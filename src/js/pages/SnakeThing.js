@@ -3,17 +3,11 @@ import React, {useEffect} from "react";
 import './page.scss';
 import './previousWorkPage.scss';
 
-import ShapeShopCard from "./cards/ShapeShopCard";
-import {Trans, useTranslation} from "react-i18next";
-import IcebergChartsCard from "./cards/IcebergChartsCard";
-import ReactChartsCard from "./cards/ReactChartsCard";
-import BlogCard from "./cards/BlogCard";
-import {InView, useInView} from "react-intersection-observer";
 import useWindowDimensions from "../useWindowDimension";
 
 
 
-export default function Test(props) {
+export default function SnakeThing(props) {
 
     const { heightX, widthX } = useWindowDimensions();
     let width =600
