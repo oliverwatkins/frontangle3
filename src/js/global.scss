@@ -19,7 +19,16 @@ $breakpoint-width-tablet: 1200px;
 $breakpoint-width-normal: 1700px;
 
 .svg-test {
-  border: 5px solid blue
+  //border: 5px solid blue;
+
+  //background-image: url("../img/bg-stroke-2.svg");
+
+  //background-size: auto 100%;
+  //
+  //
+  //background-repeat: no-repeat;
+  ////background-size:     cover;
+  //background-position-x: 300px;
 }
 //PHONE
 @media only screen and (max-width: $breakpoint-width-phone) {

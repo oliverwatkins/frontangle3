@@ -13,6 +13,7 @@ import Nav from "./layout/Nav.js";
 
 import {Switch} from "react-router-dom";
 import Test from "./pages/Test";
+import Test2 from "./pages/Test2";
 
 /**
  * Contains nav on top, footer on bottom, and all the pages are passed in
@@ -39,6 +40,9 @@ export default function PageLayout(props) {
                     </Route>
                     <Route path="/main/test">
                         <Test/>
+                    </Route>
+                    <Route path="/main/test2">
+                        <Test2/>
                     </Route>
                 </Switch>
             <Footer/>
