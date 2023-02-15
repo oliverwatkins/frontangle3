@@ -9,7 +9,7 @@ import IcebergChartsCard from "./cards/IcebergChartsCard";
 import ReactChartsCard from "./cards/ReactChartsCard";
 import BlogCard from "./cards/BlogCard";
 import {InView, useInView} from "react-intersection-observer";
-import SnakeThing from "./SnakeThing";
+import SnakeThing from "./snakething/SnakeThing";
 import useWindowDimensions from "../useWindowDimension";
 
 export default function PreviousWorkPage() {
@@ -18,12 +18,12 @@ export default function PreviousWorkPage() {
 
     return (
         <section className="fa-page previous-work ">
-
+            <section className="previous-work-top">
+                <Trans i18nKey="previous-blurb"/>
+            </section>
             <SnakeThing parentWidht={width}>
 
-                <section className="previous-work-top">
-                    <Trans i18nKey="previous-blurb"/>
-                </section>
+
                 <InView>
                     {({ inView, ref, entry }) => {
 

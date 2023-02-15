@@ -1,35 +1,27 @@
 import React, {useEffect} from "react";
 
-import './page.scss';
-import './previousWorkPage.scss';
-
-import useWindowDimensions from "../useWindowDimension";
-
-
+import '../page.scss';
+import '../previousWorkPage.scss';
 
 export default function SnakeThing(props) {
-
-    const { heightX, widthX } = useWindowDimensions();
     let width =600
-    let height =1600
-
-    let gradientColor1 ="gray"
-    let gradientColor2 ="blue"
+    let height =4600
+    let viewboxHeight =height/2
 
     let x1 = 200
     let x2 = 400
+    let x3 = "wtf"
 
-    let y0 = 200
-    let y1 = 570
-    let y2 = 1060
-    let y3 = 1465
-    let y4 = 1600
-    // let y5 = 9820
-    // let y4 = 350
+    let y0 = 0
+    let y1 = 750/2
+    let y2 = 1750/2
+    let y3 = 2750/2
+    let y4 = 3750/2
 
+    //curve constant
     let c = 50
 
-    let stroke = 2
+    let stroke = 12
 
     function getPathLeftRight(xFrom, xTo, y) {
         return <path d={`M ${xTo - c} ${y} H ${xFrom + c}`} strokeWidth={`${stroke}`} stroke="url(#paint0_linear_207_14200)"/>;
@@ -58,14 +50,12 @@ export default function SnakeThing(props) {
         top:"0px",
         // border: "3px solid purple",
         zIndex: 1,
-        // background: "white",
-
         width: "100%",
-        height: "3200px"
+        height: height + "px"
+        // height: height + "3600px"
     }
 
     // width={width} height={length}
-    const { height2, width2 } = useWindowDimensions();
 
     return (
         <div className="svg-test" style={{position:"relative"}}>
@@ -75,12 +65,19 @@ export default function SnakeThing(props) {
             {/*props.children*/}
 
 
+{/*x1*/}
+{/*            {x1}*/}
+{/*            x2*/}
+{/*            {x2}*/}
+{/*            x3*/}
+{/*            {x3}*/}
 
-            {(props.parentWidht > 1800) &&
+            {/*{(props.parentWidht > 1800) &&*/}
+            {(props.parentWidht > 1200) &&
             <svg style={svgStyle}
 
-                 preserveAspectRatio="none"
-                 viewBox={`0 0 ${width} ${height} `} fill="none" xmlns="http://www.w3.org/2000/svg">
+                 preserveAspectRatio="none "
+                 viewBox={`0 0 ${width} ${viewboxHeight} `} fill="none" xmlns="http://www.w3.org/2000/svg">
                 {getPathTopDowm(y0 - c, y1, x2)}
                 {downLeft(x2, y1)}
                 {getPathLeftRight(x1, x2, y1)}
@@ -94,6 +91,14 @@ export default function SnakeThing(props) {
                 {getPathLeftRight(x1, x2, y3)}
                 {leftDown(x1, y3)}
                 {getPathTopDowm(y3, y4, x1)}
+                {downRight(x1, y4)}
+
+                {getPathLeftRight(x1, x2 - 50 , y4)}
+
+                { <circle cx={x2 - 50} cy={y4} r="50" stroke="black" stroke-width="0"  stroke="url(#paint0_linear_207_14200)" fill="url(#paint0_linear_207_14200)" />}
+
+
+                {/*{getPathLeftRight(x1, x2 - (x2-x1)/2 , y4)}*/}
                 {/*{downRight(x1, y4)}*/}
                 {/*{getPathLeftRight(x1, x2, y4)}*/}
                 {/*{rightDown(x2, y4)}*/}
@@ -102,13 +107,13 @@ export default function SnakeThing(props) {
                 {/*<path d={`M ${x1 + c} ${y3} H ${x2 - c}`} strokeWidth={`${stroke}`}*/}
                 {/*      stroke="url(#paint0_linear_207_14200)"/>*/}
                 <defs>
-                    <linearGradient id="paint0_linear_207_14200" x1="8.51253" y1="731.998" x2="308.147" y2="1023.79"
+                    <linearGradient id="paint0_linear_207_14200" x1="8.51253" y1="731.998" x2="308.147" y2="3023.79"
                                     gradientUnits="userSpaceOnUse">
 
                         <stop stopColor={"red"} className="stop1" offset="0%" stopOpacity={0.1}/>
-                        <stop stopColor={"yellow"} className="stop2" offset="50%"  stopOpacity={0.2}/>
-                        <stop stopColor={"blue"} className="stop3" offset="100%"  stopOpacity={0.2}/>
-
+                        <stop stopColor={"yellow"} className="stop2" offset="30%"  stopOpacity={0.2}/>
+                        <stop stopColor={"blue"} className="stop3" offset="60%"  stopOpacity={0.2}/>
+                        <stop stopColor={"orange"} className="stop3" offset="100%"  stopOpacity={0.2}/>
 
                         {/*<stop stopColor={gradientColor1}/>*/}
                         {/*<stop offset="1" stopColor={gradientColor2}/>*/}

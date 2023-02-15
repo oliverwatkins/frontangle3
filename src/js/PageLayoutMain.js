@@ -12,7 +12,8 @@ import Header from "./layout/Header.js";
 import Nav from "./layout/Nav.js";
 
 import {Switch} from "react-router-dom";
-import SnakeThing from "./pages/SnakeThing";
+import SnakeThing from "./pages/snakething/SnakeThing";
+import DemoPage from "./pages/snakething/DemoPage";
 
 /**
  * Contains nav on top, footer on bottom, and all the pages are passed in
@@ -37,8 +38,8 @@ export default function PageLayout(props) {
                     <Route path="/main/contact">
                         <ContactPage/>
                     </Route>
-                    <Route path="/main/test">
-                        <SnakeThing/>
+                    <Route path="/main/snakething">
+                        <DemoPage/>
                     </Route>
                 </Switch>
             <Footer/>

@@ -1,0 +1,15 @@
+@import "../../global";
+
+.demo-page {
+  border: 2px solid green;
+  background: white;
+  z-index: -3;
+  margin-left: 400px;
+  margin-right: 400px;
+}
+
+.demo-box {
+  margin-bottom: 500px;
+  border: 2px solid red;
+  height: 500px;
+}
