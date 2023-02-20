@@ -2,9 +2,6 @@ import React, {useEffect} from "react";
 
 
 import useWindowDimensions from "../../useWindowDimension";
-import ShapeShopCard from "../cards/ShapeShopCard";
-import IcebergChartsCard from "../cards/IcebergChartsCard";
-import ReactChartsCard from "../cards/ReactChartsCard";
 import SnakeThing from "./SnakeThing";
 
 import demo from "./demo.scss"

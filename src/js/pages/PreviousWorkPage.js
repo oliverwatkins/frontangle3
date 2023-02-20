@@ -3,11 +3,11 @@ import React, {useEffect} from "react";
 import './page.scss';
 import './previousWorkPage.scss';
 
-import ShapeShopCard from "./cards/ShapeShopCard";
+import ShapeShopSection from "./prevworkSections/ShapeShopSection";
 import {Trans, useTranslation} from "react-i18next";
-import IcebergChartsCard from "./cards/IcebergChartsCard";
-import ReactChartsCard from "./cards/ReactChartsCard";
-import BlogCard from "./cards/BlogCard";
+import IcebergChartsSection from "./prevworkSections/IcebergChartsSection";
+import ReactChartsSection from "./prevworkSections/ReactChartsSection";
+import BlogSection from "./prevworkSections/BlogSection";
 import {InView, useInView} from "react-intersection-observer";
 import SnakeThing from "./snakething/SnakeThing";
 import useWindowDimensions from "../useWindowDimension";
@@ -29,7 +29,7 @@ export default function PreviousWorkPage() {
 
                         return (
                             <section ref={ref} className={"prev-section left " + (inView ? "show" : "hidden")}>
-                                <ShapeShopCard align={"left"}/>
+                                <ShapeShopSection align={"left"}/>
                             </section>
                         )
                     }}
@@ -45,7 +45,7 @@ export default function PreviousWorkPage() {
 
                         return (
                             <section ref={ref} className={"prev-section right " + (inView ? "show" : "hidden")}>
-                                <IcebergChartsCard align={"right"}/>
+                                <IcebergChartsSection align={"right"}/>
                             </section>
                         )
                     }}
@@ -53,14 +53,14 @@ export default function PreviousWorkPage() {
                 <InView>
                     {({ inView, ref, entry }) => (
                         <section ref={ref} className={"prev-section " + (inView ? "show" : "hidden")}>
-                            <ReactChartsCard/>
+                            <ReactChartsSection/>
                         </section>
                     )}
                 </InView>
                 <InView>
                     {({ inView, ref, entry }) => (
                         <section ref={ref} className={"prev-section right " + (inView ? "show" : "hidden")}>
-                            <BlogCard align={"right"}/>
+                            <BlogSection align={"right"}/>
                         </section>
                     )}
                 </InView>

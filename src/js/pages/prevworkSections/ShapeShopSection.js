@@ -13,7 +13,7 @@ import c7 from "../shapeshop/img/ss7.png";
 import {Trans} from "react-i18next";
 
 
-export default function ShapeShopCard() {
+export default function ShapeShopSection() {
 
     return (
         <>
@@ -34,6 +34,10 @@ export default function ShapeShopCard() {
                     <li>MySQL</li>
                     <li>all running on the Azure Cloud</li>
                 </ul>
+
+                    <a href={"https://github.com/oliverwatkins/shape-shop-backend"}>Github backend</a><br/>
+                    <a href={"https://github.com/oliverwatkins/shape-shop-front-end2"}>Github frontend</a>
+
                 </p>
             </div>
             <div className={"boxy"}>

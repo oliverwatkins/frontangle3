@@ -22,7 +22,7 @@ import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 import {Trans} from "react-i18next";
 
-export default function IcebergChartsCard() {
+export default function IcebergChartsSection() {
     return (
         <>
             <div className={"previous-work-description"} >
