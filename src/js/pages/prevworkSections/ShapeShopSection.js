@@ -24,16 +24,16 @@ export default function ShapeShopSection() {
                 {/*    Shape Shop is an ecommerce platform in developement that allows small and medium sized companies to administer their product catalog. A white labelling solution*/}
                 {/*exists for developing customized public facing websites.*/}
                     <ul>
-                    <li>React</li>
-                    <li>Redux middleware</li>
-                    <li>Typescript</li>
-                    <li>Hooks</li>
-                    <li>Material UI</li>
-                    <li>Testing with Enzyme and Jest</li>
-                    <li>Spring Boot</li>
-                    <li>MySQL</li>
-                    <li>all running on the Azure Cloud</li>
-                </ul>
+                        <li>React</li>
+                        <li>Redux middleware</li>
+                        <li>Typescript</li>
+                        <li>Hooks</li>
+                        <li>Material UI</li>
+                        <li>Testing with Enzyme and Jest</li>
+                        <li>Spring Boot</li>
+                        <li>MySQL</li>
+                        <li>all running on the Azure Cloud</li>
+                    </ul>
 
                     <a href={"https://github.com/oliverwatkins/shape-shop-backend"}>Github backend</a><br/>
                     <a href={"https://github.com/oliverwatkins/shape-shop-front-end2"}>Github frontend</a>

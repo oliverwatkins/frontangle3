@@ -21,7 +21,7 @@ export default function PreviousWorkPage() {
             <section className="previous-work-top">
                 <Trans i18nKey="previous-blurb"/>
             </section>
-            <SnakeThing parentWidht={width}>
+            <SnakeThing parentWidht={width}  snakeWidth={12} x1={200} x2={400}>
 
 
                 <InView>

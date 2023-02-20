@@ -3,14 +3,13 @@ import React, {useEffect} from "react";
 import '../page.scss';
 import '../previousWorkPage.scss';
 
-export default function SnakeThing(props) {
+export default function SnakeThing(props = {x1: 200, x2:400, snakeWidth: 12}) {
     let width =600
     let height =4600
     let viewboxHeight =height/2
 
-    let x1 = 200
-    let x2 = 400
-    let x3 = "wtf"
+    let x1 = Number(props.x1)
+    let x2 = Number(props.x2)
 
     let y0 = 0
     let y1 = 750/2
@@ -21,10 +20,12 @@ export default function SnakeThing(props) {
     //curve constant
     let c = 50
 
-    let stroke = 12
+    // alert(x1)
+
+    let stroke = props.snakeWidth;
 
     function getPathLeftRight(xFrom, xTo, y) {
-        return <path d={`M ${xTo - c} ${y} H ${xFrom + c}`} strokeWidth={`${stroke}`} stroke="url(#paint0_linear_207_14200)"/>;
+        return <path d={`M ${x2 - c} ${y} H ${x1 + c}`} strokeWidth={`${stroke}`} stroke="url(#paint0_linear_207_14200)"/>;
     }
     function getPathTopDowm(yFrom, yTo, x) {
         return <path d={`M ${x} ${yFrom + c} V ${yTo - c}`} strokeWidth={`${stroke}`} stroke="url(#paint0_linear_207_14200)"/>;
@@ -56,21 +57,10 @@ export default function SnakeThing(props) {
     }
 
     // width={width} height={length}
-
+    // snakeWidth
     return (
         <div className="svg-test" style={{position:"relative"}}>
-            {/*asdfasdfasdfasdfadsfasdf {props.parentWidht} nnn*/}
-            {/*<div>{props.children}</div>*/}
             <div>{props.children}</div>
-            {/*props.children*/}
-
-
-{/*x1*/}
-{/*            {x1}*/}
-{/*            x2*/}
-{/*            {x2}*/}
-{/*            x3*/}
-{/*            {x3}*/}
 
             {/*{(props.parentWidht > 1800) &&*/}
             {(props.parentWidht > 1200) &&
@@ -78,6 +68,7 @@ export default function SnakeThing(props) {
 
                  preserveAspectRatio="none "
                  viewBox={`0 0 ${width} ${viewboxHeight} `} fill="none" xmlns="http://www.w3.org/2000/svg">
+
                 {getPathTopDowm(y0 - c, y1, x2)}
                 {downLeft(x2, y1)}
                 {getPathLeftRight(x1, x2, y1)}
