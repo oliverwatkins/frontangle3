@@ -54,11 +54,15 @@ function Nav() {
                     </li>
 
                     <li >
-                    <Link to="/main/snakething" onClick={toggleCollapse.bind(this)} className={"playground"}>
-                        snakething
-                    </Link>
+                        <Link to="/main/snakething" onClick={toggleCollapse.bind(this)} className={"playground"}>
+                            snakething
+                        </Link>
                     </li>
-
+                    <li >
+                        <Link to="/main/resume" onClick={toggleCollapse.bind(this)} className={"playground"}>
+                            resume
+                        </Link>
+                    </li>
                     {/*<li>*/}
                     {/*    <Link to="/main/test2" onClick={toggleCollapse.bind(this)} className={contactClassisActive}>*/}
                     {/*        test2*/}

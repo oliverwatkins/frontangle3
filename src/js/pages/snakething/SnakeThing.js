@@ -20,14 +20,12 @@ export default function SnakeThing(props = {x1: 200, x2:400, snakeWidth: 12}) {
     //curve constant
     let c = 50
 
-    // alert(x1)
-
     let stroke = props.snakeWidth;
 
-    function getPathLeftRight(xFrom, xTo, y) {
-        return <path d={`M ${x2 - c} ${y} H ${x1 + c}`} strokeWidth={`${stroke}`} stroke="url(#paint0_linear_207_14200)"/>;
+    function createPathLeftRight(y, xFrom, xTo) {
+        return <path d={`M ${(xFrom ? xFrom : (x2 - c))} ${y} H ${(xTo ? xTo : (x1 + c))}`} strokeWidth={`${stroke}`} stroke="url(#paint0_linear_207_14200)"/>;
     }
-    function getPathTopDowm(yFrom, yTo, x) {
+    function createPathTopDowm(yFrom, yTo, x) {
         return <path d={`M ${x} ${yFrom + c} V ${yTo - c}`} strokeWidth={`${stroke}`} stroke="url(#paint0_linear_207_14200)"/>;
     }
     function downLeft(x, y) {
@@ -69,22 +67,22 @@ export default function SnakeThing(props = {x1: 200, x2:400, snakeWidth: 12}) {
                  preserveAspectRatio="none "
                  viewBox={`0 0 ${width} ${viewboxHeight} `} fill="none" xmlns="http://www.w3.org/2000/svg">
 
-                {getPathTopDowm(y0 - c, y1, x2)}
+                {createPathTopDowm(y0 - c, y1, x2)}
                 {downLeft(x2, y1)}
-                {getPathLeftRight(x1, x2, y1)}
+                {createPathLeftRight(y1)}
                 {leftDown(x1, y1)}
-                {getPathTopDowm(y1, y2, x1)}
+                {createPathTopDowm(y1, y2, x1)}
                 {downRight(x1, y2)}
-                {getPathLeftRight(x1, x2, y2)}
+                {createPathLeftRight(y2)}
                 {rightDown(x2, y2)}
-                {getPathTopDowm(y2, y3, x2)}
+                {createPathTopDowm(y2, y3, x2)}
                 {downLeft(x2, y3)}
-                {getPathLeftRight(x1, x2, y3)}
+                {createPathLeftRight(y3)}
                 {leftDown(x1, y3)}
-                {getPathTopDowm(y3, y4, x1)}
+                {createPathTopDowm(y3, y4, x1)}
                 {downRight(x1, y4)}
 
-                {getPathLeftRight(x1, x2 - 50 , y4)}
+                {createPathLeftRight(y4, x1 + 50, x2 - 50 - 50)}
 
                 { <circle cx={x2 - 50} cy={y4} r="50" stroke="black" stroke-width="0"  stroke="url(#paint0_linear_207_14200)" fill="url(#paint0_linear_207_14200)" />}
 
