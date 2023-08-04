@@ -38,6 +38,9 @@ function Main() {
                 <Route path="/icharts">
                     <PageLayoutICharts/>
                 </Route>
+                <Route path="/#/icharts">
+                    <PageLayoutICharts/>
+                </Route>
                 <Route path="*" element={<div>Not found</div>}/>
             </Switch>
         </BrowserRouter>

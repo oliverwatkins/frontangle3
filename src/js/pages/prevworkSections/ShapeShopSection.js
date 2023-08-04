@@ -38,6 +38,10 @@ export default function ShapeShopSection() {
                     <a href={"https://github.com/oliverwatkins/shape-shop-backend"}>Github backend</a><br/>
                     <a href={"https://github.com/oliverwatkins/shape-shop-front-end2"}>Github frontend</a>
 
+                    <br/>
+                    <a href={"https://alpenhof3.netlify.app/"}>demo</a>
+
+
                 </p>
             </div>
             <div className={"boxy"}>
