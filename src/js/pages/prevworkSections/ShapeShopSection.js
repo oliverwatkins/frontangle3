@@ -3,13 +3,22 @@ import React from "react";
 import "../page.scss"
 
 import ImageGallery from "react-image-gallery";
-import c1 from "../shapeshop/img/ss1.png";
-import c2 from "../shapeshop/img/ss2.png";
-import c3 from "../shapeshop/img/ss3.png";
-import c4 from "../shapeshop/img/ss4.png";
-import c5 from "../shapeshop/img/ss5.png";
+
+
+import c1 from "../shapeshop/img/ss3.png";
+import c2 from "../shapeshop/img/ss4.png";
+import c3 from "../shapeshop/img/ss5.png";
+import c4 from "../shapeshop/img/ss6.png";
+import c5 from "../shapeshop/img/ss7.png";
 import c6 from "../shapeshop/img/ss6.png";
-import c7 from "../shapeshop/img/ss7.png";
+import c7 from "../shapeshop/img/ssah1.png";
+
+import c8 from "../shapeshop/img/ssah3.png";
+import c9 from "../shapeshop/img/ssah5.png";
+import c10 from "../shapeshop/img/ssah1.png";
+import c11 from "../shapeshop/img/ssh1.png";
+import c12 from "../shapeshop/img/ssh2.png";
+
 import {Trans} from "react-i18next";
 
 
@@ -54,6 +63,14 @@ export default function ShapeShopSection() {
 const someInterestingImages = [
 
     {
+        original: c1,
+        thumbnail: c1,
+    },
+    {
+        original: c2,
+        thumbnail: c2,
+    },
+    {
         original: c3,
         thumbnail: c3,
     },
@@ -74,43 +91,24 @@ const someInterestingImages = [
         thumbnail: c7,
     },
     {
-        original: c1,
-        thumbnail: c1,
+        original: c8,
+        thumbnail: c8,
     },
     {
-        original: c2,
-        thumbnail: c2,
+        original: c9,
+        thumbnail: c9,
     },
-    // {
-    //     original: c8,
-    //     thumbnail: c8,
-    // },
-    // {
-    //     original: c9,
-    //     thumbnail: c9,
-    // },
-    // {
-    //     original: c10,
-    //     thumbnail: c10,
-    // },
-    // {
-    //     original: c11,
-    //     thumbnail: c11,
-    // },
-    // {
-    //     original: c12,
-    //     thumbnail: c12,
-    // },
-    // {
-    //     original: c13,
-    //     thumbnail: c13,
-    // },
-    // {
-    //     original: c17,
-    //     thumbnail: c17
-    // },
-    // {
-    //     original: c18,
-    //     thumbnail: c18
-    // }
+    {
+        original: c10,
+        thumbnail: c10,
+    },
+    {
+        original: c11,
+        thumbnail: c11,
+    },
+    {
+        original: c12,
+        thumbnail: c12,
+    },
+
 ]
