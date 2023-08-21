@@ -63,6 +63,18 @@ function Nav() {
                             resume
                         </Link>
                     </li>
+                    <li >
+                        <a href="https://purple-moss-0e5ca5f10.3.azurestaticapps.net/" onClick={toggleCollapse.bind(this)} className={"playground"}>
+                            art
+                        </a>
+                    </li>
+
+
+
+
+
+
+
                     {/*<li>*/}
                     {/*    <Link to="/main/test2" onClick={toggleCollapse.bind(this)} className={contactClassisActive}>*/}
                     {/*        test2*/}
