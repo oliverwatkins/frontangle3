@@ -38,7 +38,7 @@ function Nav2() {
         // <div>
 
 
-            <nav className="navbar2 navbar-default2" role="navigation">
+            <nav role="navigation">
                 <ul>
                     <li className={homeClassisActive}>
                         <Link to="/main" onClick={toggleCollapse.bind(this)}>
@@ -66,18 +66,37 @@ function Nav2() {
 
                     <li >
                         <Link to="/main/snakething" onClick={toggleCollapse.bind(this)} className={"playground"}>
-                            snakething
+                            sn
                         </Link>
                     </li>
                     <li >
                         <Link to="/main/resume" onClick={toggleCollapse.bind(this)} className={"playground"}>
-                            resume
+                            re
                         </Link>
                     </li>
                     <li >
                         <a href="https://purple-moss-0e5ca5f10.3.azurestaticapps.net/" onClick={toggleCollapse.bind(this)} className={"playground"}>
                             art
                         </a>
+                    </li>
+
+
+                    <li className={"language " + (lang === "en" ? "active": "")} onClick={
+                        ()=>{
+                            setLang("en")
+                            i18n.changeLanguage("en");
+                        }
+
+                    }>
+                        <div id="english"/>
+                    </li>
+                    <li className={"language " + (lang === "de" ? "active": "")} onClick={
+                        ()=>{
+                            setLang("de");
+                            i18n.changeLanguage("de");
+                        }
+                    }>
+                        <div id="german"/>
                     </li>
                 </ul>
             </nav>

@@ -1,43 +1,33 @@
 @import "../global";
 
 
+$navBackgroundColor: #0033ff;
+$navSelectedColor: #1995dc;
+$navHeight: 52px;
 
-.navbar2 {
 
+nav {
+  background-image: -webkit-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
+  background-image: -o-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#54b4eb), color-stop(60%, #2fa4e7), to(#1d9ce5));
   background-image: linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
   background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff54b4eb', endColorstr='#ff1d9ce5', GradientType=0);
   border-bottom: 1px solid #178acc;
-  //-webkit-filter: none;
-  //-webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+  -webkit-filter: none;
+  filter: none;
+  -webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
   box-shadow: 0 1px 10px rgba(0,0,0,0.1);
-  overflow: hidden;
-  height: 56px;
-  margin-bottom: 40px;
-
-
+  margin-bottom: 50px;
 }
-
-.navbar-default2 {
-  background-color: #2fa4e7;
-  border-color: #1995dc;
-}
-
-
-
-
-
-
-
-
 
 nav ul {
-  //background: #ddd;
   font-size: 0;
   list-style: none;
   margin: 0;
   padding: 0;
   text-align: center;
-  width: 100%;
+  height: $navHeight;
 }
 nav li {
   display: inline-block;
@@ -45,35 +35,51 @@ nav li {
   padding: 0;
   position: relative;
   float: left;
-  //min-width: 20%;
 }
+
+nav li.language{
+  float: right;
+  padding: 16px;
+  width:30px;
+
+  #german {
+    min-height: 20px;
+    background-image: url("../../img/germany-flag-icon.svg");
+    background-repeat: no-repeat;
+  }
+
+  #english {
+    min-height: 20px;
+    background-image: url("../../img/united-kingdom-flag-icon.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+
 nav a {
   display: block;
-  //background: #ddd;
   color: white;
-
-
   font: bold 16px/50px sans-serif;
   font-family: "Roboto","Helvetica","Arial",sans-serif;
   font-weight: 400;
-
   padding: 0 25px;
   text-decoration: none;
 
-
-  //display: block;
-  //color: white;
-  //text-align: center;
-  //padding: 16px;
-  //text-decoration: none;
 }
 nav .dropdown:after {
   //arrow
   content: ' \25bc';
 }
-nav li:hover a {
-  background: #ccc;
+
+li a:hover {
+  background-color: $navSelectedColor;
 }
+
+li.language:hover{
+  background-color: $navSelectedColor;
+  cursor: pointer;
+}
+
 nav li ul {
   left: 0;
   opacity: 0;
@@ -81,16 +87,84 @@ nav li ul {
   top: 35px;
   visibility: hidden;
   z-index: 1;
-
 }
+
 nav li:hover ul {
   opacity: 1;
   top: 50px;
   visibility: visible;
 }
+
 nav li ul li {
   width: 100%;
 }
-nav li ul a:hover {
-  background: #bbb;
+
+nav .active {
+  background: #1995dc;
 }
+
+li.language.active {
+  background: #1995dc;
+}
+
+//$navSelectedColor
+
+//submenu :
+nav li ul a:hover {
+  background: $navBackgroundColor;
+}
+nav li ul a {
+  background: $navSelectedColor;
+}
+
+
+@media only screen and (max-width: $breakpoint-width-tablet) {
+  body {
+    nav {
+      margin-left: 2px;
+      padding-bottom: 0px;
+
+      li.language {
+        padding: 5px;
+      }
+
+      ul {
+        height: $navHeight - 10;
+        padding-top: 0px;
+      }
+
+      ul li a {
+        height: $navHeight - 10;
+        font-size: 14px;
+        padding-right: 5px;
+        padding-left: 5px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-width-phone) {
+  body {
+    nav {
+      margin-left: 2px;
+      padding-bottom: 0px;
+
+      li.language {
+        padding: 5px;
+      }
+
+      ul {
+        height: $navHeight - 10;
+        padding-top: 0px;
+      }
+
+      ul li a {
+        height: $navHeight - 10;
+        font-size: 14px;
+        padding-right: 5px;
+        padding-left: 5px;
+      }
+    }
+  }
+}
+
