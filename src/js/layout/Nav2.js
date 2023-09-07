@@ -1,11 +1,11 @@
 import React from "react";
 import {Link, useLocation} from "react-router-dom";
-import "./nav.scss"
+import "./nav2.scss"
 import {Typography} from "@mui/material";
 // import './';
 import { useTranslation } from 'react-i18next';
 
-function Nav() {
+function Nav2() {
 
     const [lang, setLang] = React.useState("en");
 
@@ -34,10 +34,12 @@ function Nav() {
 
     return (
 
-        <nav className="navbar navbar-default" role="navigation">
-            {/*{lang}*/}
-            <div className="container-fluid">
-                <ul className="nav navbar-nav">
+
+        // <div>
+
+
+            <nav className="navbar2 navbar-default2" role="navigation">
+                <ul>
                     <li className={homeClassisActive}>
                         <Link to="/main" onClick={toggleCollapse.bind(this)}>
                             Home
@@ -48,23 +50,13 @@ function Nav() {
                             Previous Work
                         </Link>
                     </li>
-                    <li onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
-                        <Link to="/main/services" onClick={toggleCollapse.bind(this)} className={previousClassisActive}>
-                            Services
-                        </Link>
-                        {/*{showDropdown && (*/}
-                            <div className="dropdown-content">
-                                <a href="/subpage1">Subpage 1</a>
-                                <a href="/subpage2">Subpage 2</a>
-                                <a href="/subpage3">Subpage 3</a>
-                            </div>
-                        {/*)}*/}
+                    <li><a className="dropdown" href="#">Services</a>
+                        <ul>
+                            <li><a href="#">Sub-menu Item 1</a></li>
+                            <li><a href="#">Sub-menu Item 2</a></li>
+                            <li><a href="#">Sub-menu Item 3</a></li>
+                        </ul>
                     </li>
-                    {/*<li>*/}
-                    {/*    <Link to="/icharts/" onClick={toggleCollapse.bind(this)}>*/}
-                    {/*        Iceberg Charts*/}
-                    {/*    </Link>*/}
-                    {/*</li>*/}
                     <li>
                         <Link to="/main/contact" onClick={toggleCollapse.bind(this)} className={contactClassisActive}>
                             Contact
@@ -87,40 +79,9 @@ function Nav() {
                             art
                         </a>
                     </li>
-
-
-
-
-
-
-
-                    {/*<li>*/}
-                    {/*    <Link to="/main/test2" onClick={toggleCollapse.bind(this)} className={contactClassisActive}>*/}
-                    {/*        test2*/}
-                    {/*    </Link>*/}
-                    {/*</li>*/}
-
-                    <li className={"language " + (lang === "en" ? "active": "")} onClick={
-                        ()=>{
-                            setLang("en")
-                            i18n.changeLanguage("en");
-                        }
-
-                    }>
-                        <div id="english"/>
-                    </li>
-                    <li className={"language " + (lang === "de" ? "active": "")} onClick={
-                        ()=>{
-                            setLang("de");
-                            i18n.changeLanguage("de");
-                        }
-                    }>
-                        <div id="german"/>
-                    </li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
     );
 }
 
-export default Nav
+export default Nav2

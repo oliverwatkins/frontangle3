@@ -21,12 +21,9 @@ export default function PreviousWorkPage() {
             <section className="previous-work-top">
                 <Trans i18nKey="previous-blurb"/>
             </section>
-            <SnakeThing parentWidht={width}  snakeWidth={12} x1={200} x2={400}>
-
-
+            <SnakeThing parentWidht={width} snakeWidth={12} x1={200} x2={400}>
                 <InView>
                     {({ inView, ref, entry }) => {
-
                         return (
                             <section ref={ref} className={"prev-section left " + (inView ? "show" : "hidden")}>
                                 <ShapeShopSection align={"left"}/>

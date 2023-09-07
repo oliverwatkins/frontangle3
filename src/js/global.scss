@@ -45,6 +45,11 @@ $breakpoint-width-normal: 1700px;
       padding-right: $sidePadding_phone;
     }
 
+    .navbar2 {
+      padding-left: $sidePadding_phone;
+      padding-right: $sidePadding_phone;
+    }
+
     footer {
       margin-left: $sidePadding_phone;
       margin-right: $sidePadding_phone;
@@ -71,6 +76,11 @@ $breakpoint-width-normal: 1700px;
       padding-right: $sidePadding_tablet;
     }
 
+    .navbar2 {
+      padding-left: $sidePadding_tablet;
+      padding-right: $sidePadding_tablet;
+    }
+
     footer {
       padding-left: $sidePadding_tablet;
       padding-right: $sidePadding_tablet;
@@ -86,6 +96,11 @@ $breakpoint-width-normal: 1700px;
   body {
 
     .navbar {
+      padding-left: $sidePadding_normal;
+      padding-right: $sidePadding_normal;
+    }
+
+    .navbar2 {
       padding-left: $sidePadding_normal;
       padding-right: $sidePadding_normal;
     }
@@ -112,6 +127,11 @@ $breakpoint-width-normal: 1700px;
   body {
 
     .navbar {
+      padding-left: $sidePadding_wide;
+      padding-right: $sidePadding_wide;
+    }
+
+    .navbar2 {
       padding-left: $sidePadding_wide;
       padding-right: $sidePadding_wide;
     }

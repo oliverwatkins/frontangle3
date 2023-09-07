@@ -15,6 +15,7 @@ import {Switch} from "react-router-dom";
 import SnakeThing from "./pages/snakething/SnakeThing";
 import DemoPage from "./pages/snakething/DemoPage";
 import ResumePage from "./pages/resume/ResumePage";
+import Nav2 from "./layout/Nav2";
 
 /**
  * Contains nav on top, footer on bottom, and all the pages are passed in
@@ -25,7 +26,9 @@ export default function PageLayout(props) {
     return (
         <div>
             <Header/>
-            <Nav location={location}/>
+            {/*<Nav location={location}/>*/}
+            <Nav2/>
+
                 <Switch>
                     <Route exact path="/public/OW.html">
                         <HomePage/>
@@ -49,7 +52,7 @@ export default function PageLayout(props) {
                         <ResumePage/>
                     </Route>
                 </Switch>
-            <Footer/>
+            {/*<Footer/>*/}
         </div>
     );
 }
