@@ -21,15 +21,20 @@ nav {
   margin-bottom: 50px;
 }
 
-nav ul {
-  font-size: 0;
+.standard-menu, .sub-menu, .hamburger-menu {
   list-style: none;
+}
+
+.standard-menu, .sub-menu{
+  font-size: 0;
   margin: 0;
   padding: 0;
   text-align: center;
   height: $navHeight;
 }
-nav li {
+
+.navigation-element {
+  border: 2px solid cadetblue;
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -37,9 +42,14 @@ nav li {
   float: left;
 }
 
-nav li.language{
-  float: right;
+
+.hamburger-icon-item, .language {
   padding: 16px;
+}
+
+.standard-menu .language{
+  float: right;
+  //padding: 16px;
   width:30px;
 
   #german {
@@ -55,16 +65,42 @@ nav li.language{
   }
 }
 
+nav li #hamburger-icon{
+  background-image: url("../../img/Hamburger_icon.svg");
+  //padding: 16px;
+  min-height: 20px;
+  width:30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  //.standard-menu-item {
+  //}
+  //border: 6px solid green;
+}
+
+
+.hamburger-icon-item {
+  //visibility: hidden;
+  display:none;
+}
+
+//
+
+
+
+nav li #hamburger-icon:hover{
+  background-color: $navSelectedColor;
+  cursor: pointer;
+}
+
 
 nav a {
   display: block;
   color: white;
-  font: bold 16px/50px sans-serif;
   font-family: "Roboto","Helvetica","Arial",sans-serif;
   font-weight: 400;
-  padding: 0 25px;
+  font-size: 16px;
+  padding: 14px;
   text-decoration: none;
-
 }
 nav .dropdown:after {
   //arrow
@@ -78,15 +114,6 @@ li a:hover {
 li.language:hover{
   background-color: $navSelectedColor;
   cursor: pointer;
-}
-
-nav li ul {
-  left: 0;
-  opacity: 0;
-  position: absolute;
-  top: 35px;
-  visibility: hidden;
-  z-index: 1;
 }
 
 nav li:hover ul {
@@ -116,29 +143,52 @@ nav li ul a:hover {
 nav li ul a {
   background: $navSelectedColor;
 }
+nav li ul {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 35px;
+  visibility: hidden;
+  z-index: 1;
+}
 
+//navigation-element
 
 @media only screen and (max-width: $breakpoint-width-tablet) {
   body {
     nav {
-      margin-left: 2px;
-      padding-bottom: 0px;
 
-      li.language {
-        padding: 5px;
+      .standard-menu-item {
+        //visibility: hidden;
+        display:none;
       }
 
-      ul {
+      margin-left: 2px;
+      //height: $navHeight - 15;
+
+      .standard-menu {
         height: $navHeight - 10;
         padding-top: 0px;
       }
 
-      ul li a {
-        height: $navHeight - 10;
+      .navigation-element {
+        height: $navHeight - 25;
+        padding: 0px;
+        border: 1px solid burlywood;
+      }
+
+      .navigation-element a {
         font-size: 14px;
         padding-right: 5px;
+        padding-top: 5px;
         padding-left: 5px;
       }
+
+      .hamburger-icon-item, .language {
+        padding: 5px;
+        display:block;
+      }
+
     }
   }
 }
