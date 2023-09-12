@@ -16,6 +16,10 @@ import SnakeThing from "./pages/snakething/SnakeThing";
 import DemoPage from "./pages/snakething/DemoPage";
 import ResumePage from "./pages/resume/ResumePage";
 import Nav2 from "./layout/Nav2";
+import ServicesPage from "./pages/ServicesPage";
+
+
+
 
 /**
  * Contains nav on top, footer on bottom, and all the pages are passed in
@@ -47,6 +51,9 @@ export default function PageLayout(props) {
                     </Route>
                     <Route path="/main/snakething">
                         <DemoPage/>
+                    </Route>
+                    <Route path="/main/services">
+                        <ServicesPage/>
                     </Route>
                     <Route path="/main/resume">
                         <ResumePage/>
