@@ -18,18 +18,7 @@ $breakpoint-width-phone: 400px;
 $breakpoint-width-tablet: 1200px;
 $breakpoint-width-normal: 1700px;
 
-.svg-test {
-  //border: 5px solid blue;
 
-  //background-image: url("../img/bg-stroke-2.svg");
-
-  //background-size: auto 100%;
-  //
-  //
-  //background-repeat: no-repeat;
-  ////background-size:     cover;
-  //background-position-x: 300px;
-}
 //PHONE
 @media only screen and (max-width: $breakpoint-width-phone) {
   body {
@@ -40,10 +29,10 @@ $breakpoint-width-normal: 1700px;
       margin-right: $sidePadding_phone;
     }
 
-    nav {
-      padding-left: $sidePadding_phone;
-      padding-right: $sidePadding_phone;
-    }
+    //nav {
+    //  padding-left: $sidePadding_phone;
+    //  padding-right: $sidePadding_phone;
+    //}
 
     //.navbar2 {
     //  padding-left: $sidePadding_phone;
@@ -71,10 +60,10 @@ $breakpoint-width-normal: 1700px;
       margin-right: $sidePadding_tablet;
     }
 
-    nav {
-      padding-left: $sidePadding_tablet;
-      padding-right: $sidePadding_tablet;
-    }
+    //nav {
+    //  padding-left: $sidePadding_tablet;
+    //  padding-right: $sidePadding_tablet;
+    //}
 
     //.navbar2 {
     //  padding-left: $sidePadding_tablet;
@@ -92,13 +81,13 @@ $breakpoint-width-normal: 1700px;
 }
 
 //NORMAL
-@media only screen and (min-width: $breakpoint-width-tablet) and (max-width: $breakpoint-width-normal) {
+@media only screen and (min-width: $breakpoint-width-tablet) {
   body {
 
-    nav {
-      padding-left: $sidePadding_normal;
-      padding-right: $sidePadding_normal;
-    }
+    //nav {
+    //  padding-left: $sidePadding_normal;
+    //  padding-right: $sidePadding_normal;
+    //}
     //
     //.navbar2 {
     //  padding-left: $sidePadding_normal;
@@ -122,33 +111,33 @@ $breakpoint-width-normal: 1700px;
   }
 }
 
-//WIDE
-@media only screen and (min-width: $breakpoint-width-normal) {
-  body {
-
-    nav {
-      padding-left: $sidePadding_wide;
-      padding-right: $sidePadding_wide;
-    }
-
-    //.navbar2 {
-    //  padding-left: $sidePadding_wide;
-    //  padding-right: $sidePadding_wide;
-    //}
-
-    .fa-page {
-      //border: 5px solid orange;
-      margin-left: $sidePadding_wide;
-      margin-right: $sidePadding_wide;
-    }
-
-    footer {
-      padding-left: $sidePadding_wide;
-      padding-right: $sidePadding_wide;
-    }
-
-    .Header img {
-      margin-left: $sidePadding_wide;
-    }
-  }
-}
+////WIDE
+//@media only screen and (min-width: $breakpoint-width-normal) {
+//  body {
+//
+//    nav {
+//      padding-left: $sidePadding_wide;
+//      padding-right: $sidePadding_wide;
+//    }
+//
+//    //.navbar2 {
+//    //  padding-left: $sidePadding_wide;
+//    //  padding-right: $sidePadding_wide;
+//    //}
+//
+//    .fa-page {
+//      //border: 5px solid orange;
+//      margin-left: $sidePadding_wide;
+//      margin-right: $sidePadding_wide;
+//    }
+//
+//    footer {
+//      padding-left: $sidePadding_wide;
+//      padding-right: $sidePadding_wide;
+//    }
+//
+//    .Header img {
+//      margin-left: $sidePadding_wide;
+//    }
+//  }
+//}

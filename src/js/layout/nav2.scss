@@ -62,43 +62,66 @@ nav {
   padding: 16px;
 }
 
+//nav {
+//  padding: 0;
+//}
 
-nav li #hamburger-icon{
-  background-image: url("../../img/Hamburger_icon.svg");
-  //padding: 16px;
-  min-height: 20px;
-  width:30px;
-  background-repeat: no-repeat;
-  background-position: center;
-  //.standard-menu-item {
+
+nav {
+
+
+  //nav {
+    padding-left: $sidePadding_normal;
+    padding-right: $sidePadding_normal;
   //}
-  //border: 6px solid green;
-}
-
-.hamburger-icon-item {
-  display:none;
-}
 
 
-.standard-menu .language{
-  float: right;
-  //padding: 16px;
-  width:30px;
-
-  #german {
-    min-height: 20px;
-    background-image: url("../../img/germany-flag-icon.svg");
-    background-repeat: no-repeat;
+  //padding: 0;
+  .active {
+    background: #1995dc;
   }
 
-  #english {
+  li:hover ul {
+      opacity: 1;
+      top: 50px;
+      visibility: visible;
+    }
+  li #hamburger-icon{
+    background-image: url("../../img/Hamburger_icon.svg");
+    //padding: 16px;
     min-height: 20px;
-    background-image: url("../../img/united-kingdom-flag-icon.svg");
+    width:30px;
     background-repeat: no-repeat;
+    background-position: center;
+    //.standard-menu-item {
+    //}
+    //border: 6px solid green;
   }
+
+  .standard-menu .language{
+    float: right;
+    //padding: 16px;
+    width:30px;
+
+    #german {
+      min-height: 20px;
+      background-image: url("../../img/germany-flag-icon.svg");
+      background-repeat: no-repeat;
+    }
+
+    #english {
+      min-height: 20px;
+      background-image: url("../../img/united-kingdom-flag-icon.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .dropdown:after {
+    //arrow
+    content: ' \25bc';
+  }
+
 }
-
-
 
 
 
@@ -108,41 +131,35 @@ nav li #hamburger-icon:hover{
 }
 
 
-nav .dropdown:after {
-  //arrow
-  content: ' \25bc';
+//nav .dropdown:after {
+//  //arrow
+//  content: ' \25bc';
+//}
+
+
+
+.hamburger-icon-item {
+  display:none;
 }
+
+
+
+
+
 
 .standard-menu-item:hover {
   background-color: $navSelectedColor;
 }
-
-//li a:hover {
-//  background-color: $navSelectedColor;
-//}
 
 li.language:hover{
   background-color: $navSelectedColor;
   cursor: pointer;
 }
 
-nav li:hover ul {
-  opacity: 1;
-  top: 50px;
-  visibility: visible;
-}
-
-
-
-nav .active {
-  background: #1995dc;
-}
 
 li.language.active {
   background: #1995dc;
 }
-
-
 
 .sub-menu {
   left: 0;
@@ -168,7 +185,7 @@ li.language.active {
 
 }
 
-.hamburger-menu{
+.hamburger-menu {
   background-color: white;
 
   font-family: "Roboto","Helvetica","Arial",sans-serif;
@@ -177,8 +194,15 @@ li.language.active {
 
   text-decoration: none;
 
+  margin: 0;
+  padding: 0;
+
   .hamburger-menu-item a {
     text-decoration: none;
+  }
+
+  li.active {
+    background: red;
   }
 }
 
@@ -219,6 +243,8 @@ li.language.active {
   body {
     nav {
 
+      border: 5px solid green;
+      padding: 0;
       //height: $navHeight -15;
 
       .standard-menu-item {

@@ -19,14 +19,6 @@ function Nav2() {
     const [hamburgerActive, setHamburgerActive] = React.useState(false);
     const [showHamburgerMenu, setShowHamburgerMenu] = React.useState(false);
 
-    // let location = useLocation();
-
-    // const [showDropdown, setShowDropdown] = React.useState(false);
-
-    // const toggleDropdown = () => {
-    //     setShowDropdown(!showDropdown);
-    // };
-
     return (
         <>
             <nav role="navigation">
@@ -58,13 +50,13 @@ function Nav2() {
 
 function HamburgerMenu(props) {
     return (
-        <ul className={"hamburger-menu"}>
+        <ul className={"hamburger-menu"  + props.homeClassisActive}>
             <li className={"standard-menu-item " + props.homeClassisActive}>
                 <Link to="/main" >
                     Home
                 </Link>
             </li>
-            <li className={"hamburger-menu-item "}>
+            <li className={"hamburger-menu-item " + props.previousClassisActive }>
                 <Link to="/main/previous" className={props.previousClassisActive}>
                     Previous Work
                 </Link>
@@ -84,7 +76,7 @@ function HamburgerMenu(props) {
                     <li className={"hamburger-sub-menu-item "}><a href="#">System Analysis</a></li>
                 </ul>
             </li>
-            <li className={"hamburger-menu-item "}>
+            <li className={"hamburger-menu-item " + props.contactClassisActive}>
                 <Link to="/main/contact"
                       className={props.contactClassisActive}>
                     Contact
