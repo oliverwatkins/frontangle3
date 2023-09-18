@@ -152,7 +152,6 @@ li.language:hover{
 .hamburger-menu, .hamburger-menu-item, .hamburger-sub-menu {
   //background-color: white;
   list-style: none;
-
 }
 
 .hamburger-menu {
@@ -169,38 +168,27 @@ li.language:hover{
 
   .hamburger-menu-item {
     background: #ffffff;
-  }
-  .hamburger-menu-item {
-    border-bottom: 1px;
+    //border-bottom: 1px;
     display:block;
-  }
-  .hamburger-sub-menu-item {
-    display:block;
-  }
-  .hamburger-menu-item a {
-    text-decoration: none;
-    padding: 4px;
+    a {
+      text-decoration: none;
+      padding: 4px;
+    }
+
+    border-bottom: 1px solid gray;
   }
 
   .hamburger-menu-item.active {
     background: #f5bfbf;
   }
-
-  a {
-    width: 100%;
-  }
-
-  li ul  {
+  .hamburger-sub-menu-item {
+    display:block;
     font-size: 20px;
     visibility: visible;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.21);
+
   }
-
-
 }
-
-
-
-
 
 //navigation-element
 
@@ -213,14 +201,16 @@ li.language:hover{
 
       .hamburger-menu-item {
         display:block;
+
       }
       .hamburger-sub-menu-item {
         display:block;
       }
+
+
       .standard-menu-item {
         display:none;
       }
-
       .standard-menu {
         height: $navHeight - 15;
         padding-top: 0px;
@@ -229,7 +219,6 @@ li.language:hover{
       .navigation-element {
         height: $navHeight - 25;
       }
-
       .navigation-element a {
         font-size: 14px;
       }
