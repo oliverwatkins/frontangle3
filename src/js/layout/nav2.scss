@@ -159,7 +159,7 @@ li.language:hover{
 
   font-family: "Roboto","Helvetica","Arial",sans-serif;
   font-weight: 400;
-  font-size: 26px;
+  font-size: 22px;
 
   text-decoration: none;
 
@@ -175,15 +175,20 @@ li.language:hover{
       padding: 4px;
     }
 
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.37);
+  }
+
+  .dropdown:after {
+    //arrow
+    content: '';
   }
 
   .hamburger-menu-item.active {
-    background: #f5bfbf;
+    background: #e0d6d6;
   }
   .hamburger-sub-menu-item {
     display:block;
-    font-size: 20px;
+    font-size: 18px;
     visibility: visible;
     border-bottom: 1px solid rgba(128, 128, 128, 0.21);
 

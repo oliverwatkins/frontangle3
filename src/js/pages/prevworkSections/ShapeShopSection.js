@@ -26,9 +26,11 @@ export default function ShapeShopSection() {
 
     return (
         <>
-            <div className={"previous-work-description"}>
+            <div className={"previous-work-description paragraph-2"}>
                 <p>
-                    <Trans i18nKey="previous-ss"/>
+                    {/*<div className={"paragraph-1"} >*/}
+                        <Trans i18nKey="previous-ss"/>
+                    {/*</div>*/}
 
                 {/*    Shape Shop is an ecommerce platform in developement that allows small and medium sized companies to administer their product catalog. A white labelling solution*/}
                 {/*exists for developing customized public facing websites.*/}

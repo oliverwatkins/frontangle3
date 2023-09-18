@@ -18,7 +18,7 @@ export default function ContactPage() {
 
     return (
         <section className="fa-page contact-page">
-            <div className="contact-info">
+            <div className="contact-info paragraph-1">
                 <p>
                 If you would like to contact me please fill out the form on the right.
                 You can also contact me via <a href={"https://www.linkedin.com/in/oliver-watkins-0673b27/"}>Linked In </a>

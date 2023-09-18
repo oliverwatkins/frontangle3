@@ -7,7 +7,7 @@ import {Trans} from "react-i18next";
 
 export default function ReactChartsSection() {
     return (<>
-                <div className={"previous-work-description"}>
+                <div className={"previous-work-description  paragraph-2"}>
                     <p>
                         <Trans i18nKey="previous-rc"/>
                     </p>

@@ -3,7 +3,7 @@
 //$globalGray: rgba(213, 213, 213, 0.35);
 html {font-size: 1em;  /* 22px */}
 body {
-  font-size: 100%;     /* flexible baseline */
+  //font-size: 100%;     /* flexible baseline */
   line-height: 1.4;
   background: #6D737723;
 }
@@ -16,12 +16,20 @@ $standardTextColor: #6d7377;
 
 $breakpoint-width-phone: 400px;
 $breakpoint-width-tablet: 1200px;
-$breakpoint-width-normal: 1700px;
+$breakpoint-width-normal: 800px;
+
 
 
 //PHONE
 @media only screen and (max-width: $breakpoint-width-phone) {
   body {
+    .paragraph-1 {
+      font-size: 1.0rem;
+    }
+
+    .paragraph-2 {
+      font-size: 0.9rem;
+    }
 
     .fa-page {
       //border: 5px solid green;
@@ -29,15 +37,6 @@ $breakpoint-width-normal: 1700px;
       margin-right: $sidePadding_phone;
     }
 
-    //nav {
-    //  padding-left: $sidePadding_phone;
-    //  padding-right: $sidePadding_phone;
-    //}
-
-    //.navbar2 {
-    //  padding-left: $sidePadding_phone;
-    //  padding-right: $sidePadding_phone;
-    //}
 
     footer {
       margin-left: $sidePadding_phone;
@@ -54,21 +53,21 @@ $breakpoint-width-normal: 1700px;
 @media only screen and (min-width: $breakpoint-width-phone) and (max-width: $breakpoint-width-tablet) {
   body {
 
+    .paragraph-1 {
+      font-size: 1.3rem;
+    }
+
+    .paragraph-2 {
+      font-size: 0.8rem;
+    }
+
+
+
     .fa-page {
       //border: 5px solid blue;
       margin-left: $sidePadding_tablet;
       margin-right: $sidePadding_tablet;
     }
-
-    //nav {
-    //  padding-left: $sidePadding_tablet;
-    //  padding-right: $sidePadding_tablet;
-    //}
-
-    //.navbar2 {
-    //  padding-left: $sidePadding_tablet;
-    //  padding-right: $sidePadding_tablet;
-    //}
 
     footer {
       padding-left: $sidePadding_tablet;
@@ -84,15 +83,13 @@ $breakpoint-width-normal: 1700px;
 @media only screen and (min-width: $breakpoint-width-tablet) {
   body {
 
-    //nav {
-    //  padding-left: $sidePadding_normal;
-    //  padding-right: $sidePadding_normal;
-    //}
-    //
-    //.navbar2 {
-    //  padding-left: $sidePadding_normal;
-    //  padding-right: $sidePadding_normal;
-    //}
+    .paragraph-1 {
+      font-size: 1.5rem;
+    }
+
+    .paragraph-2 {
+      font-size: 1.1rem;
+    }
 
     .fa-page {
       //border: 5px solid red;

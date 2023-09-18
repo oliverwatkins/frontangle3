@@ -18,7 +18,7 @@ export default function PreviousWorkPage() {
 
     return (
         <section className="fa-page previous-work ">
-            <section className="previous-work-top">
+            <section className="previous-work-top paragraph-1">
                 <Trans i18nKey="previous-blurb"/>
             </section>
             <SnakeThing parentWidht={width} snakeWidth={12} x1={200} x2={400}>

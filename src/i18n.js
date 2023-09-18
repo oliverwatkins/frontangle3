@@ -30,7 +30,35 @@ const resources = {
             "previous-bl":
                 `My blog is where I write about javascript and javascript frameworks, java swing components, projects I am working on, problems i have encountered, and technical reviews.`,
 
-            "contact": `If you would like to contact me please fill out the form on the right. You can also 
+            "services-web-header": "Web Developement",
+            "services-web":  "At Frontangle we offer web developement using the latest web technologies available.",
+            "services-web-1":  "Single Page Applications.",
+            "services-web-1-1":  "A complete solution front to back",
+            "services-web-1-2":  "Using the React/Spring Boot/MySQL stack",
+            "services-web-1-3":  "Test automation using tools such as React Testing Library, Jest and Snapshot tests, ensuring high code coverage",
+            "services-web-2":  "Implementation of a e-commerce web store headless solution such as Shopify WIX, and Woocommerce",
+            "services-web-3":  "Guidance and implementation of Wordpress solutions",
+            "services-web-4":  "Simple static web pages leveraging the best of CSS and HTML5",
+
+
+            "services-systems-header":  "Systems Analysis and Database Design",
+            "services-systems":  "Database systems are at the core of every software application. They need to be scalable yet robust.",
+
+            "services-systems-1":  "Database design using entity diagrams.",
+            "services-systems-2":  "Database developement in the most common relational databases including MySQL, Oracle and Postgres, as well as consulting and recommendations on using next generation \"NoSql\" databases such as MongoDB and Graph databases such as Neo4J",
+            "services-systems-3":  "Performance optimisation and bottleneck analysis",
+            "services-systems-4":  "SQL optimisation",
+
+            "services-coaching-header": "Coaching",
+            // "services-coaching":  "Database systems are at the core of every software application. They need to be scalable yet robust.",
+
+            "services-coaching-1":  "Coaching junior developers on the best coding pratices",
+            "services-coaching-2":  "Code reviews",
+            "services-coaching-3":  "Analysing existing code and dependency analysis",
+            "services-coaching-4":  "Suggesting refactoring candidatesn",
+
+
+            "contact": `If you would like to contact me please fill out the form on the right. You can also
                         contact me via <a href='https://www.linkedin.com/in/oliver-watkins-0673b27/'>Linked In </a>
                         or <a href='https://www.xing.com/profile/Oliver_Watkins2/cv'> Xing</a>`
         }
@@ -57,6 +85,32 @@ const resources = {
             "previous-rc": `Meine Charting-Anwendung ist ein kontinuierliches „Work in Progress“, das zusammen mit einigen Komponenten von Drittanbietern vollständig in React-JS geschrieben wurde <strong> [HINWEIS: Derzeit veraltet] </strong>`,
             "previous-bl": `In meinem Blog schreibe ich über Javascript und Javascript-Frameworks, Java-Swing-Komponenten, Projekte, an denen ich arbeite, Probleme, auf die ich gestoßen bin, und technische Reviews.`,
 
+            "services-web-header": "Webentwicklung",
+            "services-web":  "Bei Frontangle bieten wir Webentwicklung unter Verwendung der neuesten verfügbaren Webtechnologien an.",
+            "services-web-1":  "Single-Page-Anwendungen",
+            "services-web-1-1":  "Eine vollständige Lösung von vorne bis hinten",
+            "services-web-1-2":  "Verwendung des React/Spring Boot/MySQL-Stacks",
+            "services-web-1-3":  "Testautomatisierung mit Tools wie React Testing Library, Jest und Snapshot-Tests, um eine hohe Codeabdeckung sicherzustellen",
+            "services-web-2":  "Implementierung einer headless E-Commerce-Webshop-Lösung wie Shopify, WIX und WooCommerce",
+            "services-web-3":  "Beratung und Implementierung von Wordpress-Lösungen",
+            "services-web-4":  "Einfache statische Webseiten, die das Beste aus CSS und HTML5 nutzen",
+
+
+            "services-systems-header":  "Systemanalyse und Datenbankdesign",
+            "services-systems":  "Datenbanksysteme sind das Herzstück jeder Softwareanwendung. Sie müssen skalierbar und dennoch robust sein.",
+
+            "services-systems-1":  "Datenbankdesign mit Entity-Diagrammen.",
+            "services-systems-2":  "Datenbankentwicklung in den gängigsten relationalen Datenbanken wie MySQL, Oracle und Postgres sowie Beratung und Empfehlungen zur Verwendung von Datenbanken der nächsten Generation wie MongoDB und Graphdatenbanken wie Neo4J",
+            "services-systems-3":  "Performance optimisation und bottleneck Analyse",
+            "services-systems-4":  "SQL-Optimierung",
+
+            "services-coaching-header": "Coaching",
+            // "services-coaching":  "Database systems are at the core of every software application. They need to be scalable yet robust.",
+
+            "services-coaching-1":  "Coaching für Junior-Entwickler zu den besten Codierungspraktiken",
+            "services-coaching-2":  "Code reviews",
+            "services-coaching-3":  "Analyse vorhandener Code und dependency analysis",
+            "services-coaching-4":  "Vorschläge für Refactoring-Kandidaten",
 
             "contact":
 
