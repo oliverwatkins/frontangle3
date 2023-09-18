@@ -65,23 +65,13 @@ nav {
   padding-left: $sidePadding_normal;
   padding-right: $sidePadding_normal;
 
-  //.active {
-  //  background: #1995dc;
-  //}
-
-
   li #hamburger-icon{
     background-image: url("../../img/Hamburger_icon.svg");
-    //padding: 16px;
     min-height: 20px;
     width:30px;
     background-repeat: no-repeat;
     background-position: center;
-    //.standard-menu-item {
-    //}
-    //border: 6px solid green;
   }
-
 
   .standard-menu {
     li:hover ul {
@@ -89,22 +79,15 @@ nav {
       top: 50px;
       visibility: visible;
     }
-    //a {
-    //  color: $navSelectedColor;
-    //  padding: 5px;
-    //}
-
     .active {
       background: #1995dc;
     }
   }
 
-  .standard-menu .language{
+  .language{
     float: right;
     //padding: 16px;
     width:30px;
-
-
 
     #german {
       min-height: 20px;
@@ -144,11 +127,9 @@ li.language:hover{
 }
 
 
-li.language.active {
+.language.active {
   background: #1995dc;
 }
-
-
 
 .standard-sub-menu {
   left: 0;
@@ -186,48 +167,35 @@ li.language.active {
   margin: 0;
   padding: 0;
 
-  .hamburger-menu-item a {
-    text-decoration: none;
-  }
-
-
   .hamburger-menu-item {
     background: #ffffff;
   }
-  .hamburger-menu-item.active {
-    background: #862b2b;
-  }
-  //
-  //li.active {
-  //  background: red;
-  //}
-  a {
-    width: 100%;
-  }
-
-  .standard-sub-menu {
-    left: 0;
-    opacity: 0;
-    position: relative;
-  }
-  li ul  {
-    border: 5px solid red;
-    //opacity: 1;
-    color: red;
-    font-size: 12px;
-    //top: 50px;
-    visibility: visible;
-  }
-  //a.active {
-  //  background: red;
-  //  //width: 100%;
-  //}
   .hamburger-menu-item {
+    border-bottom: 1px;
     display:block;
   }
   .hamburger-sub-menu-item {
     display:block;
   }
+  .hamburger-menu-item a {
+    text-decoration: none;
+    padding: 4px;
+  }
+
+  .hamburger-menu-item.active {
+    background: #f5bfbf;
+  }
+
+  a {
+    width: 100%;
+  }
+
+  li ul  {
+    font-size: 20px;
+    visibility: visible;
+  }
+
+
 }
 
 
@@ -239,29 +207,19 @@ li.language.active {
 @media only screen and (max-width: $breakpoint-width-tablet) {
   body {
     nav {
+
+      padding: 0;
+      margin-left: 2px;
+
       .hamburger-menu-item {
         display:block;
-
-        //color: $navSelectedColor;
-
-        a {
-          //color: $navSelectedColor;
-          //padding: 5px;
-        }
       }
       .hamburger-sub-menu-item {
         display:block;
       }
-
-      //border: 5px solid green;
-      padding: 0;
-
       .standard-menu-item {
         display:none;
       }
-
-      margin-left: 2px;
-      //height: $navHeight - 15;
 
       .standard-menu {
         height: $navHeight - 15;
@@ -270,71 +228,45 @@ li.language.active {
 
       .navigation-element {
         height: $navHeight - 25;
-        //padding: 0px;
-        //border: 1px solid burlywood;
       }
 
       .navigation-element a {
         font-size: 14px;
-        //padding-right: 5px;
-        //padding-top: 5px;
-        //padding-left: 5px;
       }
 
       .hamburger-icon-item, .language {
         padding: 5px;
         display:block;
       }
-
     }
   }
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: $breakpoint-width-phone) {
-  body {
-    nav {
-      border: 5px solid burlywood;
-      margin-left: 2px;
-      padding-bottom: 0px;
-
-      li.language {
-        padding: 5px;
-      }
-
-      ul {
-        height: $navHeight - 10;
-        padding-top: 0px;
-      }
-
-      ul li a {
-        height: $navHeight - 10;
-        font-size: 14px;
-        padding-right: 5px;
-        padding-left: 5px;
-      }
-    }
-  }
+  //body {
+  //  nav {
+  //    border: 5px solid burlywood;
+  //    margin-left: 2px;
+  //    padding-bottom: 0px;
+  //
+  //    li.language {
+  //      padding: 5px;
+  //    }
+  //
+  //    ul {
+  //      height: $navHeight - 10;
+  //      padding-top: 0px;
+  //    }
+  //
+  //    ul li a {
+  //      height: $navHeight - 10;
+  //      font-size: 14px;
+  //      padding-right: 5px;
+  //      padding-left: 5px;
+  //    }
+  //  }
+  //}
 }
 

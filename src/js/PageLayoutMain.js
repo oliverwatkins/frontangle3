@@ -9,10 +9,8 @@ import HomePage from "./pages/HomePage";
 import PreviousWorkPage from "./pages/PreviousWorkPage";
 
 import Header from "./layout/Header.js";
-import Nav from "./layout/Nav.js";
 
 import {Switch} from "react-router-dom";
-import SnakeThing from "./pages/snakething/SnakeThing";
 import DemoPage from "./pages/snakething/DemoPage";
 import ResumePage from "./pages/resume/ResumePage";
 import Nav2 from "./layout/Nav2";
