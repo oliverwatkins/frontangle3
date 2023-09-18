@@ -3,18 +3,14 @@ import React from "react";
 import "./contactPage.scss"
 import {Trans, useTranslation} from 'react-i18next';
 
-import linkedInLogo from './../../img/link-linkedin.png';
-import xingLogo from './../../img/xing.svg';
-
 import "./servicesPage.scss"
-import bw from "../../img/laptop.png";
-
+import useWindowDimensions from "../useWindowDimension";
 
 export default function ServicesPage() {
 
     const { t, i18n } = useTranslation();
 
-
+    // const { height, width } = useWindowDimensions();
 
     return (
         <section className="fa-page services">
@@ -39,20 +35,7 @@ export default function ServicesPage() {
                     </ul>
                 </p>
             </div>
-
-            {/*<div className="services-section" id="system">*/}
-            {/*    <h2>Systems Analysis</h2>*/}
-            {/*    <p>*/}
-            {/*    <div>*/}
-            {/*        <div id={"web-image"}  alt={"web motif"}/>*/}
-            {/*        <ul>*/}
-            {/*            <li>Systems analysis and design using UML</li>*/}
-            {/*        </ul>*/}
-
-            {/*    </div>*/}
-            {/*    </p>*/}
-            {/*</div>*/}
-            <div className="services-section" id="database">
+            <div className="services-section" id="systems">
                 <h2>Systems Analysis and Database Design</h2>
                 <p>
                     Database systems are at the core of every software application. They need to be scalable yet robust.
@@ -62,9 +45,8 @@ export default function ServicesPage() {
                             <li>Database design using entity diagrams</li>
                             <li>Database developement in the most common relational databases including MySQL, Oracle and Postgres, as well as consulting
                                 and recommendations on using next generation "NoSql" databases such as MongoDB and Graph databases such as Neo4J</li>
-                            <li>Consulting and coaching </li>
+                            <li>Performance optimisation and bottleneck analysis</li>
                             <li>SQL optimisation</li>
-
                         </ul>
                     </div>
                 </p>
@@ -75,7 +57,7 @@ export default function ServicesPage() {
                     <div>
                         <div className={"image"} id={"coaching-image"}  alt={"web motif"}/>
                         <ul>
-                            <li>Coaching junior developers on the best coding pratises</li>
+                            <li>Coaching junior developers on the best coding pratices</li>
                             <li>Code reviews</li>
                             <li>Analysing existing code and dependency analysis</li>
                             <li>Suggesting refactoring candidates</li>
@@ -83,20 +65,6 @@ export default function ServicesPage() {
                     </div>
                 </p>
             </div>
-
-
-            {/*<div className="services-section" id="testing">*/}
-            {/*    <h2>Testing</h2>*/}
-            {/*    <p>*/}
-            {/*    <div>*/}
-            {/*        <div id={"web-image"}  alt={"web motif"}/>*/}
-            {/*        <ul>*/}
-            {/*            <li>data</li>*/}
-            {/*        </ul>*/}
-            {/*    </div>*/}
-            {/*    </p>*/}
-            {/*</div>*/}
-
         </section>
     );
 }
