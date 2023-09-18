@@ -22,7 +22,7 @@ export default function ServicesPage() {
                 <h2>Web Developement</h2>
                 <p>
                 At Frontangle we offer web developement using the latest web technologies available.
-                    <div id={"web-image"}  alt={"web motif"}/>
+                    <div className={"image"} id={"web-image"}  alt={"web motif"}/>
                     <ul>
                         <li>Single Page Applications.
                             <ul>
@@ -52,35 +52,38 @@ export default function ServicesPage() {
             {/*    </div>*/}
             {/*    </p>*/}
             {/*</div>*/}
-
-            <div className="services-section" id="testing">
-                <h2>Coaching</h2>
+            <div className="services-section" id="database">
+                <h2>Systems Analysis and Database Design</h2>
                 <p>
+                    Database systems are at the core of every software application. They need to be scalable yet robust.
                     <div>
-                        <div id={"coaching-image"}  alt={"web motif"}/>
+                        <div className={"image"} id={"uml-image"}  alt={"web motif"}/>
                         <ul>
-                            <li>data</li>
+                            <li>Database design using entity diagrams</li>
+                            <li>Database developement in the most common relational databases including MySQL, Oracle and Postgres, as well as consulting
+                                and recommendations on using next generation "NoSql" databases such as MongoDB and Graph databases such as Neo4J</li>
+                            <li>Consulting and coaching </li>
+                            <li>SQL optimisation</li>
+
                         </ul>
                     </div>
                 </p>
             </div>
-            <div className="services-section" id="database">
-                <h2>Systems Analyis and Database Design</h2>
+            <div className="services-section" id="coaching">
+                <h2>Coaching</h2>
                 <p>
-                    Database systems are at the core of every software application. They need to be scalable yet robust.
                     <div>
-                    <div id={"web-image"}  alt={"web motif"}/>
-                    <ul>
-                        <li>Database design using entity diagrams</li>
-                        <li>Database developement in the most common relational databases including MySQL, Oracle and Postgres, as well as consulting
-                        and recommendations on using next generation "NoSql" databases such as MongoDB and Graph databases such as Neo4J</li>
-                        <li>Consulting and coaching </li>
-                        <li>SQL optimisation</li>
-
-                    </ul>
-                </div>
+                        <div className={"image"} id={"coaching-image"}  alt={"web motif"}/>
+                        <ul>
+                            <li>Coaching junior developers on the best coding pratises</li>
+                            <li>Code reviews</li>
+                            <li>Analysing existing code and dependency analysis</li>
+                            <li>Suggesting refactoring candidates</li>
+                        </ul>
+                    </div>
                 </p>
             </div>
+
 
             {/*<div className="services-section" id="testing">*/}
             {/*    <h2>Testing</h2>*/}

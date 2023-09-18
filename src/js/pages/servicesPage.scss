@@ -2,11 +2,12 @@
 @import "../global";
 
 
+
 .services-section {
   padding:30px;
 
   h2 {
-    color: darkgreen;
+    color: $standardTextColor;
   }
 
   //border: 5px solid green;
@@ -20,26 +21,44 @@
   font-family: Arial, Helvetica, sans-serif;
   color: $standardTextColor;
   margin-bottom: 200px;
+
+  .image {
+    height: 400px;
+    width: 400px;
+
+    //mask :
+    -webkit-mask-image: url(../../img/splatter2.svg);
+    mask-image: url(../../img/splatter2.svg);
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: bottom;
+
+  }
 }
 
-//.previous-work-top {
-//  //border: 5px solid green;
-//  p {
-//    padding-top: 0rem;
-//    margin-top: 0rem;
-//    font-size: 26px;
-//    text-align: right;
-//  }
-//  background-color: white;
-//  font-family: Arial, Helvetica, sans-serif;
-//  color: $standardTextColor;
-//  margin-bottom: 200px;
-//}
+
+
+#coaching {
+  padding-bottom: 400px;
+}
 
 #web-image {
-  height: 500px;
-  width: 500px;
+
   float: right;
+
+  //background image :
+  border: 5px solid red;
+  background: url("../../img/laptop4.png");
+  background-size: cover;
+}
+
+
+
+#uml-image {
+  //height: 400px;
+  //width: 400px;
+  float: left;
   //margin-left: 1rem;
   //margin-right: 6rem;
   //min-width: 30vw;
@@ -48,31 +67,14 @@
 
   //background image :
   border: 5px solid red;
-  background: url("../../img/laptop4.png");
+  background: url("../../img/uml.png");
+  background-color: gray;
   //background-repeat: no-repeat;
   background-size: cover;
-  //background-position: top;
-
-
-  //mask :
-  -webkit-mask-image: url(../../img/splatter2.svg);
-  mask-image: url(../../img/splatter2.svg);
-  -webkit-mask-size: 100%;
-  mask-size: 100%;
-  -webkit-mask-repeat: no-repeat;
-  mask-position: bottom;
 }
 
-
 #coaching-image {
-  height: 500px;
-  width: 500px;
   float: right;
-  //margin-left: 1rem;
-  //margin-right: 6rem;
-  //min-width: 30vw;
-  //aspect-ratio: 3 / 2;
-
 
   //background image :
   border: 5px solid red;
@@ -80,13 +82,4 @@
   //background-repeat: no-repeat;
   background-size: cover;
   //background-position: top;
-
-
-  //mask :
-  -webkit-mask-image: url(../../img/splatter2.svg);
-  mask-image: url(../../img/splatter2.svg);
-  -webkit-mask-size: 100%;
-  mask-size: 100%;
-  -webkit-mask-repeat: no-repeat;
-  mask-position: bottom;
 }

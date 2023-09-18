@@ -59,7 +59,7 @@ export default function PageLayout(props) {
                         <ResumePage/>
                     </Route>
                 </Switch>
-            {/*<Footer/>*/}
+            <Footer/>
         </div>
     );
 }
