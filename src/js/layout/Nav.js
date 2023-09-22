@@ -1,12 +1,12 @@
 import React from "react";
 import {useLocation} from "react-router-dom";
-import "./nav2.scss"
+import "./nav.scss"
 import { useTranslation } from 'react-i18next';
 import { HashLink as Link } from 'react-router-hash-link';
 import useWindowDimensions from "../useWindowDimension";
 
 
-function Nav2() {
+function Nav() {
     let location = useLocation();
     const homeClassisActive = location.pathname === "/main" ? "active" : "";
     let previousClassisActive = location.pathname.indexOf("previous") > 0 ? "active" : "";
@@ -139,7 +139,7 @@ function CommonMenuItems(props) {
             </li>
             <li className={ne + " " + props.type + "-menu-item " + props.previousClassisActive}>
                 <Link to="/main/previous" className={props.previousClassisActive}>
-                    Previous Work
+                    Current Projects
                 </Link>
             </li>
             <li className={ne + " " + props.type + "-menu-item " + ""}>
@@ -178,4 +178,4 @@ function SubMenu(props) {
     )
 }
 
-export default Nav2
+export default Nav

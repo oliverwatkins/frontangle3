@@ -13,7 +13,7 @@ import Header from "./layout/Header.js";
 import {Switch} from "react-router-dom";
 import DemoPage from "./pages/snakething/DemoPage";
 import ResumePage from "./pages/resume/ResumePage";
-import Nav2 from "./layout/Nav2";
+import Nav from "./layout/Nav";
 import ServicesPage from "./pages/ServicesPage";
 
 
@@ -29,7 +29,7 @@ export default function PageLayout(props) {
         <div>
             <Header/>
             {/*<Nav location={location}/>*/}
-            <Nav2/>
+            <Nav/>
 
                 <Switch>
                     <Route exact path="/public/OW.html">

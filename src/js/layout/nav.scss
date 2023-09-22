@@ -15,7 +15,7 @@ nav {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff54b4eb', endColorstr='#ff1d9ce5', GradientType=0);
   border-bottom: 1px solid #178acc;
   -webkit-filter: none;
-  filter: none;
+  //filter: none;
   -webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
   box-shadow: 0 1px 10px rgba(0,0,0,0.1);
   margin-bottom: 50px;
@@ -42,7 +42,7 @@ nav {
   display: inline-block;
   margin: 0;
   padding: 0;
-  position: relative;
+  position: relative; //need for submenu
   float: left;
 
   a {
@@ -171,6 +171,7 @@ li.language:hover{
     //border-bottom: 1px;
     display:block;
     a {
+      color:$navSelectedColor;
       text-decoration: none;
       padding: 4px;
     }
@@ -196,7 +197,7 @@ li.language:hover{
 }
 
 //navigation-element
-
+$mobileHeight: 35px;
 @media only screen and (max-width: $breakpoint-width-tablet) {
   body {
     nav {
@@ -228,8 +229,12 @@ li.language:hover{
         font-size: 14px;
       }
 
-      .hamburger-icon-item, .language {
+      .language {
         padding: 5px;
+        display:block;
+      }
+      .hamburger-icon-item {
+        padding: 5px 5px 0px 5px;
         display:block;
       }
     }
