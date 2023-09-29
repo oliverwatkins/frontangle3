@@ -85,11 +85,7 @@ function StandardMenu(props) {
                     re
                 </Link>
             </li>
-            <li  className={"navigation-element standard-menu-item "}>
-                <a href="https://purple-moss-0e5ca5f10.3.azurestaticapps.net/" className={"playground"}>
-                    art
-                </a>
-            </li>
+
 
             <li className={"navigation-element language " + (lang === "en" ? "active": "")} onClick={
                 ()=>{
@@ -107,6 +103,11 @@ function StandardMenu(props) {
                 }
             }>
                 <div id="german"/>
+            </li>
+            <li  className={"navigation-element art "}>
+                <a href="https://oliver-watkins.art/" className={"playground"}>
+                    art
+                </a>
             </li>
         </ul>
     )

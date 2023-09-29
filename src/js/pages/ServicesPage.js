@@ -47,7 +47,7 @@ export default function ServicesPage() {
 function ServicesWeb(props) {
 
     return <>
-        <h2>
+        <h2 style={{marginTop: "0px"}}>
             <Trans i18nKey="services-web-header"/>
         </h2>
         <p>

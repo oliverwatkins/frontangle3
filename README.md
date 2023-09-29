@@ -5,9 +5,6 @@ To start the dev server for developement
 
 ### `npm start`
 
-
-
-
 ## DEPLOY
 
 To deploy, first create a build distribution
