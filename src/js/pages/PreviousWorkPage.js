@@ -61,7 +61,6 @@ export default function PreviousWorkPage() {
                         </section>
                     )}
                 </InView>
-
             </SnakeThing>
         </section>
     );

@@ -8,7 +8,7 @@ import {Trans} from "react-i18next";
 export default function BlogSection() {
     return (
         <>
-            <div className={"previous-work-description  paragraph-2"}>
+            <div className={"previous-work-description paragraph-2"}>
                 <p>
                     <Trans i18nKey="previous-bl"/>
                 </p>
