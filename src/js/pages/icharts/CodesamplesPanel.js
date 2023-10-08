@@ -14,7 +14,7 @@ export default function CodesamplesPanel() {
 
     useEffect(() => {
         setNavHeader(samplesFile.samples)
-    });
+    }, []);
 
     return (
         <div>
@@ -28,7 +28,7 @@ export default function CodesamplesPanel() {
                                 if (name.fileName === fileName) {
                                     return  <li key={index} className='active'>{name.title}</li>;
                                 } else {
-                                    return <li key={index} onClick={e => setFileName(name.fileName)}>{name.title}</li>;
+                                    return <li key={index} onClick={() => setFileName(name.fileName)}>{name.title}</li>;
                                 }
                             })}
                         </ul>

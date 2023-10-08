@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React  from "react";
 
 import '../page.scss';
 import '../previousWorkPage.scss';
@@ -84,7 +84,7 @@ export default function SnakeThing(props = {x1: 200, x2:400, snakeWidth: 12}) {
 
                 {createPathLeftRight(y4, x1 + 50, x2 - 50 - 50)}
 
-                { <circle cx={x2 - 50} cy={y4} r="50" stroke="black" stroke-width="0"  stroke="url(#paint0_linear_207_14200)" fill="url(#paint0_linear_207_14200)" />}
+                { <circle cx={x2 - 50} cy={y4} r="50"  stroke="url(#paint0_linear_207_14200)" fill="url(#paint0_linear_207_14200)" />}
 
 
                 {/*{getPathLeftRight(x1, x2 - (x2-x1)/2 , y4)}*/}

@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./contactPage.scss"
-import {Trans, useTranslation} from 'react-i18next';
+// import {useTranslation} from 'react-i18next';
 
 import linkedInLogo from './../../img/link-linkedin.png';
 import xingLogo from './../../img/xing.svg';
@@ -9,7 +9,7 @@ import xingLogo from './../../img/xing.svg';
 
 export default function ContactPage() {
 
-    const { t, i18n } = useTranslation();
+    // const { t, i18n } = useTranslation();
 
     const handleSubmit = (e) => {
         e.preventDefault();

@@ -23,8 +23,8 @@ import ServicesPage from "./pages/ServicesPage";
  * Contains nav on top, footer on bottom, and all the pages are passed in
  * as children..
  */
-export default function PageLayout(props) {
-    const {location} = props;
+export default function PageLayout() {
+    // const {location} = props;
     return (
         <div>
             <Header/>

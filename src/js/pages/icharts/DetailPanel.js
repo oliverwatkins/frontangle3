@@ -13,9 +13,10 @@ export default function DetailPanel(props) {
                 }
                 return <div id="mainView">
                     {elem.fileName && (props.selected === elem.fileName) && <img src={img} style={{
-                        width: "400px",
-                    }}></img>}
-                    {h2 && h2.default && (props.selected === elem.fileName) && <div dangerouslySetInnerHTML={{__html: h2.default}}></div>}
+    width: "400px",
+}} alt={"chart image " + elem.fileName}/>}
+                    {h2 && h2.default && (props.selected === elem.fileName) &&
+                        <div dangerouslySetInnerHTML={{__html: h2.default}}/>}
                 </div>
             })}
         </div>

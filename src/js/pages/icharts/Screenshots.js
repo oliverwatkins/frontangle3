@@ -22,16 +22,16 @@ export default function Screenshots() {
 
     return (
         <div>
-            <img src={img1} style={style} className='screenshot-image'/>
-            <img src={img2} style={style} className='screenshot-image'/>
-            <img src={img3} style={style} className='screenshot-image'/>
-            <img src={img4} style={style} className='screenshot-image'/>
-            <img src={img5} style={style} className='screenshot-image'/>
-            <img src={img6} style={style} className='screenshot-image'/>
-            <img src={img7} style={style} className='screenshot-image'/>
-            <img src={img8} style={style} className='screenshot-image'/>
-            <img src={img9} style={style} className='screenshot-image'/>
-            <img src={img10} style={style} className='screenshot-image'/>
+            <img src={img1} style={style} className='screenshot-image' alt={""}/>
+            <img src={img2} style={style} className='screenshot-image' alt={""}/>
+            <img src={img3} style={style} className='screenshot-image' alt={""}/>
+            <img src={img4} style={style} className='screenshot-image' alt={""}/>
+            <img src={img5} style={style} className='screenshot-image' alt={""}/>
+            <img src={img6} style={style} className='screenshot-image' alt={""}/>
+            <img src={img7} style={style} className='screenshot-image' alt={""}/>
+            <img src={img8} style={style} className='screenshot-image' alt={""}/>
+            <img src={img9} style={style} className='screenshot-image' alt={""}/>
+            <img src={img10} style={style} className='screenshot-image' alt={""}/>
         </div>
     )
 }

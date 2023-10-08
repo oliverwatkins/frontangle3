@@ -50,15 +50,15 @@ export default function IcebergChartsSection() {
     );
 }
 
-let headerText = `Iceberg Charts is an advanced charting library for creating charts in Java.
-It offers a rich set of charting features including :
-XY Charts
-Pie Charts
-Area Charts
-Bubble Charts
-Candlestick Charts
-Bar Charts
-Stacked Charts `
+// let headerText = `Iceberg Charts is an advanced charting library for creating charts in Java.
+// It offers a rich set of charting features including :
+// XY Charts
+// Pie Charts
+// Area Charts
+// Bubble Charts
+// Candlestick Charts
+// Bar Charts
+// Stacked Charts `
 
 
 

@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./contactPage.scss"
-import {Trans, useTranslation} from 'react-i18next';
+import {Trans} from 'react-i18next';
 import {InView} from "react-intersection-observer";
 import "./servicesPage.scss"
 
@@ -9,11 +9,11 @@ import "./servicesPage.scss"
 
 export default function ServicesPage() {
 
-    const {t, i18n} = useTranslation();
+    // const {t, i18n} = useTranslation();
     return (
         <section className="fa-page services paragraph-1">
             <InView>
-                {({inView, ref, entry}) => {
+                {({inView, ref}) => {
                     return (
                         <div className={"services-section " + (inView ? "show" : "hidden")} id="frontend" ref={ref}>
                             <ServicesWeb ref={ref} inView={inView}/>
@@ -22,7 +22,7 @@ export default function ServicesPage() {
                 }}
             </InView>
             <InView>
-                {({inView, ref, entry}) => {
+                {({inView, ref}) => {
                     return (
                         <div className={"services-section " + (inView ? "show" : "hidden")} id="systems" ref={ref}>
                             <ServicesSystems ref={ref} inView={inView}/>
@@ -31,7 +31,7 @@ export default function ServicesPage() {
                 }}
             </InView>
             <InView>
-                {({inView, ref, entry}) => {
+                {({inView, ref}) => {
                     return (
                         <div className={"services-section " + (inView ? "show" : "hidden")} id="coaching" ref={ref}>
                             <ServicesCoaching ref={ref} inView={inView}/>
@@ -44,7 +44,7 @@ export default function ServicesPage() {
 }
 
 
-function ServicesWeb(props) {
+function ServicesWeb() {
 
     return <>
         <h2 style={{marginTop: "0px"}}>
@@ -52,7 +52,7 @@ function ServicesWeb(props) {
         </h2>
         <p>
             <Trans i18nKey="services-web"/>
-            <div className={"image"} id={"web-image"} alt={"web motif"}/>
+            <div className={"image"} id={"web-image"} />
             <ul>
                 <li>
                     <Trans i18nKey="services-web-1"/>
@@ -90,7 +90,7 @@ function ServicesSystems() {
                 <Trans i18nKey="services-systems-header"/>
             </h2>
             <Trans i18nKey="services-systems"/>
-            <div className={"image"} id={"uml-image"} alt={"web motif"}/>
+            <div className={"image"} id={"uml-image"}/>
             <ul>
                 <li>
                     <Trans i18nKey="services-systems-1"/>
@@ -117,7 +117,7 @@ function ServicesCoaching() {
             </h2>
 
             {/*<Trans i18nKey="services-coaching"/>*/}
-            <div className={"image"} id={"coaching-image"} alt={"web motif"}/>
+            <div className={"image"} id={"coaching-image"}/>
             <ul>
                 <li>
                     <Trans i18nKey="services-coaching-1"/>

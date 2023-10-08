@@ -1,6 +1,5 @@
 import i18n from "i18next";
 import {initReactI18next} from "react-i18next";
-import React from "react";
 
 // the translations
 // (tip move them in a JSON file and import them,
@@ -14,7 +13,7 @@ const resources = {
                 <p>Munich based Senior Software Developer, Architect, Team Lead, Coach.</p>
                 <p>I started in year 2000 as a Java Developer and have developed strong experience in database design, software architecture and requirements engineering.</p>
                 <p>Since 2010 I have been freelancing in Germany and have worked across a broad spectrum of companies. Although I am a full stack developer, I am strongly focussed on front end developement, and have spent a good part of the last ten year working on the web frontend with technologies such as reactjs and node.</p>
-                <p>On the technical side of things I am a strong adherent of clean code, refactoring, testing with high test coverage (both front end and backend). Mantras that I live by when developing software are \"keep it simple\" and \"less is more\" </p>            
+                <p>On the technical side of things I am a strong adherent of clean code, refactoring, testing with high test coverage (both front end and backend). Mantras that I live by when developing software are "keep it simple" and "less is more" </p>            
                 <p>  My current/ideal stack is <strong> React + Typescript + Spring Boot + MySql</strong> on the <strong> Azure Cloud</strong>.</p> `,
 
             "previous-blurb":
@@ -114,7 +113,9 @@ const resources = {
 
             "contact":
 
-                `Wenn Sie mich kontaktieren möchten, füllen Sie bitte das Formular auf der rechten Seite aus. Sie können mich auch über <Link to="/more">Linked </Link>In oder Xing kontaktieren`
+                `Wenn Sie mich kontaktieren möchten, füllen Sie bitte das Formular auf der rechten Seite aus. Sie können mich auch über 
+<a href="https://www.linkedin.com/in/oliver-watkins-0673b27/?originalSubdomain=de">Linked In</a>
+ oder Xing kontaktieren`
 
         }
     }

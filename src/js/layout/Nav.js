@@ -12,11 +12,11 @@ function Nav() {
     let previousClassisActive = location.pathname.indexOf("previous") > 0 ? "active" : "";
     let contactClassisActive = location.pathname.indexOf("contact") > 0 ? "active" : "";
 
-    const [lang, setLang] = React.useState("en");
+    // const [lang, setLang] = React.useState("en");
 
-    const { t, i18n } = useTranslation();
+    // const { t, i18n } = useTranslation();
 
-    const { height, width } = useWindowDimensions();
+    const {  width } = useWindowDimensions();
     console.info("widht " + width)
 
     const [hamburgerActive, setHamburgerActive] = React.useState(false);
@@ -53,7 +53,7 @@ function Nav() {
 function StandardMenu(props) {
 
     const [lang, setLang] = React.useState("en");
-    const { t, i18n } = useTranslation();
+    const { i18n } = useTranslation();
 
     return (
 
@@ -143,8 +143,15 @@ function CommonMenuItems(props) {
                     Current Projects
                 </Link>
             </li>
-            <li className={ne + " " + props.type + "-menu-item " + ""}>
-                <a className="dropdown" href="#">Services</a>
+            <li className={ne + " " + props.type + "-menu-item "}>
+
+
+                <Link to="/main/services#frontend" >
+                    Services
+                </Link>
+
+
+                {/*<a className="dropdown" href="/main/services#frontend">Services</a>*/}
                 <SubMenu type={props.type}/>
             </li>
             <li className={ne + " " + props.type + "-menu-item " + props.contactClassisActive}>

@@ -1,7 +1,7 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 // import OW from "./OW"
-import * as ReactDOMServer from "react-dom/server";
-import {Link} from "react-router-dom";
+// import * as ReactDOMServer from "react-dom/server";
+// import {Link} from "react-router-dom";
 
 // const exportedHTML = ReactDOMServer.renderToStaticMarkup(<OW />);
 

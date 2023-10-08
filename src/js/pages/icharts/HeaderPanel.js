@@ -4,12 +4,12 @@ import headerImage from './img/icharts-banner.PNG';
 
 import faImage from './img/FrontAngle_For_Site.png';
 
-import {Link, useLocation, withRouter} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 
 import './HeaderPanel.scss';
 import {Typography} from "@mui/material";
 
-export default function HeaderPanel(props) {
+export default function HeaderPanel() {
     const [collapsed, setCollapsed] = React.useState(true);
 
     let location = useLocation();
@@ -25,8 +25,8 @@ export default function HeaderPanel(props) {
     return (
         <div id="header">
             <div id="header-container">
-                <img id="header-title-icharts" src={headerImage}/>
-                <img src={icebergImage}/>
+                <img id="header-title-icharts" src={headerImage} alt={"header-title-icharts"}/>
+                <img src={icebergImage} alt={"icharts"}/>
             </div>
             <div id="header-blurb">
                 Free Java Charting Library and Framework, for use in Java2D, Swing or JavaFX applications.
@@ -55,7 +55,7 @@ export default function HeaderPanel(props) {
                         {/*TODO ali8gn to the right*/}
                         <li className={frontAngleIsActive}>
                             <Link to="/" onClick={toggleCollapse.bind(this)}>
-                                <img width={"30px"} src={faImage}/>
+                                <img width={"30px"} src={faImage} alt={""}/>
                             </Link>
                         </li>
                     </ul>

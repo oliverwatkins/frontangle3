@@ -1,14 +1,14 @@
-import React, {useEffect, useState} from "react";
+import React, { useState} from "react";
 
 
 import useWindowDimensions from "../../useWindowDimension";
 import SnakeThing from "./SnakeThing";
 
-import demo from "./demo.scss"
+// import demo from "./demo.scss"
 
 export default function DemoPage() {
 
-    const { height, width } = useWindowDimensions();
+    const {  width } = useWindowDimensions();
     const [snakewidth, setSnakewidth] = useState(10);
 
     const [x1, setX1] = useState(200);
