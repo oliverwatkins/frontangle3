@@ -14,7 +14,7 @@ import useWindowDimensions from "../useWindowDimension";
 
 export default function PreviousWorkPage() {
 
-    const { width } = useWindowDimensions();
+    const {width} = useWindowDimensions();
 
     return (
         <section className="fa-page previous-work ">
@@ -23,7 +23,7 @@ export default function PreviousWorkPage() {
             </section>
             <SnakeThing parentWidht={width} snakeWidth={12} x1={200} x2={400}>
                 <InView>
-                    {({ inView, ref }) => {
+                    {({inView, ref}) => {
                         return (
                             <section ref={ref} className={"prev-section left " + (inView ? "show" : "hidden")}>
                                 <ShapeShopSection align={"left"}/>
@@ -32,7 +32,7 @@ export default function PreviousWorkPage() {
                     }}
                 </InView>
                 <InView>
-                    {({ inView, ref }) => {
+                    {({inView, ref}) => {
 
                         //TODO get intersection ratio to work
                         // let showMe = false;
@@ -48,14 +48,14 @@ export default function PreviousWorkPage() {
                     }}
                 </InView>
                 <InView>
-                    {({ inView, ref }) => (
+                    {({inView, ref}) => (
                         <section ref={ref} className={"prev-section " + (inView ? "show" : "hidden")}>
                             <ReactChartsSection/>
                         </section>
                     )}
                 </InView>
                 <InView>
-                    {({ inView, ref }) => (
+                    {({inView, ref}) => (
                         <section ref={ref} className={"prev-section right " + (inView ? "show" : "hidden")}>
                             <BlogSection align={"right"}/>
                         </section>

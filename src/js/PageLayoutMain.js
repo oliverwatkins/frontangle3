@@ -16,21 +16,15 @@ import ResumePage from "./pages/resume/ResumePage";
 import Nav from "./layout/Nav";
 import ServicesPage from "./pages/ServicesPage";
 
-
-
-
 /**
  * Contains nav on top, footer on bottom, and all the pages are passed in
  * as children..
  */
 export default function PageLayout() {
-    // const {location} = props;
     return (
         <div>
             <Header/>
-            {/*<Nav location={location}/>*/}
             <Nav/>
-
                 <Switch>
                     <Route exact path="/public/OW.html">
                         <HomePage/>
@@ -61,5 +55,3 @@ export default function PageLayout() {
         </div>
     );
 }
-
-

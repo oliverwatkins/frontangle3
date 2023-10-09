@@ -9,8 +9,6 @@ import xingLogo from './../../img/xing.svg';
 
 export default function ContactPage() {
 
-    // const { t, i18n } = useTranslation();
-
     const handleSubmit = (e) => {
         e.preventDefault();
         alert("Currently the contact form is broken and I am working on fixing it. In the meantime please email me at oliver.f.watkins@gmail.com")

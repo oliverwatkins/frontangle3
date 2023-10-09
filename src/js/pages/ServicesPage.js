@@ -5,11 +5,8 @@ import {Trans} from 'react-i18next';
 import {InView} from "react-intersection-observer";
 import "./servicesPage.scss"
 
-
-
 export default function ServicesPage() {
 
-    // const {t, i18n} = useTranslation();
     return (
         <section className="fa-page services paragraph-1">
             <InView>

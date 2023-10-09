@@ -24,7 +24,6 @@ function Main() {
     // const { t, i18n } = useTranslation();
 
     useEffect(() => {
-
     })
     return (
         <BrowserRouter>
@@ -46,7 +45,5 @@ function Main() {
         </BrowserRouter>
     );
 }
-
-
 
 export default Main

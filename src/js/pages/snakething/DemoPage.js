@@ -4,8 +4,6 @@ import React, { useState} from "react";
 import useWindowDimensions from "../../useWindowDimension";
 import SnakeThing from "./SnakeThing";
 
-// import demo from "./demo.scss"
-
 export default function DemoPage() {
 
     const {  width } = useWindowDimensions();

@@ -18,8 +18,6 @@ $breakpoint-width-phone: 450px;
 $breakpoint-width-tablet: 1200px;
 $breakpoint-width-normal: 800px;
 
-
-
 //PHONE
 @media only screen and (max-width: $breakpoint-width-phone) {
   body {
@@ -36,7 +34,6 @@ $breakpoint-width-normal: 800px;
       margin-left: $sidePadding_phone;
       margin-right: $sidePadding_phone;
     }
-
 
     footer {
       margin-left: $sidePadding_phone;
