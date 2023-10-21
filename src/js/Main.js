@@ -1,6 +1,5 @@
 import React, {useEffect} from "react";
 
-// import {BrowserRouter as Router, Route, Navigate} from "react-router-dom";
 import PageLayoutMain from "./PageLayoutMain"
 import PageLayoutICharts from "./pages/icharts/PageLayoutICharts"
 
@@ -11,12 +10,7 @@ import '@fontsource/roboto/700.css';
 
 import './global.scss';
 
-
-
-
-
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-// import {useTranslation} from "react-i18next";
 
 function Main() {
 
