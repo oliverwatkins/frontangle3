@@ -1,25 +1,30 @@
-
 ## DEV
 
 To start the dev server for developement
 
-### `npm start`
+`npm start`
+
+## AZURE
+
+Deploys automatically to Azure when committing to master, pushing and passing all the tests.
+
+(see azure-static-web...yml in gitub workflows.)
 
 ## DEPLOY
 
 To deploy, first create a build distribution
 
-### `npm run build`
+`npm run build`
 
 Then deploy to netlify :
 
-### `netlify deploy cranky-jennings-0d3e2f.netlify.app`
+`netlify deploy cranky-jennings-0d3e2f.netlify.app`
 
 (make sure to select directory : 'build')
 
 Check URL. If everything looks OK, then deply with prod flag.
 
-### `netlify deploy --prod`
+`netlify deploy --prod`
 
 (enter 'build')
 
