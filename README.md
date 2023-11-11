@@ -22,7 +22,7 @@ Then deploy to netlify :
 
 (make sure to select directory : 'build')
 
-Check URL. If everything looks OK, then deply with prod flag.
+Check URL. If everything looks OK, then deploy with prod flag.
 
 `netlify deploy --prod`
 
