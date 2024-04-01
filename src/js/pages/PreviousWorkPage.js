@@ -11,6 +11,7 @@ import BlogSection from "./prevworkSections/BlogSection";
 import {InView} from "react-intersection-observer";
 import SnakeThing from "./snakething/SnakeThing";
 import useWindowDimensions from "../useWindowDimension";
+import ArtGallerySection from "./prevworkSections/ArtGallerySection";
 
 export default function PreviousWorkPage() {
 
@@ -47,16 +48,35 @@ export default function PreviousWorkPage() {
                         )
                     }}
                 </InView>
+
+
+
                 <InView>
                     {({inView, ref}) => (
                         <section ref={ref} className={"prev-section " + (inView ? "show" : "hidden")}>
+                            <ArtGallerySection/>
+                        </section>
+                    )}
+                </InView>
+
+
+
+
+                <InView>
+                    {({inView, ref}) => (
+                        <section ref={ref} className={"prev-section right " + (inView ? "show" : "hidden")}>
                             <ReactChartsSection/>
                         </section>
                     )}
                 </InView>
+
+
+
+
+
                 <InView>
                     {({inView, ref}) => (
-                        <section ref={ref} className={"prev-section right " + (inView ? "show" : "hidden")}>
+                        <section ref={ref} className={"prev-section " + (inView ? "show" : "hidden")}>
                             <BlogSection align={"right"}/>
                         </section>
                     )}

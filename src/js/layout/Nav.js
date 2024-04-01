@@ -1,24 +1,19 @@
 import React from "react";
 import {useLocation} from "react-router-dom";
 import "./nav.scss"
-import { useTranslation } from 'react-i18next';
+import {Trans, useTranslation} from 'react-i18next';
 import { HashLink as Link } from 'react-router-hash-link';
 import useWindowDimensions from "../useWindowDimension";
 
 
-function Nav() {
+function Nav(props) {
     let location = useLocation();
     const homeClassisActive = location.pathname === "/main" ? "active" : "";
     let previousClassisActive = location.pathname.indexOf("previous") > 0 ? "active" : "";
     let contactClassisActive = location.pathname.indexOf("contact") > 0 ? "active" : "";
 
-    // const [lang, setLang] = React.useState("en");
-
-    // const { t, i18n } = useTranslation();
-
     const {  width } = useWindowDimensions();
-    console.info("widht " + width)
-
+    console.info("width " + width)
     const [hamburgerActive, setHamburgerActive] = React.useState(false);
     const [showHamburgerMenu, setShowHamburgerMenu] = React.useState(false);
 
@@ -26,18 +21,15 @@ function Nav() {
         <>
             <nav role="navigation">
                 <StandardMenu
-
+                    i18n={props.i18n}
                     hamburgerActive={hamburgerActive}
                     setHamburgerActive={setHamburgerActive}
                     setShowHamburgerMenu={setShowHamburgerMenu}
-
                     homeClassisActive = {homeClassisActive}
                     previousClassisActive = {previousClassisActive}
                     contactClassisActive = {contactClassisActive}
-
                 />
                 {showHamburgerMenu &&
-
                     <HamburgerMenu
                         homeClassisActive = {homeClassisActive}
                         previousClassisActive = {previousClassisActive}
@@ -51,9 +43,7 @@ function Nav() {
 
 
 function StandardMenu(props) {
-
     const [lang, setLang] = React.useState("en");
-    const { i18n } = useTranslation();
 
     return (
 
@@ -90,7 +80,7 @@ function StandardMenu(props) {
             <li className={"navigation-element language " + (lang === "en" ? "active": "")} onClick={
                 ()=>{
                     setLang("en")
-                    i18n.changeLanguage("en");
+                    props.i18n.changeLanguage("en");
                 }
 
             }>
@@ -99,7 +89,8 @@ function StandardMenu(props) {
             <li className={"navigation-element language " + (lang === "de" ? "active": "")} onClick={
                 ()=>{
                     setLang("de");
-                    i18n.changeLanguage("de");
+                    props.i18n.changeLanguage("de");
+                    // window.location.reload();
                 }
             }>
                 <div id="german"/>

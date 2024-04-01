@@ -47,11 +47,9 @@ export default function SnakeThing(props = {x1: 200, x2:400, snakeWidth: 12}) {
     let svgStyle = {
         position:"absolute",
         top:"0px",
-        // border: "3px solid purple",
         zIndex: 1,
         width: "100%",
         height: height + "px"
-        // height: height + "3600px"
     }
 
     // width={width} height={length}

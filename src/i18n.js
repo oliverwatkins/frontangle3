@@ -8,6 +8,7 @@ const resources = {
     en: {
         translation: {
 
+
             "home-blurb": `
                 <p>Hi! I'm Oliver</p>
                 <p>Munich based Senior Software Developer, Architect, Team Lead, Coach.</p>
@@ -19,7 +20,8 @@ const resources = {
             "previous-blurb":
                 `<p>For over 20 years and in three cities (Melbourne, London, Munich) I have worked across a diverse cross-section of companies including financial services, telecommunication companies, eCommerce and startups to German household names such as BMW and Lufthansa.</p>
                 <p>In my spare time between client projects, these are some of the projects I work on.</p>`,
-
+            "previous-artgallery":
+                'In my spare time I paint. You can check out my paintings on my gallery website. The website is a self made react app without using any frameworks.',
             "previous-ss":
                 `Shape Shop is an ecommerce platform in developement that allows small and medium sized companies to administer their product catalog. A white labelling solution exists for developing customized public facing websites`,
             "previous-ic":
@@ -64,6 +66,8 @@ const resources = {
     },
     de: {
         translation: {
+
+
             "home-blurb": `
                 <p>Hallo! Ich bin Oliver</p>
                 <p>Münchener Senior Softwareentwickler, Architekt, Teamleiter, Coach.</p>
@@ -76,6 +80,10 @@ const resources = {
             "previous-blurb":
                 `<p>Seit über 20 Jahren und in drei Städten (Melbourne, London, München) habe ich für eine Vielzahl von Unternehmen gearbeitet, darunter Finanzdienstleister, Telekommunikationsunternehmen, E-Commerce und Start-ups bis hin zu bekannten deutschen Namen wie BMW und Lufthansa.</p>
                 <p>In meiner Freizeit zwischen Kundenprojekte sind dies einige der Projekte, an denen ich arbeite.</p>`,
+
+            "previous-artgallery":
+                'In meiner Freizeit male ich. Du kannst meine Gemälde auf meiner Galerie-Website anschauen. Die Website ist eine selbstgemachte React-App, ohne die Verwendung von Frameworks.',
+
 
 
             "previous-ss":
