@@ -3,6 +3,8 @@ import React  from "react";
 import '../page.scss';
 import '../previousWorkPage.scss';
 
+
+
 export default function SnakeThing(props = {x1: 200, x2:400, snakeWidth: 12}) {
     let width =600
     let height =4600
@@ -20,7 +22,15 @@ export default function SnakeThing(props = {x1: 200, x2:400, snakeWidth: 12}) {
     //curve constant
     let c = 50
 
-    let stroke = props.snakeWidth;
+    // let stroke = props.snakeWidth;
+    let stroke = 12
+
+    function createCircle(y1, x1, snakeWidth) {
+
+        return <circle fill={"white"} cx={x1} cy={y1 + 100} r={snakeWidth/2} stroke="url(#paint0_linear_207_14200)"/>;
+
+        // return <path d={`M ${x} ${yFrom + c} V ${yTo - c}`} strokeWidth={`${stroke}`} stroke="url(#paint0_linear_207_14200)"/>;
+    }
 
     function createPathLeftRight(y, xFrom, xTo) {
         return <path d={`M ${(xFrom ? xFrom : (x2 - c))} ${y} H ${(xTo ? xTo : (x1 + c))}`} strokeWidth={`${stroke}`} stroke="url(#paint0_linear_207_14200)"/>;
@@ -70,6 +80,10 @@ export default function SnakeThing(props = {x1: 200, x2:400, snakeWidth: 12}) {
                 {createPathLeftRight(y1)}
                 {leftDown(x1, y1)}
                 {createPathTopDowm(y1, y2, x1)}
+
+                {/*{createCircle(y1, x1, stroke)}*/}
+
+
                 {downRight(x1, y2)}
                 {createPathLeftRight(y2)}
                 {rightDown(x2, y2)}
@@ -83,16 +97,6 @@ export default function SnakeThing(props = {x1: 200, x2:400, snakeWidth: 12}) {
                 {createPathLeftRight(y4, x1 + 50, x2 - 50 - 50)}
 
                 { <circle cx={x2 - 50} cy={y4} r="50"  stroke="url(#paint0_linear_207_14200)" fill="url(#paint0_linear_207_14200)" />}
-
-
-                {/*{getPathLeftRight(x1, x2 - (x2-x1)/2 , y4)}*/}
-                {/*{downRight(x1, y4)}*/}
-                {/*{getPathLeftRight(x1, x2, y4)}*/}
-                {/*{rightDown(x2, y4)}*/}
-                {/*{getPathTopDowm(y4, y5, x2)}*/}
-
-                {/*<path d={`M ${x1 + c} ${y3} H ${x2 - c}`} strokeWidth={`${stroke}`}*/}
-                {/*      stroke="url(#paint0_linear_207_14200)"/>*/}
                 <defs>
                     <linearGradient id="paint0_linear_207_14200" x1="8.51253" y1="731.998" x2="308.147" y2="3023.79"
                                     gradientUnits="userSpaceOnUse">
