@@ -1,7 +1,6 @@
 import React from "react";
 import {useLocation} from "react-router-dom";
 import "./nav.scss"
-import {Trans, useTranslation} from 'react-i18next';
 import { HashLink as Link } from 'react-router-hash-link';
 import useWindowDimensions from "../useWindowDimension";
 

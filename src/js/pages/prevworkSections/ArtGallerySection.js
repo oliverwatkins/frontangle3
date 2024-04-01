@@ -2,7 +2,6 @@ import React from "react";
 
 import "../page.scss"
 
-import ImageGallery from "react-image-gallery";
 
 
 import c1 from "../artGallery/art1.png";
@@ -11,7 +10,6 @@ import c3 from "../shapeshop/img/ss5.png";
 import c4 from "../shapeshop/img/ss6.png";
 
 import {Trans} from "react-i18next";
-import bw from "../../../img/react-charts-1167-846.jpg";
 
 export default function ArtGallerySection() {
 
@@ -47,25 +45,3 @@ export default function ArtGallerySection() {
         </>
     );
 }
-
-const someInterestingImages = [
-
-    {
-        original: c1,
-        thumbnail: c1,
-    },
-    {
-        original: c2,
-        thumbnail: c2,
-    },
-    {
-        original: c3,
-        thumbnail: c3,
-    },
-    {
-        original: c4,
-        thumbnail: c4,
-    },
-
-
-]
