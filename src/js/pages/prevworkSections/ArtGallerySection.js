@@ -5,9 +5,7 @@ import "../page.scss"
 
 
 import c1 from "../artGallery/art1.png";
-import c2 from "../shapeshop/img/ss4.png";
-import c3 from "../shapeshop/img/ss5.png";
-import c4 from "../shapeshop/img/ss6.png";
+
 
 import {Trans} from "react-i18next";
 

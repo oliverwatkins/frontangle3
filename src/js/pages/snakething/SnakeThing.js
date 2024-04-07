@@ -25,12 +25,12 @@ export default function SnakeThing(props = {x1: 200, x2:400, snakeWidth: 12}) {
     // let stroke = props.snakeWidth;
     let stroke = 12
 
-    function createCircle(y1, x1, snakeWidth) {
-
-        return <circle fill={"white"} cx={x1} cy={y1 + 100} r={snakeWidth/2} stroke="url(#paint0_linear_207_14200)"/>;
-
-        // return <path d={`M ${x} ${yFrom + c} V ${yTo - c}`} strokeWidth={`${stroke}`} stroke="url(#paint0_linear_207_14200)"/>;
-    }
+    // function createCircle(y1, x1, snakeWidth) {
+    //
+    //     return <circle fill={"white"} cx={x1} cy={y1 + 100} r={snakeWidth/2} stroke="url(#paint0_linear_207_14200)"/>;
+    //
+    //     // return <path d={`M ${x} ${yFrom + c} V ${yTo - c}`} strokeWidth={`${stroke}`} stroke="url(#paint0_linear_207_14200)"/>;
+    // }
 
     function createPathLeftRight(y, xFrom, xTo) {
         return <path d={`M ${(xFrom ? xFrom : (x2 - c))} ${y} H ${(xTo ? xTo : (x1 + c))}`} strokeWidth={`${stroke}`} stroke="url(#paint0_linear_207_14200)"/>;
